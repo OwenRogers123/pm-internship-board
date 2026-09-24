@@ -1,0 +1,910 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Summer 2027 PM Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+
+<style>
+:root {
+  --ground: #F5F7F4;
+  --surface: #FFFFFF;
+  --surface-2: #EFF2EE;
+  --ink: #121614;
+  --ink-2: #3D4844;
+  --muted: #6B7873;
+  --line: #DDE2DC;
+  --line-strong: #C3CBC4;
+  --accent: #0E5748;
+  --accent-soft: #DCEDE6;
+  --live: #0E7A5F;
+  --live-soft: #D7EFE4;
+  --warn: #9C5A06;
+  --warn-soft: #FAE8CE;
+  --dim: #7E8A85;
+  --dim-soft: #E7EAE6;
+  --today: #A8321E;
+
+  --f-display: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --f-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --f-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --r: 4px;
+  --pad: clamp(18px, 4vw, 44px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0E1211;
+    --surface: #161B19;
+    --surface-2: #1D2422;
+    --ink: #E9EEEA;
+    --ink-2: #B6C1BB;
+    --muted: #8C9993;
+    --line: #262F2C;
+    --line-strong: #3A4642;
+    --accent: #58CCAB;
+    --accent-soft: #17322B;
+    --live: #4FC69F;
+    --live-soft: #13312A;
+    --warn: #E2A24A;
+    --warn-soft: #33260F;
+    --dim: #7B8782;
+    --dim-soft: #1E2422;
+    --today: #E4705A;
+  }
+}
+
+:root[data-theme="dark"] {
+  --ground: #0E1211;
+  --surface: #161B19;
+  --surface-2: #1D2422;
+  --ink: #E9EEEA;
+  --ink-2: #B6C1BB;
+  --muted: #8C9993;
+  --line: #262F2C;
+  --line-strong: #3A4642;
+  --accent: #58CCAB;
+  --accent-soft: #17322B;
+  --live: #4FC69F;
+  --live-soft: #13312A;
+  --warn: #E2A24A;
+  --warn-soft: #33260F;
+  --dim: #7B8782;
+  --dim-soft: #1E2422;
+  --today: #E4705A;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: var(--pad) var(--pad) 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.eyebrow {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ---------- masthead ---------- */
+
+.masthead { display: flex; flex-direction: column; gap: 16px; }
+
+h1 {
+  font-family: var(--f-display);
+  font-weight: 800;
+  font-size: clamp(34px, 6.5vw, 58px);
+  line-height: 0.98;
+  letter-spacing: -0.028em;
+  margin: 0;
+  text-wrap: balance;
+}
+h1 .thin { font-weight: 500; color: var(--muted); display: block; }
+
+.standfirst {
+  max-width: 60ch;
+  color: var(--ink-2);
+  margin: 0;
+}
+
+.meterbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+.meter {
+  flex: 1 1 130px;
+  background: var(--surface);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.meter .n {
+  font-family: var(--f-display);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.meter .n.urgent { color: var(--today); }
+.meter .lbl { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+
+/* ---------- section furniture ---------- */
+
+section { display: flex; flex-direction: column; gap: 18px; }
+
+.sec-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-bottom: 1.5px solid var(--ink);
+  padding-bottom: 8px;
+}
+h2 {
+  font-family: var(--f-display);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.012em;
+  margin: 0;
+}
+.sec-head .note { font-size: 13px; color: var(--muted); max-width: 52ch; }
+
+/* ---------- window chart ---------- */
+
+.chart-scroll { overflow-x: auto; padding-bottom: 4px; }
+.chart { min-width: 660px; }
+
+.chart-months {
+  display: grid;
+  grid-template-columns: var(--labelw) 1fr;
+  gap: 0 14px;
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.months-track { position: relative; height: 20px; }
+.month-tick {
+  position: absolute;
+  top: 0;
+  padding-left: 5px;
+  border-left: 1px solid var(--line-strong);
+  height: 20px;
+  line-height: 20px;
+}
+
+.chart-rows { display: flex; flex-direction: column; gap: 3px; }
+.crow {
+  display: grid;
+  grid-template-columns: var(--labelw) 1fr;
+  gap: 0 14px;
+  align-items: center;
+}
+.crow-label {
+  font-size: 12.5px;
+  font-weight: 500;
+  text-align: right;
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.crow-track {
+  position: relative;
+  height: 22px;
+  background: linear-gradient(to right, var(--line) 1px, transparent 1px);
+  background-size: var(--monthw) 100%;
+}
+.bar {
+  position: absolute;
+  top: 4px;
+  height: 14px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  color: var(--surface);
+}
+.bar.live { background: var(--live); }
+.bar.deadline { background: var(--warn); }
+.bar.fade { background: linear-gradient(to right, var(--live) 60%, color-mix(in srgb, var(--live) 12%, transparent)); }
+.bar.expected {
+  background: transparent;
+  border: 1.5px dashed var(--line-strong);
+  color: var(--muted);
+}
+.bar .cap { font-weight: 500; }
+
+.today-line {
+  position: absolute;
+  top: -24px;
+  bottom: 0;
+  width: 1.5px;
+  background: var(--today);
+  z-index: 2;
+}
+.today-flag {
+  position: absolute;
+  top: -24px;
+  left: 3px;
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  color: var(--today);
+  white-space: nowrap;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.swatch { width: 16px; height: 9px; border-radius: 2px; display: inline-block; }
+
+/* ---------- role rows ---------- */
+
+.roles { display: flex; flex-direction: column; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+
+.tier-head {
+  background: var(--surface-2);
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 8px 16px;
+}
+
+.role {
+  background: var(--surface);
+  display: grid;
+  grid-template-columns: 30px 1fr auto;
+  gap: 4px 14px;
+  padding: 14px 16px;
+  align-items: start;
+}
+.role.top { background: var(--accent-soft); }
+
+.rank {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  color: var(--muted);
+  padding-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.role.top .rank { color: var(--accent); font-weight: 600; }
+
+.role-main { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.role-co {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 16.5px;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+.role-title { color: var(--ink-2); font-size: 13.5px; }
+.role-meta {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+}
+.role-note { font-size: 12.5px; color: var(--ink-2); max-width: 62ch; }
+.role-note strong { color: var(--ink); font-weight: 600; }
+
+.chip {
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 2.5px 7px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.chip.live { background: var(--live-soft); color: var(--live); }
+.chip.warn { background: var(--warn-soft); color: var(--warn); }
+.chip.dim { background: var(--dim-soft); color: var(--dim); }
+.chip.check { background: var(--accent-soft); color: var(--accent); }
+
+.role-side { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.applylink {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid var(--line-strong);
+  border-radius: 2px;
+  padding: 5px 10px;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.applylink:hover { border-color: var(--accent); color: var(--accent); }
+.applylink[aria-disabled="true"] { opacity: 0.45; pointer-events: none; }
+
+/* ---------- checkboxes ---------- */
+
+.tick {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: pointer;
+  user-select: none;
+}
+.tick input, .prepbox {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid var(--line-strong);
+  border-radius: 2px;
+  background: var(--surface);
+  cursor: pointer;
+  position: relative;
+  flex: none;
+  margin: 0;
+}
+.tick input:checked, .prepbox:checked { background: var(--accent); border-color: var(--accent); }
+.tick input:checked::after, .prepbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px; top: 0.5px;
+  width: 4px; height: 9px;
+  border: solid var(--surface);
+  border-width: 0 2px 2px 0;
+  transform: rotate(42deg);
+}
+.tick input:checked + .tick-lbl { color: var(--accent); }
+.role:has(input:checked) .role-co { text-decoration: line-through; text-decoration-color: var(--line-strong); }
+
+/* ---------- two-col lists ---------- */
+
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 26px; }
+.stack { display: flex; flex-direction: column; gap: 10px; }
+.stack h3 {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--line);
+}
+.entry { display: flex; flex-direction: column; gap: 1px; }
+.entry .co { font-weight: 600; font-size: 13.5px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.entry .when { font-family: var(--f-mono); font-size: 10.5px; color: var(--accent); letter-spacing: 0.04em; }
+.entry .why { font-size: 12.5px; color: var(--muted); }
+
+/* ---------- prep ---------- */
+
+.prep { display: flex; flex-direction: column; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; }
+.prep-item {
+  background: var(--surface);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 11px 15px;
+}
+.prep-item.hot { background: var(--warn-soft); }
+.prep-txt { font-size: 13.5px; }
+.prep-item:has(input:checked) .prep-txt { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--line-strong); }
+
+/* ---------- footer notes ---------- */
+
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+.note-card {
+  border-left: 2px solid var(--line-strong);
+  padding-left: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.note-card h3 {
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.note-card p { margin: 0; font-size: 12.5px; color: var(--ink-2); }
+.note-card p strong { color: var(--ink); }
+
+.saveline {
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+@media (max-width: 620px) {
+  .role { grid-template-columns: 22px 1fr; }
+  .role-side { grid-column: 2; align-items: flex-start; flex-direction: row; align-items: center; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bar, .applylink, .tick input { transition: opacity .15s ease, border-color .15s ease, background .15s ease; }
+}
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="eyebrow">Cycle: Summer 2027 &middot; California only &middot; Swept 24 September 2026</div>
+    <h1>PM Internship Board<span class="thin">California, no CS degree required</span></h1>
+    <p class="standfirst">A recurring AI agent sweep runs every couple of days against a GitHub internship tracker, LinkedIn/Google search, and ~40 California employer boards &mdash; then checks every find against a corrections log so closed reqs and known dead ends never get re-flagged as new. This page and the notes below are what it maintains. Filtered to roles in California whose eligibility text does not require a computer-science or engineering degree. <strong>Visa's APM Intern closes within hours</strong> &mdash; file now if not already filed. Three new finds this sweep: <strong>Microsoft</strong> (Mountain View, posted yesterday), <strong>ByteDance</strong> Global Payment PM intern (San Jose), and <strong>West Monroe</strong>'s PM consulting intern (SF, a consulting-firm placement rather than in-house PM). Google's new APM intern was checked and ruled out &mdash; hard CS/technical-degree bar.</p>
+
+    <div class="meterbar">
+      <div class="meter"><span class="n" id="m-live">13</span><span class="lbl">Live in California</span></div>
+      <div class="meter"><span class="n" id="m-new">2</span><span class="lbl">Opening within weeks</span></div>
+      <div class="meter"><span class="n urgent" id="m-days">1</span><span class="lbl">Days to Visa close</span></div>
+      <div class="meter"><span class="n" id="m-applied">0</span><span class="lbl">Applications in</span></div>
+      <div class="meter"><span class="n" id="m-prep">0<span style="color:var(--muted);font-size:16px">/10</span></span><span class="lbl">Prep items done</span></div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2>The window chart</h2>
+      <p class="note">Solid bars are confirmed live. A faded end means the posting states no closing date &mdash; assume it can vanish. Dashed bars are expected windows based on prior cycles, nothing live yet.</p>
+    </div>
+    <div class="chart-scroll">
+      <div class="chart" id="chart"></div>
+    </div>
+    <div class="legend">
+      <span><i class="swatch" style="background:var(--live)"></i> Live, no stated close</span>
+      <span><i class="swatch" style="background:var(--warn)"></i> Hard deadline</span>
+      <span><i class="swatch" style="border:1.5px dashed var(--line-strong)"></i> Expected window</span>
+      <span><i class="swatch" style="background:var(--today);width:2px;height:12px"></i> Today</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Open now</h2>
+      <p class="note">California, no CS degree bar, ordered by fit rather than deadline. Tick one off when the application is actually submitted.</p>
+    </div>
+    <div class="roles" id="roles"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Checked, and what it cost</h2>
+      <p class="note">Why each rejected company is rejected, so no future sweep re-walks the same ground &mdash; and the handful that genuinely need a human with a browser.</p>
+    </div>
+    <div class="cols" id="pipeline"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Prep work</h2>
+      <p class="note">Items 1 and 4 are the ones that gate the Roblox application. The rest can happen while postings trickle out.</p>
+    </div>
+    <div class="prep" id="prep"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Standing notes</h2>
+    </div>
+    <div class="notes">
+      <div class="note-card">
+        <h3>Positioning</h3>
+        <p>Business + Information Systems + a real sales job is an edge for <strong>enterprise SaaS PM</strong>, where teams want someone who has actually talked to customers. For outdoor and lifestyle brands, genuine product passion carries unusual weight &mdash; small applicant pools, hiring for enthusiasm plus judgment.</p>
+      </div>
+      <div class="note-card">
+        <h3>What the filter costs</h3>
+        <p>California-only removed <strong>Dick's Sporting Goods</strong> (Pittsburgh) and <strong>Hudl</strong> (Lincoln) &mdash; the two strongest narrative fits found in any sweep, sporting goods and sports-performance software against small applicant pools. They're parked, not deleted. If Roblox and Coinbase both come back empty, they're the first two to revisit.</p>
+      </div>
+      <div class="note-card">
+        <h3>Corrections log</h3>
+        <p><strong>Zurn Elkay URL</strong> &mdash; the stored link was missing a hyphen and 404'd. Posting is still live; corrected 24 Sept.</p>
+        <p><strong>Google APM Intern</strong> &mdash; new Summer 2027 posting (Mountain View/SF, closes 6 Oct), but eligibility requires a "Product Management, Computer Science, Engineering, Data Science, Mathematics, Statistics, or related technical field" degree &mdash; same pattern as Salesforce/Databricks. Ruled out.</p>
+        <p><strong>Trimble</strong> &mdash; was listed as open with "no degree requirement found." Wrong: the live posting states plainly "Currently pursuing a degree in Computer Science, Engineering, or a related field." Removed 21 Sept.</p>
+        <p><strong>Salesforce APM (JR348039)</strong> &mdash; logged as open on an earlier pass; it was already closed (deadline 24 July 2026, pulled same day). Reconfirmed 15 Sept: still no second Futureforce PM req this autumn.</p>
+        <p><strong>Pinterest Apprentice PM</strong> &mdash; the live posting is the 2026 cohort and a rotational apprenticeship, not a summer internship. Reconfirmed 15 Sept.</p>
+        <p><strong>LinkedIn APM</strong> &mdash; it wasn't just closed for the season. It was replaced by "Associate Product Builder," a full-time two-year new-grad rotational program &mdash; never a summer internship to begin with. Dropped from this board. (24 Sept: a domain "linkedincareers.info" impersonating LinkedIn's careers site surfaced in search &mdash; not a real posting, avoid it.)</p>
+        <p><strong>Unfetchable &ne; dead.</strong> Dick's was written off as an unloadable Workday page; it was live the whole time. Treat a failed fetch as unknown and check it by hand.</p>
+      </div>
+      <div class="note-card">
+        <h3>Evergreen channels</h3>
+        <p><a href="https://github.com/SimplifyJobs/Summer2027-Internships">SimplifyJobs/Summer2027-Internships</a> &mdash; updated hourly, the source of most of this board. Then <a href="https://www.workatastartup.com/jobs">workatastartup.com</a> filtered to product, and <a href="https://www.ycombinator.com/internships">YC internships</a>.</p>
+      </div>
+      <div class="note-card">
+        <h3>How this stays current</h3>
+        <p>Built because manually re-checking 40+ career pages every week for one eligibility line ("pursuing a degree in CS, Engineering, or a related field") is exactly the kind of chore that eats a Tuesday night. An AI agent runs the sweep instead: GitHub tracker &rarr; LinkedIn/Google search &rarr; company boards &rarr; re-verify everything already on the board &mdash; then writes the results here and to a version-controlled markdown archive, so a role that was already ruled out (closed, MBA-only, wrong degree bar) never wastes a re-check.</p>
+      </div>
+    </div>
+    <p class="saveline" id="saveline">Ticks are saved in your browser only &mdash; this is a single-player board, not a shared one</p>
+    <p class="saveline">Built by Owen Rogers, Cal Poly &middot; <a href="https://github.com/OwenRogers123/pm-internship-board">source</a></p>
+  </section>
+
+</div>
+
+<script>
+const ROLES = [
+  { id: "visa", tier: "Apply first", co: "Visa", title: "Associate Product Manager (APM) Intern, Summer 2027", loc: "Foster City, CA",
+    meta: ["$46–55/hr", "Hybrid", "Closes Fri 25 Sept 2026"],
+    chip: { cls: "warn", txt: "Closes today/tomorrow" },
+    top: true, chart: true,
+    note: "Eligibility, verbatim: <em>\"Pursuing a Bachelor's or Master's Degree in <strong>Business Administration, Management Information Systems</strong>, Operations Management, Communications or a related design field, graduating December 2027 – August 2028.\"</em> CS/Engineering is only a <em>preferred</em> alternative, not required. Reconfirmed live 24 Sept &mdash; the posting itself read \"~11 hours left to apply\" at last check. This is closing effectively today/tomorrow morning &mdash; file now if not already filed.",
+    url: "https://visa.wd5.myworkdayjobs.com/en-US/Visa_Early_Careers/job/Associate-Product-Manager--APM--Intern---Summer-2027_REF088603W",
+    open: "2026-09-17", close: "2026-09-25", kind: "deadline" },
+
+  { id: "roblox", tier: "Apply first", co: "Roblox", title: "[Summer 2027] Product Management Intern", loc: "San Mateo, CA",
+    meta: ["$62/hr", "Rolling review", "Closes Fri 30 Oct, 5pm PST"],
+    chip: { cls: "warn", txt: "Hard deadline" },
+    top: true, chart: true,
+    note: "Eligibility, verbatim: <em>\"pursuing an undergraduate/graduate degree in computer science, engineering, <strong>information systems, business</strong>, mathematics or a related field.\"</em> Named explicitly, best-paid on the board, and program runs May 25 – Aug 13, 2027. Rolling review means early beats polished-but-late. Reconfirmed live 24 Sept, deadline unchanged.",
+    url: "https://careers.roblox.com/jobs/8143981",
+    open: "2026-08-20", close: "2026-10-30", kind: "deadline" },
+
+  { id: "coinbase", tier: "Apply now", co: "Coinbase", title: "Associate Product Manager Intern, 12-week Summer 2027", loc: "Hybrid — San Francisco",
+    meta: ["$55/hr", "Max 3 applications per 6 months"],
+    chip: { cls: "live", txt: "Live" }, chart: true,
+    note: "No degree or major restriction stated. Wants prior product, design or cross-functional project experience plus quantitative aptitude from coursework or a data-analysis role &mdash; which a BDR background maps onto directly. The three-application cap is the thing to plan around. Reconfirmed live 24 Sept.",
+    url: "https://www.coinbase.com/careers/positions/8168322",
+    open: "2026-08-25", close: null, kind: "fade" },
+
+  { id: "intuit", tier: "Apply now", co: "Intuit", title: "Summer 2027 Product Manager Intern (incl. Rotational PM track)", loc: "Mountain View, CA / San Diego, CA",
+    meta: ["Posted 15 Sept 2026", "No deadline listed"],
+    chip: { cls: "live", txt: "Live" }, chart: true,
+    note: "Eligibility explicitly names <strong>Business, Management Information Systems</strong> and Marketing alongside CS/Engineering &mdash; one of the cleanest fits on the board. Covers the well-known Rotational PM (RPM) program at HQ. Reconfirmed live 24 Sept; grab the req off jobs.intuit.com directly if this link rotates.",
+    url: "https://jobs.intuit.com/job/mountain-view/summer-2027-product-manager-intern/27595/100620927632",
+    open: "2026-09-15", close: null, kind: "fade" },
+
+  { id: "zurn", tier: "Apply now", co: "Zurn Elkay Water Solutions", title: "Product Management Intern, Summer 2027", loc: "Paso Robles, CA",
+    meta: ["$18.25–23/hr", "No deadline listed"],
+    chip: { cls: "live", txt: "Live" }, chart: true,
+    note: "Eligibility, verbatim: <em>\"Junior or Senior status working towards a four-year college degree... Required major(s) are <strong>Business</strong>, Project Management/Marketing, Manufacturing Engineering.\"</em> Business named and sufficient on its own. Smaller company, lower pay, but real PLCM work (competitive analysis, pricing), and Paso Robles is minutes from Cal Poly SLO. ⚠ URL corrected 24 Sept &mdash; the previously-stored link was missing a hyphen and 404'd.",
+    url: "https://elkay.wd1.myworkdayjobs.com/Elkay_External/job/Paso-Robles-CA/Product-Management-Intern--Summer-2027-_REQ-020109",
+    open: "2026-09-17", close: null, kind: "fade" },
+
+  { id: "atlassian", tier: "Apply now", co: "Atlassian", title: "Product Management Intern, 2027 Summer", loc: "San Francisco (also lists Remote)",
+    meta: ["\"Technical degree program\"", "No deadline listed"],
+    chip: { cls: "warn", txt: "Eligibility tightened" }, chart: true,
+    note: "The listing moved off iCIMS to atlassian.com directly. Eligibility now reads <em>\"currently enrolled full time in a technical degree program... expected graduation by June 2028\"</em> &mdash; new language since 15 Sept, when nothing was stated. Doesn't name CS/engineering outright, so Information Systems may still qualify, but it's no longer cleanly business-friendly. Still the cleanest enterprise-SaaS home for the sales-to-product story. Reconfirmed live 24 Sept.",
+    url: "https://www.atlassian.com/company/careers/details/26274",
+    open: "2026-08-25", close: null, kind: "fade" },
+
+  { id: "tiktok", tier: "Apply now", co: "TikTok", title: "Product Manager Intern — multiple sub-team reqs", loc: "San Jose, CA",
+    meta: ["~12 live reqs", "Verify the req number first"],
+    chip: { cls: "warn", txt: "Stale link" }, chart: true,
+    note: "TikTok runs roughly a dozen separate PM sub-team reqs this cycle (AI Governance, Commerce Ads, Signal &amp; Identity, Scaled Growth, AI Safety, Recommendation, and more), each its own req number, rotating independently &mdash; <strong>the stored link goes stale fast. Search lifeattiktok.com for \"product manager intern\"</strong> and pick the team that fits. Reconfirmed live 24 Sept — still roughly a dozen sub-reqs active, with normal churn (some rotate out, others in) since the last pass.",
+    url: "https://lifeattiktok.com/search/7677493272788683013",
+    open: "2026-09-01", close: null, kind: "fade" },
+
+  { id: "veeam", tier: "Apply now", co: "Veeam", title: "Services Portfolio Management Intern, Summer 2027", loc: "San Jose — hybrid",
+    meta: ["$20–25/hr", "10-week program, June–Aug 2027"],
+    chip: { cls: "live", txt: "Live" }, chart: true,
+    note: "Preferred majors: <em>\"Business, Data Science, Computer Science, or a related field\"</em> &mdash; business listed first. Scope caveat: customer-experience and services-portfolio work (needs research, service metrics, launch support), so product ops rather than classic software PM. Worth applying knowing that. Reconfirmed live 24 Sept.",
+    url: "https://careers.veeam.com/job/san-jose/services-portfolio-management-intern-summer-2027/22681/100497516720",
+    open: "2026-09-05", close: null, kind: "fade" },
+
+  { id: "blackhawk", tier: "Apply now", co: "Blackhawk Network", title: "Product Management Intern", loc: "Pleasanton, CA",
+    meta: ["$25–30/hr", "No deadline listed"],
+    chip: { cls: "live", txt: "Live" }, chart: true,
+    note: "Eligibility: enrolled in a Business Administration (or STEM) degree program &mdash; explicitly business-friendly. A related Direct-to-Consumer Product Intern req also exists at the same company and location, unconfirmed year/eligibility. Reconfirmed live 24 Sept &mdash; the 21 Sept redirect-to-hub issue looks to have been a transient fetch glitch, not a real problem.",
+    url: "https://careers-blackhawknetwork.icims.com/jobs/26869/product-management-intern/job",
+    open: "2026-09-10", close: null, kind: "fade" },
+
+  { id: "pimco", tier: "Apply now", co: "PIMCO", title: "2027 Summer Intern — Product Strategy Analyst", loc: "Newport Beach, CA",
+    meta: ["Min 3.5 GPA", "FT start Jan–Aug 2028"],
+    chip: { cls: "warn", txt: "Different flavor" }, chart: true,
+    note: "Business/Finance, Economics, Mathematics or applied-science majors preferred &mdash; not CS/eng-exclusive. Must be enrolled Fall 2027 semester and eligible to begin full-time employment Jan–Aug 2028 (fits a Spring 2028 grad). Flavor caveat: this is investment-fund product strategy at a bond manager, not consumer-tech product management. Worth including if casting a wide net. Reconfirmed live 24 Sept.",
+    url: "https://pimco.wd1.myworkdayjobs.com/pimco-careers/job/Newport-Beach-CA-USA/XMLNAME-2027-Summer-Intern---Product-Strategy-Analyst--US_R106626",
+    open: "2026-09-08", close: null, kind: "fade" },
+
+  { id: "microsoft", tier: "Apply now", co: "Microsoft", title: "Product Manager Intern", loc: "Mountain View, CA",
+    meta: ["Job #200057344", "Posted 23 Sept 2026"],
+    chip: { cls: "check", txt: "New" }, chart: true,
+    note: "Required qualification: \"currently pursuing a Bachelor's, Master's, or Doctorate degree\" with <strong>no major restriction</strong> &mdash; CS/Engineering appear only as <em>preferred</em>. New find this sweep, posted the day before &mdash; file soon while it's fresh in the queue.",
+    url: "https://apply.careers.microsoft.com/careers/job/1970393557004836",
+    open: "2026-09-23", close: null, kind: "fade" },
+
+  { id: "bytedance", tier: "Apply now", co: "ByteDance", title: "Product Management Project Intern — Global Payment", loc: "San Jose, CA",
+    meta: ["New find this sweep"],
+    chip: { cls: "check", txt: "New" }, chart: true,
+    note: "Eligibility, verbatim: <em>\"Currently pursuing an Undergraduate degree in fields such as Computer Science, Data Science, <strong>Business Analytics</strong>, etc.\"</em> &mdash; a broad, non-exclusive list; CS/Engineering is only a preferred background, not required. Payments-vertical PM/ops work at a major tech co.",
+    url: "https://jobs.bytedance.com/en/position/7686394581777631541/detail",
+    open: "2026-09-22", close: null, kind: "fade" },
+
+  { id: "westmonroe", tier: "Apply now", co: "West Monroe", title: "2027 Product Management Consulting Intern", loc: "San Francisco, CA",
+    meta: ["$40/hr", "Rolling — apply ASAP"],
+    chip: { cls: "check", txt: "New" }, chart: true,
+    note: "Eligibility, verbatim: <em>\"Bachelor's degree in progress, with an expected graduation date between December 2027 and August 2028,\"</em> min 3.0 GPA, <strong>no major restriction</strong>. Scope caveat: this is a <strong>consulting-firm placement</strong> &mdash; you'd be staffed onto client PM engagements (facilitation, data analysis, Agile practices) rather than an in-house product org. Different in kind from the rest of this board, but a real PM-titled role with a wide-open major bar.",
+    url: "https://www.westmonroe.com/careers/job-search-students",
+    open: "2026-09-20", close: null, kind: "fade" },
+
+  { id: "robinhood", tier: "Opens within weeks", co: "Robinhood", title: "Summer 2027 Internship — Product track", loc: "Menlo Park",
+    meta: ["Still not posted as of 24 Sept"],
+    chip: { cls: "warn", txt: "Check weekly" },
+    note: "Their early-talent page says roles post \"typically by mid-September,\" and the programme explicitly recruits <strong>Product Management majors</strong> alongside CS and design. Reconfirmed 24 Sept via the full Greenhouse feed (27 current postings): only a full-time new-grad APM role exists, no intern track yet.",
+    url: "https://robinhood.com/us/en/careers/early-talent/",
+    open: "2026-09-15", close: "2026-11-30", kind: "expected" },
+
+  { id: "ea", tier: "Opens within weeks", co: "Electronic Arts", title: "Technical / Product Manager Intern", loc: "Redwood City",
+    meta: ["Expected Sept–Oct", "Hard deadline ~Nov 2026"],
+    chip: { cls: "warn", txt: "Watch" },
+    note: "Umbrella internship application expected to open Sept–Oct with a hard November cut-off. Reconfirmed 24 Sept via jobs.ea.com (the real portal): the only live \"Product Management Intern\" req is still in Hyderabad, India, not Redwood City.",
+    url: "https://ea.gg/careers/students",
+    open: "2026-10-01", close: "2026-11-30", kind: "expected" }
+];
+
+const PIPELINE = [
+  { head: "Ruled out — and why", items: [
+    { co: "Google", when: "CS/technical degree (24 Sept)", why: "New Summer 2027 APM Intern (Mountain View/SF, closes 6 Oct). Eligibility: \"currently enrolled in a degree program within Product Management, Computer Science, Engineering, Data Science, Mathematics, Statistics, or a related technical field\" — no business/any-major path. Same pattern as Salesforce/Databricks." },
+    { co: "Verkada", when: "No PM intern track (24 Sept)", why: "Read the full 301-opening board directly. Product department has 4 open roles, all full-time. Only internships are Software Engineering, Winter Co-ops, and Technical Support Engineering." },
+    { co: "Trimble", when: "CS degree (21 Sept)", why: "Was in open-now on \"no requirement found\"; the live posting now states plainly \"Currently pursuing a degree in Computer Science, Engineering, or a related field.\" Removed." },
+    { co: "ID.me", when: "Not an internship", why: "\"Associate Product Manager (New Grad)\" surfaced in a tracker sweep, but it's a full-time new-grad rotational role, not a summer internship." },
+    { co: "Databricks", when: "CS degree", why: "Req requires \"computer science or a related engineering field.\" Fails the degree bar outright." },
+    { co: "Okta", when: "MBA only", why: "Their PM internship requires current MBA enrolment. Not open to undergraduates." },
+    { co: "Strava", when: "MBA + experience", why: "Last PM intern req (Summer 2025, closed) wanted an MBA or master's plus 1–2 years of PM experience. Never an undergrad role — the teardown is still worth writing." },
+    { co: "Salesforce", when: "Closed + CS", why: "JR348039 closed 24 July 2026, and required a CS degree anyway. Reconfirmed 15 Sept: no second Futureforce PM req this autumn." },
+    { co: "Pinterest", when: "No such role", why: "No Summer 2027 PM internship exists; their PM track is a rotational career-switcher apprenticeship. Reconfirmed 15 Sept." },
+    { co: "LinkedIn", when: "Not an internship", why: "APM was retired and replaced by \"Associate Product Builder\" — a full-time, two-year new-grad rotational program, not a summer internship. Never actually a prospect for this board." },
+    { co: "ServiceNow", when: "Not found", why: "The two Santa Clara reqs aggregators pointed to both 404. Its own sitemap.xml lists all 618 live job slugs — none contain \"product-manager-intern\" or \"product-management-intern.\"" },
+    { co: "PayPal", when: "Stale ad", why: "The \"Product Manager Intern, Technical\" ad resolves to a different, closed Summer 2024 MBA-intern req that required a CS degree. Not a live Summer 2027 posting." },
+    { co: "Workday", when: "Not found", why: "Both known Pleasanton req IDs 404, and the live Early Career board shows only 3 open roles, none product. One unconfirmed lead — \"AI Product Manager Intern,\" req JR-0101993 — still needs a manual check." },
+    { co: "Dropbox · Asana · Figma · Notion", when: "No PM track", why: "All four run engineering- and design-only internship programmes. Dropbox and Asana reconfirmed 15 Sept — no current openings at all on Asana's board." },
+    { co: "Riot Games", when: "MBA only", why: "Both PM-titled internships (\"Product Manager Intern (MBA)\" and \"Technical Product Management Intern (MBA)\," LA) require active MBA enrollment. Not open to undergraduates." },
+    { co: "Fender", when: "No program", why: "No PM/APM internship postings found for any year; a related brand's \"Digital Product Manager\" intern req was removed in 2024 and never replaced." },
+    { co: "Snap", when: "MBA-leaning, wrong cycle", why: "Reconfirmed 24 Sept: read Snap's complete board — only 2 roles company-wide are typed \"Intern\" (neither PM, neither CA). No Summer 2027 PM posting live yet." },
+    { co: "Chipotle · Southern California Edison · Clorox · Edwards Lifesciences · Vans/VF", when: "Checked 21 Sept", why: "No PM/business-track internship found at any of these — Edwards and SCE run engineering-only internship tracks; the others have no matching listing at all." }
+  ]},
+  { head: "Worth ten minutes by hand", items: [
+    { co: "Cisco · Sony Interactive · Twilio", when: "Blocked / inconclusive", why: "Direct fetches were blocked (bot protection, JS-rendered results, 403s) or turned up no PM-specific req. Search-engine evidence is too thin to call these confirmed either way — check by hand." },
+    { co: "Sephora · Levi's · Illumina · Williams-Sonoma", when: "Reconfirmed 24 Sept: still not posted", why: "All recur or are expected to open Fall 2026; none had a live Summer 2027 PM listing as of 24 Sept. Levi's previously-noted req number now 404s (expired, not just hard to find)." },
+    { co: "Autodesk", when: "Live, but not CA", why: "Reconfirmed 24 Sept via direct Workday API query: still only Singapore (×2) and Montreal (×1) postings for \"Intern, Product Manager.\" Doesn't clear the California filter yet; watch for a US posting." },
+    { co: "Surfline", when: "Cold outreach", why: "One PM intern posting on record, Summer 2025. Waiting for a repeat is not a strategy — email them." },
+    { co: "Airbnb", when: "Dec – Feb", why: "Reconfirmed 21 Sept via Greenhouse: their own page puts the Summer Intern Program window in December; no PM internship posted yet, matches expectation." },
+    { co: "Garmin · Oakley", when: "Recurs yearly, still not posted", why: "Both ran a Summer 2026 PM/product-strategy intern; reconfirmed 24 Sept the 2027 version hasn't posted (Garmin: read all 39 current intern postings directly). Check again in the next few weeks." },
+    { co: "Adobe", when: "2027 cycle active, APM not yet", why: "Other 2027 tracks (SWE, ML, Sales) are already posted; the \"2027 Intern - Associate Product Manager\" title specifically hasn't appeared yet as of 21 Sept." },
+    { co: "Not yet swept", when: "Next pass", why: "eBay, Block, Zoom, Reddit, Roku, Qualcomm, GoPro, Gap, Disney — searched broadly this round with nothing surfacing, worth a direct board check next time rather than another keyword search." }
+  ]}
+];
+
+const PREP = [
+  { id: "p1", hot: true, txt: "Rewrite the resume for product rather than sales — reframe the Connect Outbound BDR bullets around customer discovery and quantified outcomes." },
+  { id: "p2", txt: "Write 2–3 product teardowns (Strava, Surfline, Spotify): what works, one metric to move, one feature to ship." },
+  { id: "p3", txt: "Host the teardowns on a one-page site." },
+  { id: "p4", hot: true, txt: "Ship something real on Vega Athletics and write up the product decision behind it." },
+  { id: "p5", txt: "Draft a cover letter skeleton with 3 swappable \"why this company\" paragraphs." },
+  { id: "p6", txt: "Line up 5–8 Cal Poly alumni conversations (leverage the PM club outreach role)." },
+  { id: "p7", txt: "Practice product sense, estimation, and \"a product you love\" formats." },
+  { id: "p8", txt: "Set backstop alerts: LinkedIn saved search, Simplify, Handshake." },
+  { id: "p9", txt: "Write the 60-second sales-to-product story." },
+  { id: "p10", txt: "Cold-email Surfline rather than waiting for a posting that has run exactly once." }
+];
+
+const EXPECTED = [
+  { label: "Airbnb", open: "2026-12-01", close: "2027-02-28", cap: "expected" }
+];
+
+const T0 = new Date("2026-09-01T00:00:00");
+const T1 = new Date("2027-03-31T00:00:00");
+const TODAY = new Date("2026-09-24T00:00:00");
+const SPAN = T1 - T0;
+
+const pct = d => ((new Date(d + "T00:00:00") - T0) / SPAN) * 100;
+
+function buildChart() {
+  const months = [];
+  let c = new Date(T0);
+  while (c < T1) {
+    months.push({ label: c.toLocaleString("en-US", { month: "short" }), left: ((c - T0) / SPAN) * 100 });
+    c = new Date(c.getFullYear(), c.getMonth() + 1, 1);
+  }
+
+  const rows = ROLES.filter(r => r.chart || r.kind === "expected").map(r => ({
+    label: r.co,
+    left: pct(r.open),
+    right: r.close ? pct(r.close) : Math.min(pct("2026-11-10"), 100),
+    kind: r.kind,
+    cap: r.kind === "deadline" ? (r.id === "visa" ? "25 Sep" : "30 Oct") : ""
+  })).concat(EXPECTED.map(e => ({
+    label: e.label, left: pct(e.open), right: pct(e.close), kind: "expected", cap: e.cap
+  })));
+
+  const todayLeft = ((TODAY - T0) / SPAN) * 100;
+
+  const html = `
+    <div class="chart-months" style="--labelw:150px">
+      <div></div>
+      <div class="months-track">
+        ${months.map(m => `<div class="month-tick" style="left:${m.left}%">${m.label}</div>`).join("")}
+      </div>
+    </div>
+    <div class="chart-rows" style="--labelw:150px;--monthw:${100 / months.length}%">
+      ${rows.map((r, i) => `
+        <div class="crow" style="--labelw:150px">
+          <div class="crow-label">${r.label}</div>
+          <div class="crow-track" style="--monthw:${(100 / months.length)}%">
+            ${i === 0 ? `<div class="today-line" style="left:${todayLeft}%"><span class="today-flag">24 SEP</span></div>` : ""}
+            <div class="bar ${r.kind}" style="left:${r.left}%;width:${Math.max(r.right - r.left, 2)}%">
+              <span class="cap">${r.cap}</span>
+            </div>
+          </div>
+        </div>`).join("")}
+    </div>`;
+  document.getElementById("chart").innerHTML = html;
+}
+
+function buildRoles() {
+  const tiers = [...new Set(ROLES.map(r => r.tier))];
+  document.getElementById("roles").innerHTML = tiers.map(tier => `
+    <div class="tier-head">${tier}</div>
+    ${ROLES.filter(r => r.tier === tier).map(r => roleRow(r, ROLES.indexOf(r) + 1)).join("")}
+  `).join("");
+}
+
+function roleRow(r, n) {
+  return `
+    <div class="role${r.top ? " top" : ""}">
+      <div class="rank">${String(n).padStart(2, "0")}</div>
+      <div class="role-main">
+        <div class="role-co">${r.co} <span class="chip ${r.chip.cls}">${r.chip.txt}</span></div>
+        <div class="role-title">${r.title}</div>
+        <div class="role-meta"><span>${r.loc}</span>${r.meta.map(m => `<span>${m}</span>`).join("")}</div>
+        ${r.note ? `<div class="role-note">${r.note}</div>` : ""}
+      </div>
+      <div class="role-side">
+        ${r.url
+          ? `<a class="applylink" href="${r.url}" target="_blank" rel="noopener">Apply &rarr;</a>`
+          : `<span class="applylink" aria-disabled="true">Search board</span>`}
+        <label class="tick">
+          <input type="checkbox" data-kind="applied" data-id="${r.id}">
+          <span class="tick-lbl">Applied</span>
+        </label>
+      </div>
+    </div>`;
+}
+
+function buildPipeline() {
+  document.getElementById("pipeline").innerHTML = PIPELINE.map(col => `
+    <div class="stack">
+      <h3>${col.head}</h3>
+      ${col.items.map(it => `
+        <div class="entry">
+          <div class="co">${it.co} <span class="when">${it.when}</span></div>
+          <div class="why">${it.why}</div>
+        </div>`).join("")}
+    </div>`).join("");
+}
+
+function buildPrep() {
+  document.getElementById("prep").innerHTML = PREP.map((p, i) => `
+    <label class="prep-item${p.hot ? " hot" : ""}">
+      <input type="checkbox" data-kind="prep" data-id="${p.id}" class="prepbox">
+      <span class="prep-txt">${p.txt}</span>
+      ${p.hot ? `<span class="chip warn">Gates Roblox</span>` : `<span class="chip dim">${String(i + 1).padStart(2, "0")}</span>`}
+    </label>`).join("");
+}
+
+buildChart();
+buildRoles();
+buildPipeline();
+buildPrep();
+
+/* ---------- state ---------- */
+
+const state = { applied: {}, prep: {} };
+let store = null;
+const LOCAL_KEY = "pm-board-v1";
+
+function render() {
+  document.querySelectorAll("input[type=checkbox]").forEach(box => {
+    const kind = box.dataset.kind, id = box.dataset.id;
+    box.checked = !!(state[kind] && state[kind][id]);
+  });
+  document.getElementById("m-applied").textContent = Object.values(state.applied).filter(Boolean).length;
+  document.getElementById("m-prep").innerHTML =
+    Object.values(state.prep).filter(Boolean).length + '<span style="color:var(--muted);font-size:16px">/10</span>';
+  document.getElementById("m-live").textContent = ROLES.filter(r => r.kind !== "expected").length;
+  document.getElementById("m-new").textContent = ROLES.filter(r => r.kind === "expected").length;
+  const days = Math.ceil((new Date("2026-09-25T23:59:00") - TODAY) / 86400000);
+  document.getElementById("m-days").textContent = days;
+}
+
+function readLocal() {
+  try {
+    const raw = localStorage.getItem(LOCAL_KEY);
+    if (raw) Object.assign(state, JSON.parse(raw));
+  } catch (e) {}
+}
+
+function writeLocal() {
+  try { localStorage.setItem(LOCAL_KEY, JSON.stringify(state)); } catch (e) {}
+}
+
+document.addEventListener("change", e => {
+  const box = e.target;
+  if (!box.matches("input[type=checkbox][data-kind]")) return;
+  state[box.dataset.kind][box.dataset.id] = box.checked;
+  writeLocal();
+  render();
+  if (store) {
+    store.set({ applied: state.applied, prep: state.prep, updatedAt: Date.now() })
+      .catch(() => {});
+  }
+});
+
+readLocal();
+render();
+
+(async () => {
+  if (!window.claude || !claude.use) return;
+  const db = await claude.use("db");
+  if (!db) return;
+  store = db.doc("state/board");
+  document.getElementById("saveline").textContent = "Ticks are saved — they persist across devices and reloads";
+  store.onSnapshot(snap => {
+    const d = snap && snap.data ? (typeof snap.data === "function" ? snap.data() : snap.data) : null;
+    if (!d) return;
+    state.applied = d.applied || {};
+    state.prep = d.prep || {};
+    writeLocal();
+    render();
+  });
+})();
+</script>
+
+</body></html>
