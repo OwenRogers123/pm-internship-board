@@ -838,7 +838,7 @@ function postedAgo(ts) {
 }
 
 const FILTER_LABELS = { g: "f-g", loc: "f-loc", deg: "f-deg", age: "f-age" };
-function selectedText(id) { const s = F(id); return s.options[s.selectedIndex].text; }
+function selectedText(id) { const s = F(id); return s.options[s.selectedIndex].text.replace(/\s*\(\d[\d,]*\)$/, ""); }
 
 function renderActive(f) {
   const chips = [];
@@ -865,7 +865,7 @@ function emptyState(f, res) {
     if (n) fixes.push('<button type="button" class="btn" data-clear="' + id + '">' +
       (k === "open" ? "Include closed roles" : "Remove " + esc(selectedText(id))) + " (" + n + ")</button>");
   });
-  const what = norm(f.q) ? ' for "' + esc(f.q.trim()) + '"' : "";
+  const what = norm(f.q) ? ' "' + esc(f.q.trim()) + '"' : "";
   return '<div class="empty" style="margin-top:16px"><b>No internships match' + what + '.</b>' +
     (fixes.length ? '<p>Try one of these:</p><div class="fixes">' + fixes.join("") + "</div>"
       : '<p>Try a broader word like "business" or "engineering", or clear your filters.</p>') +
