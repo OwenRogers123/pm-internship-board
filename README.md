@@ -14,7 +14,7 @@ An AI agent (Claude, running on a schedule every two days) does the checking:
 
 1. **Scan.** Searches the web: job boards, LinkedIn, Google, and about 40 California company career pages.
 2. **Filter.** Opens each posting and reads the real requirements. A role only makes the list if it is in California, doesn't require a CS or engineering degree, and is real product work.
-3. **Update.** Rewrites this page and keeps a log of past mistakes, so a closed or wrong role never shows up twice.
+3. **Update.** Rewrites this page, emails me the results every 2 days, and keeps a log of past mistakes, so a closed or wrong role never shows up twice.
 
 ## Features
 
