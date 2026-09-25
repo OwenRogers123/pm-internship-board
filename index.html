@@ -241,11 +241,23 @@ footer a { color: var(--green); }
 
 <section id="search">
   <h2>Search all Summer 2027 internships</h2>
-  <p class="sub">Set your own criteria. Pulled from public internship listings across the web and refreshed every day.</p>
+  <p class="sub">Pick your major, location and degree. Pulled from public internship listings across the web and refreshed every day.</p>
   <form class="finder" id="finder" onsubmit="return false">
     <div class="fields">
       <div class="field"><label for="f-q">Keyword</label><input id="f-q" type="search" placeholder="product, marketing, Google..."></div>
-      <div class="field"><label for="f-g">Field</label><select id="f-g"><option value="">All fields</option></select></div>
+      <div class="field"><label for="f-g">Major</label><select id="f-g">
+        <option value="">Any major</option>
+        <optgroup label="Business">
+          <option value="biz">Business (all)</option>
+          <option value="is">Information Systems</option>
+          <option value="acct">Accounting</option>
+          <option value="fin">Finance</option>
+        </optgroup>
+        <option value="cs">Computer Science</option>
+        <option value="eng">Engineering</option>
+        <option value="data">Data Science / Statistics</option>
+        <option value="math">Math / Economics</option>
+      </select></div>
       <div class="field"><label for="f-loc">Location</label><select id="f-loc"><option value="">Anywhere</option></select></div>
       <div class="field"><label for="f-deg">Degree</label><select id="f-deg"><option value="">Any degree</option></select></div>
       <div class="field"><label for="f-age">Posted</label><select id="f-age"><option value="">Any time</option><option value="3">Last 3 days</option><option value="7">Last week</option><option value="30">Last month</option></select></div>
@@ -577,6 +589,16 @@ const STATES = { CA: "California", NY: "New York", TX: "Texas", WA: "Washington"
   FL: "Florida", MN: "Minnesota", OH: "Ohio", MI: "Michigan", AZ: "Arizona", OR: "Oregon", UT: "Utah", WI: "Wisconsin",
   MD: "Maryland", DC: "Washington DC", MO: "Missouri", TN: "Tennessee", IA: "Iowa", IN: "Indiana", CT: "Connecticut" };
 const PAGE = 25;
+const MAJORS = {
+  biz: r => r.g === "Product" || /business|marketing|sales|strategy|operations|consult|supply chain|human resources|\bhr\b|analyst|product|financ|account|brand|merchandis|procure/i.test(r.t),
+  is: r => r.g === "Product" || /information system|\bit\b|business analy|systems analy|technology analy|data analy|\berp\b|\bsap\b|product/i.test(r.t),
+  acct: r => /account|audit|\btax\b|assurance/i.test(r.t),
+  fin: r => /financ|invest|bank|treasury|fp&a|wealth|capital market|credit|risk|equity/i.test(r.t),
+  cs: r => r.g === "Software" || r.g === "AI/ML/Data",
+  eng: r => r.g === "Hardware" || /mechanical|electrical|civil|chemical|aerospace|industrial|manufacturing|hardware/i.test(r.t),
+  data: r => r.g === "AI/ML/Data",
+  math: r => r.g === "Quant" || /econom|actuar/i.test(r.t)
+};
 const F = id => document.getElementById(id);
 let LISTINGS = [], shownCount = PAGE, minePreset = false;
 
@@ -589,8 +611,6 @@ function matchLoc(r, v) {
 function fillOptions() {
   const count = key => { const m = {}; LISTINGS.forEach(r => [].concat(key(r)).forEach(k => { if (k) m[k] = (m[k] || 0) + 1; })); return m; };
   const add = (sel, pairs) => pairs.forEach(([v, label]) => sel.insertAdjacentHTML("beforeend", '<option value="' + esc(v) + '">' + esc(label) + '</option>'));
-  const g = count(r => r.g);
-  add(F("f-g"), Object.keys(g).sort((a, b) => g[b] - g[a]).map(k => [k, k]));
   const st = count(r => [...new Set(r.l.map(stateOf).filter(s => STATES[s]))]);
   const locs = Object.keys(st).sort((a, b) => st[b] - st[a]).map(k => [k, STATES[k]]);
   add(F("f-loc"), [["Remote", "Remote"]].concat(locs, [["Canada", "Canada"]]));
@@ -604,7 +624,7 @@ function searchResults() {
   const cutoff = age ? Date.now() / 1000 - age * 86400 : 0;
   return LISTINGS.filter(r =>
     (!open || r.a) &&
-    (!g || r.g === g) &&
+    (!g || MAJORS[g](r)) &&
     (!deg || !r.deg.length || r.deg.includes(deg)) &&
     (!cutoff || r.d >= cutoff) &&
     matchLoc(r, loc) &&
@@ -622,9 +642,9 @@ function renderSearch() {
   const locText = l => l.length > 3 ? l.slice(0, 3).join(", ") + " +" + (l.length - 3) + " more" : l.join(", ");
   F("f-results").innerHTML = hits.length ? hits.slice(0, shownCount).map(r =>
     '<div class="hit' + (r.a ? "" : " closed") + '"><div><b>' + esc(r.c) + '</b> <span class="t">' + esc(r.t) + '</span>' +
-    '<div class="m">' + esc(locText(r.l) || "Location not listed") + ' &middot; ' + esc(r.g) + ' &middot; Posted ' + postedAgo(r.d) + (r.a ? "" : " &middot; Closed") + '</div></div>' +
+    '<div class="m">' + esc(locText(r.l) || "Location not listed") + ' &middot; Posted ' + postedAgo(r.d) + (r.a ? "" : " &middot; Closed") + '</div></div>' +
     (r.a ? '<a class="apply" href="' + esc(r.u) + '" target="_blank" rel="noopener">Apply</a>' : '<span class="badge closed">Closed</span>') + '</div>'
-  ).join("") + (minePreset ? '<p class="hint">Search finds ' + hits.length + ' product internships in California. After reading every posting, only ' +
+  ).join("") + (minePreset ? '<p class="hint">Search finds ' + hits.length + ' business-friendly internships in California. After reading every posting, only ' +
     ROLES.filter(r => !isClosed(r)).length + ' made <a href="#picks">my picks</a>. The rest need a CS degree, an MBA, or aren\'t real internships.</p>' : "")
     : '<div class="empty" style="margin-top:16px">No internships match. Try loosening a filter.</div>';
   F("f-more").hidden = hits.length <= shownCount;
@@ -639,7 +659,7 @@ F("f-reset").addEventListener("click", () => {
   F("f-open").checked = true; onFilter();
 });
 F("f-mine").addEventListener("click", () => {
-  F("f-q").value = ""; F("f-g").value = "Product"; F("f-loc").value = "CA"; F("f-deg").value = "Bachelor's"; F("f-age").value = "";
+  F("f-q").value = ""; F("f-g").value = "biz"; F("f-loc").value = "CA"; F("f-deg").value = "Bachelor's"; F("f-age").value = "";
   F("f-open").checked = true; shownCount = PAGE; minePreset = true; renderSearch();
 });
 
