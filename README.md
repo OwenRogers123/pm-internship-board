@@ -12,7 +12,7 @@ Most PM internships quietly require a computer science degree. Finding the ones 
 
 An AI agent (Claude, running on a schedule every two days) does the checking:
 
-1. **Scan.** Pulls the [SimplifyJobs](https://github.com/SimplifyJobs/Summer2027-Internships) internship list, searches LinkedIn and Google, and visits about 40 California company career pages.
+1. **Scan.** Searches the web: job boards, LinkedIn, Google, and about 40 California company career pages.
 2. **Filter.** Opens each posting and reads the real requirements. A role only makes the list if it is in California, doesn't require a CS or engineering degree, and is real product work.
 3. **Update.** Rewrites this page and keeps a log of past mistakes, so a closed or wrong role never shows up twice.
 
@@ -23,6 +23,8 @@ An AI agent (Claude, running on a schedule every two days) does the checking:
 - Closed roles are marked automatically once their deadline passes
 - "Ruled out" list showing every rejected company and why
 - "Applied" and prep checkboxes that save in your browser
+
+The public search uses listings data from [SimplifyJobs](https://github.com/SimplifyJobs/Summer2027-Internships), refreshed daily.
 
 ## Stack
 
