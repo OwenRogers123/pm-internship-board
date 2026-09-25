@@ -1,4 +1,4 @@
-# Internship Radar
+# Internship Sweeper
 
 **Live:** https://owenrogers123.github.io/pm-internship-board/
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Internship Radar</title>
+<title>Internship Sweeper</title>
 <meta name="description" content="The Summer 2027 PM internships a Cal Poly business student can actually apply to, found and filtered automatically.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -230,13 +230,8 @@ footer a { color: var(--green); }
 
 <header>
   <div class="tag"><i class="dot"></i> <span id="swept"></span></div>
-  <h1>Internship <span>Radar</span></h1>
+  <h1>Internship <span>Sweeper</span></h1>
   <p class="lede">Search every Summer 2027 internship with your own filters, or see the product management roles I found for myself as a Cal Poly business major.</p>
-  <div class="stats">
-    <div class="stat"><b id="s-all">&nbsp;</b><span>Summer 2027 internships open</span></div>
-    <div class="stat"><b id="s-live">0</b><span>my verified picks</span></div>
-    <div class="stat hot"><b id="s-soon">0</b><span>of mine closing this week</span></div>
-  </div>
 </header>
 
 <section id="search">
@@ -564,9 +559,6 @@ function renderPrep() {
 }
 
 function renderStats() {
-  const open = ROLES.filter(r => !isClosed(r));
-  document.getElementById("s-live").textContent = open.length;
-  document.getElementById("s-soon").textContent = ROLES.filter(isSoon).length;
   document.getElementById("swept").textContent = "Last checked " + toDate(SWEPT).toLocaleDateString("en-US", { month: "long", day: "numeric" });
 }
 
@@ -668,10 +660,9 @@ fetch("data.json")
   .then(rows => {
     LISTINGS = rows;
     fillOptions();
-    F("s-all").textContent = rows.filter(r => r.a).length.toLocaleString();
-    renderSearch();
+      renderSearch();
   })
-  .catch(() => { F("f-count").textContent = "Couldn't load listings. Try refreshing."; F("s-all").textContent = "-"; });
+  .catch(() => { F("f-count").textContent = "Couldn't load listings. Try refreshing."; });
 
 renderStats();
 renderDeadlines();
