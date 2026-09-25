@@ -26,13 +26,15 @@ An AI agent (Claude, running on a schedule every two days) does the checking:
 
 ## Search
 
-Anyone can search every Summer 2027 internship by keyword, major, location, degree and posting date. About 3,000 listings come from the [SimplifyJobs](https://github.com/SimplifyJobs/Summer2027-Internships) list plus the public job boards of about 100 companies (Greenhouse, Lever, Ashby and Workday), refreshed every day by a GitHub Action.
+Anyone can search every Summer 2027 internship by keyword, major, location, degree, company size and posting date. About 4,700 listings come from the [SimplifyJobs](https://github.com/SimplifyJobs/Summer2027-Internships) list, [The Muse](https://www.themuse.com/developers/api/v2), and the public job boards of about 150 companies (Greenhouse, Lever, Ashby and Workday), refreshed every day by a GitHub Action. Company size comes from each company's Simplify profile, with a short list of corrections in `tools/build_data.py`.
 
 - Loose matching: "product" also finds product manager, product strategy and APM roles, and "sales" also finds business development and account executive roles
 - Handles typos ("accountng", "sofware enginer") and ignores filler words like "internship"
 - Best matches first, with the matched words highlighted
 - When nothing matches, it says which filter to remove and how many results that brings back
 - Every search is saved in the URL, so it can be shared
+- Filter by company size: startup (under 200), mid-size, or large (5,000+)
+- One click runs the same search on Indeed, LinkedIn, Wellfound, Handshake and Google Jobs, which block scripts from pulling their listings
 
 ## Stack
 

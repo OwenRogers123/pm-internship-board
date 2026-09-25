@@ -1,21 +1,35 @@
 """Builds data.json: Summer 2027 internships from public listings and company job boards."""
 import concurrent.futures as cf
 import json
+import os
 import re
 import time
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
 SIMPLIFY = "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json"
+MUSE = "https://www.themuse.com/api/public/jobs"
+# The Muse's internship categories, minus Healthcare (thousands of pharmacy and clinical rotations).
+MUSE_CATEGORIES = ["Business Operations", "Sales", "Product Management", "Project Management", "Data and Analytics",
+    "Advertising and Marketing", "Account Management", "Human Resources and Recruitment", "Management",
+    "Accounting and Finance", "Media, PR, and Communications", "Writing and Editing", "Legal Services", "Retail",
+    "Education", "Computer and IT", "Real Estate", "Transportation and Logistics", "Administration and Office",
+    "Software Engineering", "Design and UX", "Science and Engineering", "Arts", "Unknown"]
+SIZES_FILE = os.path.join(os.path.dirname(__file__), "company_sizes.json")
 
 GREENHOUSE = """airbnb stripe robinhood coinbase doordashusa pinterest reddit dropbox figma discord lyft instacart
 gusto brex samsara databricks twilio okta toast squarespace duolingo peloton warbyparker chime affirm sofi
 nerdwallet roblox riotgames epicgames twitch cloudflare datadog mongodb elastic asana gitlab pagerduty scaleai
 andurilindustries flexport faire whatnot benchling carta webflow airtable calendly zocdoc nuro waymo
 appliedintuition gemini opendoor wayfair etsy mercury lattice vercel amplitude fivetran confluent clickup
-navan betterment wealthfront marqeta checkr gong attentive klaviyo braze zendesk intercom""".split()
-LEVER = "palantir shieldai plaid spotify whoop".split()
-ASHBY = "ramp notion openai linear retool deel mercury clay posthog replit supabase".split()
+navan betterment wealthfront marqeta checkr gong attentive klaviyo braze zendesk intercom
+anthropic adyen block hellofresh justworks oscar oura prizepicks stockx upstart scopely nextdoor sweetgreen
+glossier everlane ripple""".split()
+LEVER = "palantir shieldai spotify whoop lyrahealth greenlight zoox gopuff ro jamcity".split()
+ASHBY = """ramp notion openai linear retool deel clay posthog replit supabase plaid cohere elevenlabs harvey
+perplexity sierra vanta wealthsimple sleeper supercell substack modal drata headway thumbtack strava poshmark
+hopper oyster patreon acorns zapier kayak""".split()
 # (display name, host, tenant, site)
 WORKDAY = [
     ("Visa", "visa.wd5", "visa", "Visa_Early_Careers"),
@@ -44,10 +58,26 @@ WORKDAY = [
 ]
 
 ALIASES = {"SF": "San Francisco, CA", "LA": "Los Angeles, CA", "NYC": "New York, NY"}
-INTERN = re.compile(r"\bintern(ship)?s?\b", re.I)
+# Banks and consultancies call their interns "summer analysts" or "summer associates", so those count too.
+INTERN = re.compile(r"\bintern(ship)?s?\b|\bsummer (analyst|associate|scholar|fellow)s?\b|\bapprentice(ship)?s?\b", re.I)
 OTHER_TERM = re.compile(r"\b(2025|2026|2028|fall|autumn|spring|winter|co-?op|jan(uary)?|feb(ruary)?|march|oct(ober)?|nov(ember)?|dec(ember)?)\b", re.I)
 SUMMER_27 = re.compile(r"summer\s*('|20)?27|2027\s*summer", re.I)
-CUTOFF = datetime(2026, 7, 1, tzinfo=timezone.utc).timestamp()
+CUTOFF = datetime(2026, 6, 1, tzinfo=timezone.utc).timestamp()
+# Simplify's headcount is wrong or missing for some big employers with many listings.
+BIG = "10,001+"
+SIZE_OVERRIDES = {n: BIG for n in ["Trimble", "Mastercard", "Tokyo Electron", "Teledyne", "GE Healthcare",
+    "Fidelity National Information Services", "Enterprise Mobility", "JPMorgan Chase", "The TJX Companies, Inc.",
+    "Spectrum", "NIKE, Inc.", "Nike", "Southern California Edison (SCE)", "Grainger", "PNC", "Eaton", "The Hartford",
+    "CRH", "Philips", "BD", "Liberty Mutual Insurance", "Pilot Company", "Warner Bros. Discovery",
+    "Navy Federal Credit Union", "Entergy", "Regions Bank", "Levi Strauss & Co.", "Cadence",
+    "Sandia National Laboratories", "HelloFresh", "DoorDash USA"]}
+SIZE_OVERRIDES.update({"Altria Group, Inc.": "5,001-10,000", "HNTB": "5,001-10,000", "W.R. Berkley": "5,001-10,000",
+    "Genworth Financial": "1,001-5,000", "Lazard": "1,001-5,000", "PGIM": "1,001-5,000", "Zurn Elkay": "1,001-5,000",
+    "Anduril Industries": "1,001-5,000", "Samsara Inc.": "1,001-5,000", "Excellus BCBS": "1,001-5,000",
+    "Gallup": "1,001-5,000", "The Aerospace Corporation": "1,001-5,000", "QTS": "1,001-5,000",
+    "Akuna Capital University": "201-500", "Kairos Power": "201-500", "Shieldai": "501-1,000"})
+SIZE_BUCKET = {"1-10": "s", "11-50": "s", "51-200": "s", "201-500": "m", "501-1,000": "m", "1,001-5,000": "m",
+    "5,001-10,000": "l", "10,001+": "l"}
 
 CATEGORIES = [
     ("Quant", r"\bquant|trading\b|trader"),
@@ -241,7 +271,11 @@ def from_workday(entry):
 def from_simplify():
     rows = []
     for x in get_json(SIMPLIFY, timeout=60) or []:
-        if "Summer 2027" not in x.get("terms", []) or not x.get("is_visible", True):
+        if not x.get("is_visible", True):
+            continue
+        terms = x.get("terms") or ["N/A"]
+        # Undated listings count when the title and posting date say Summer 2027.
+        if "Summer 2027" not in terms and not (terms == ["N/A"] and is_summer_2027(x["title"], x["date_posted"])):
             continue
         rows.append({
             "c": x["company_name"], "t": x["title"],
@@ -249,8 +283,65 @@ def from_simplify():
             "u": x["url"], "d": x["date_posted"], "a": 1 if x.get("active") else 0,
             "g": "Software" if x.get("category") == "Software Engineering" else x.get("category", ""),
             "deg": x.get("degrees", []), "s": "tracker",
+            "_slug": (x.get("company_url") or "").rsplit("/c/", 1)[-1] or None,
         })
     return rows
+
+
+def muse_page(cat, page):
+    q = urllib.parse.urlencode({"level": "Internship", "category": cat, "page": page})
+    return get_json(f"{MUSE}?{q}")
+
+
+def from_muse(cat):
+    out = []
+    first = muse_page(cat, 0)
+    if not first:
+        return out
+    pages = [first] + [muse_page(cat, p) for p in range(1, min(first.get("page_count", 1), 99))]
+    for d in pages:
+        for j in (d or {}).get("results", []):
+            posted = iso_ts(j.get("publication_date") or "")
+            if is_summer_2027(j.get("name", ""), posted):
+                locs = split_locations("; ".join(l["name"] for l in j.get("locations", [])))
+                out.append(row(j["company"]["name"], j["name"], locs, j["refs"]["landing_page"], posted, "muse"))
+    return out
+
+
+def simplify_size(slug):
+    """Headcount band from the company's public Simplify page, e.g. "1,001-5,000", or None."""
+    url = "https://simplify.jobs/c/" + urllib.parse.quote(slug)
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (internship-sweeper)"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            html = r.read().decode("utf-8", "ignore")
+    except Exception:
+        return None
+    m = re.search(r"companySize=([^\"&]+)", html)
+    return urllib.parse.unquote_plus(m.group(1)).replace(" employees", "") if m else None
+
+
+def add_sizes(rows):
+    """Tags each row with s/m/l. Sizes are cached in company_sizes.json; misses are retried after 30 days."""
+    try:
+        cache = json.load(open(SIZES_FILE))
+    except Exception:
+        cache = {}
+    now = time.time()
+    slugs = {}
+    for r in rows:
+        slugs.setdefault(r["c"], r.pop("_slug", None) or re.sub(r"[^A-Za-z0-9]+", "-", r["c"]).strip("-"))
+    todo = [c for c in slugs if c not in SIZE_OVERRIDES and (c not in cache or (not cache[c]["size"] and now - cache[c]["checked"] > 30 * 86400))]
+    with cf.ThreadPoolExecutor(8) as ex:
+        for c, size in zip(todo, ex.map(lambda c: simplify_size(slugs[c]), todo)):
+            cache[c] = {"size": size, "checked": int(now)}
+    with open(SIZES_FILE, "w") as f:
+        json.dump(dict(sorted(cache.items())), f, indent=0)
+    for r in rows:
+        z = SIZE_BUCKET.get(SIZE_OVERRIDES.get(r["c"]) or (cache.get(r["c"]) or {}).get("size") or "")
+        if z:
+            r["z"] = z
+    return len(todo)
 
 
 def key(r):
@@ -264,7 +355,8 @@ def main():
         raise SystemExit("tracker download failed; keeping the old data.json")
     seen = {key(r) for r in rows}
     jobs = ([(from_greenhouse, t) for t in GREENHOUSE] + [(from_lever, t) for t in LEVER] +
-            [(from_ashby, t) for t in ASHBY] + [(from_workday, w) for w in WORKDAY])
+            [(from_ashby, t) for t in ASHBY] + [(from_workday, w) for w in WORKDAY] +
+            [(from_muse, c) for c in MUSE_CATEGORIES])
     added = 0
     with cf.ThreadPoolExecutor(24) as ex:
         for found in ex.map(lambda j: j[0](j[1]), jobs):
@@ -280,9 +372,11 @@ def main():
         if k not in unique or (r["a"] and not unique[k]["a"]):
             unique[k] = r
     rows = sorted(unique.values(), key=lambda r: -r["d"])
+    looked_up = add_sizes(rows)
     with open("data.json", "w") as f:
         json.dump(rows, f, separators=(",", ":"))
-    print(len(rows), "listings,", added, "added from company job boards")
+    print(len(rows), "listings,", added, "added from company job boards and The Muse,",
+          sum("z" in r for r in rows), "with a company size,", looked_up, "sizes looked up")
 
 
 if __name__ == "__main__":

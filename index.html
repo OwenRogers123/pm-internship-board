@@ -184,7 +184,7 @@ details[open] summary { border-bottom: 1px solid var(--line); }
 
 /* search everything */
 .finder { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; box-shadow: var(--shadow); }
-.fields { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 10px; }
+.fields { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr; gap: 10px; }
 .field label { display: block; font-size: 12.5px; font-weight: 600; color: var(--muted); margin-bottom: 5px; }
 .field input, .field select {
   width: 100%; font: inherit; font-size: 14.5px; color: var(--ink); background: var(--bg);
@@ -207,7 +207,11 @@ details[open] summary { border-bottom: 1px solid var(--line); }
 .hit.closed { opacity: .5; }
 .hit .apply { padding: 7px 13px; font-size: 13px; }
 .more { display: block; margin: 14px auto 0; }
+.more[hidden] { display: none; }
 .hint { font-size: 13px; color: var(--muted); margin: 14px 0 0; }
+.elsewhere { font-size: 13px; color: var(--muted); margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 6px 12px; }
+.elsewhere a { color: var(--green); font-weight: 600; }
+@media (max-width: 1100px) { .fields { grid-template-columns: 2fr 1fr 1fr; } }
 @media (max-width: 820px) { .fields { grid-template-columns: 1fr 1fr; } .fields .field:first-child { grid-column: 1 / -1; } }
 
 .suggest { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 12px; font-size: 13px; color: var(--muted); }
@@ -271,6 +275,7 @@ footer a { color: var(--green); }
       <div class="field"><label for="f-loc">Location</label><select id="f-loc"><option value="">Anywhere</option></select></div>
       <div class="field"><label for="f-deg">Degree</label><select id="f-deg"><option value="">Any degree</option></select></div>
       <div class="field"><label for="f-age">Posted</label><select id="f-age"><option value="">Any time</option><option value="3">Last 3 days</option><option value="7">Last week</option><option value="30">Last month</option></select></div>
+      <div class="field"><label for="f-size">Company size</label><select id="f-size"><option value="">Any size</option></select></div>
     </div>
     <div class="suggest">Try:
       <button type="button" data-try="product">product</button>
@@ -296,6 +301,7 @@ footer a { color: var(--green); }
     <p class="notice" id="f-note" hidden></p>
     <div class="results" id="f-results"></div>
     <button type="button" class="btn more" id="f-more" hidden>Show more</button>
+    <p class="elsewhere" id="f-elsewhere"></p>
   </form>
 </section>
 
@@ -615,8 +621,8 @@ const STATES = { AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA:
   WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming" };
 const PAGE = 25;
 const MAJORS = {
-  biz: r => r.g === "Product" || r.g === "Business" || /business|marketing|sales|strategy|operations|consult|supply chain|human resources|\bhr\b|analyst|product|financ|account|brand|merchandis|procure/i.test(r.t),
-  is: r => r.g === "Product" || /information system|\bit\b|business analy|systems analy|technology analy|data analy|\berp\b|\bsap\b|product/i.test(r.t),
+  biz: r => r.g === "Product" || r.g === "Business" || /business|marketing|sales|strategy|operations|consult|supply chain|human resources|\bhr\b|analyst|product|financ|account|brand|merchandis|procure|manage|project|program|customer|partner|communicat|people|recruit|talent|pricing|revenue|growth|retail|real estate|risk|compliance|audit|\btax\b|invest|economic|summer associate/i.test(r.t),
+  is: r => r.g === "Product" || r.g === "AI/ML/Data" || /information system|information technology|\bit\b|business analy|systems analy|technology analy|data analy|\berp\b|\bsap\b|product|program manag|solutions|implementation|systems|technology|cyber|security|analytics|digital/i.test(r.t),
   acct: r => /account|audit|\btax\b|assurance/i.test(r.t),
   fin: r => /financ|invest|bank|treasury|fp&a|wealth|capital market|credit|risk|equity/i.test(r.t),
   cs: r => r.g === "Software" || r.g === "AI/ML/Data",
@@ -784,7 +790,7 @@ function suggestionFor(text) {
 function readFilters() {
   return {
     q: F("f-q").value.slice(0, 80), g: F("f-g").value, loc: F("f-loc").value, deg: F("f-deg").value,
-    age: +F("f-age").value || 0, open: F("f-open").checked, sort: F("f-sort").value
+    age: +F("f-age").value || 0, size: F("f-size").value, open: F("f-open").checked, sort: F("f-sort").value
   };
 }
 
@@ -793,6 +799,7 @@ function passes(r, f, skip) {
   if (skip !== "open" && f.open && !r.a) return false;
   if (skip !== "g" && f.g && !MAJORS[f.g](r)) return false;
   if (skip !== "deg" && f.deg && r.deg.length && !r.deg.includes(f.deg)) return false;
+  if (skip !== "size" && f.size && r.z !== f.size) return false;
   if (skip !== "age" && f.age && r.d < Date.now() / 1000 - f.age * 86400) return false;
   if (skip !== "loc" && f.loc) {
     const ok = r.l.some(l => f.loc === "Remote" ? /remote/i.test(l) : f.loc === "Canada" ? /canada|, (ON|BC|QC|AB)\b/i.test(l) : stateOf(l) === f.loc);
@@ -837,7 +844,7 @@ function postedAgo(ts) {
   return d <= 0 ? "today" : d === 1 ? "yesterday" : d < 60 ? d + " days ago" : Math.round(d / 30) + " months ago";
 }
 
-const FILTER_LABELS = { g: "f-g", loc: "f-loc", deg: "f-deg", age: "f-age" };
+const FILTER_LABELS = { g: "f-g", loc: "f-loc", deg: "f-deg", age: "f-age", size: "f-size" };
 function selectedText(id) { const s = F(id); return s.options[s.selectedIndex].text.replace(/\s*\(\d[\d,]*\)$/, ""); }
 
 function renderActive(f) {
@@ -858,7 +865,7 @@ function emptyState(f, res) {
     const s = suggestionFor(t);
     if (s) fixes.push('<button type="button" class="btn" data-replace="' + esc(t) + '" data-with="' + esc(s) + '">Search "' + esc(s) + '" instead of "' + esc(t) + '"</button>');
   });
-  [["loc", "f-loc"], ["g", "f-g"], ["deg", "f-deg"], ["age", "f-age"], ["open", "f-open"]].forEach(([k, id]) => {
+  [["loc", "f-loc"], ["g", "f-g"], ["size", "f-size"], ["deg", "f-deg"], ["age", "f-age"], ["open", "f-open"]].forEach(([k, id]) => {
     const active = k === "open" ? f.open : !!F(id).value;
     if (!active) return;
     const n = runSearch(f, k).hits.length;
@@ -901,12 +908,30 @@ function renderSearch() {
   ).join("") + (minePreset ? '<p class="hint">Search finds ' + hits.length + ' business-friendly internships in California. After reading every posting, only ' +
     ROLES.filter(r => !isClosed(r)).length + ' made <a href="#picks">my picks</a>. The rest need a CS degree, an MBA, or aren\'t real internships.</p>' : "")
     : emptyState(f, res);
+  renderElsewhere(f);
   const left = hits.length - shownCount;
   F("f-more").hidden = left <= 0;
   F("f-more").textContent = "Show " + Math.min(PAGE, left) + " more (" + left.toLocaleString() + " left)";
 }
 
-const URL_KEYS = [["q", "f-q"], ["major", "f-g"], ["loc", "f-loc"], ["degree", "f-deg"], ["posted", "f-age"], ["sort", "f-sort"]];
+// Indeed, Wellfound, LinkedIn and Handshake block scripts, so the search hands off to them with the same words.
+function renderElsewhere(f) {
+  const words = f.q.trim() || (f.g ? selectedText("f-g") : "");
+  const q = encodeURIComponent((words + " intern").trim());
+  const where = f.loc === "Remote" ? "Remote" : f.loc === "Canada" ? "Canada" : STATES[f.loc] || "United States";
+  const w = encodeURIComponent(where);
+  const links = [
+    ["Indeed", "https://www.indeed.com/jobs?q=" + q + "&l=" + (f.loc === "Remote" ? "remote" : w)],
+    ["LinkedIn", "https://www.linkedin.com/jobs/search/?keywords=" + q + "&location=" + w + "&f_E=1"],
+    ["Wellfound", "https://wellfound.com/jobs?q=" + q],
+    ["Handshake", "https://app.joinhandshake.com/stu/postings?query=" + q],
+    ["Google Jobs", "https://www.google.com/search?ibp=htl;jobs&q=" + q + "+summer+2027+" + w]
+  ];
+  F("f-elsewhere").innerHTML = "<span>Search the same thing on</span>" + links.map(([n, u]) =>
+    '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + n + "</a>").join("");
+}
+
+const URL_KEYS = [["q", "f-q"], ["major", "f-g"], ["loc", "f-loc"], ["degree", "f-deg"], ["posted", "f-age"], ["size", "f-size"], ["sort", "f-sort"]];
 function syncUrl(f) {
   const p = new URLSearchParams();
   URL_KEYS.forEach(([k, id]) => { const v = F(id).value; if (v && !(k === "sort" && v === "best")) p.set(k, k === "q" ? v.trim() : v); });
@@ -931,7 +956,7 @@ function clearField(id) {
   else F(id).value = "";
 }
 function clearAll() {
-  ["f-q", "f-g", "f-loc", "f-deg", "f-age"].forEach(id => F(id).value = "");
+  ["f-q", "f-g", "f-loc", "f-deg", "f-age", "f-size"].forEach(id => F(id).value = "");
   F("f-open").checked = true;
 }
 
@@ -939,7 +964,7 @@ let debounce;
 function onFilter() { shownCount = PAGE; minePreset = false; renderSearch(); }
 F("f-q").addEventListener("input", () => { clearTimeout(debounce); debounce = setTimeout(onFilter, 120); });
 F("f-q").addEventListener("keydown", e => { if (e.key === "Escape") { F("f-q").value = ""; onFilter(); } });
-["f-g", "f-loc", "f-deg", "f-age", "f-open", "f-sort"].forEach(id => F(id).addEventListener("change", onFilter));
+["f-g", "f-loc", "f-deg", "f-age", "f-size", "f-open", "f-sort"].forEach(id => F(id).addEventListener("change", onFilter));
 F("f-more").addEventListener("click", () => { shownCount += PAGE; renderSearch(); });
 F("f-reset").addEventListener("click", () => { clearAll(); onFilter(); });
 F("f-mine").addEventListener("click", () => {
@@ -968,6 +993,9 @@ function fillOptions() {
   const locs = Object.keys(st).sort((a, b) => st[b] - st[a]).map(k => [k, STATES[k] + " (" + st[k] + ")"]);
   add(F("f-loc"), [["Remote", "Remote"]].concat(locs, [["Canada", "Canada"]]));
   add(F("f-deg"), [["Bachelor's", "Bachelor's"], ["Master's", "Master's"], ["MBA", "MBA"], ["PhD", "PhD"]]);
+  const sz = { s: 0, m: 0, l: 0 };
+  LISTINGS.forEach(r => { if (r.z in sz) sz[r.z]++; });
+  add(F("f-size"), [["s", "Startup, under 200 (" + sz.s + ")"], ["m", "Mid-size, 200-5k (" + sz.m + ")"], ["l", "Large, 5k+ (" + sz.l + ")"]]);
 }
 
 function loadListings() {
