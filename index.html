@@ -182,6 +182,34 @@ details[open] summary { border-bottom: 1px solid var(--line); }
 .prep input { width: 17px; height: 17px; accent-color: var(--green); margin: 2px 0 0; flex: none; }
 .prep input:checked + span { color: var(--muted); text-decoration: line-through; }
 
+/* search everything */
+.finder { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; box-shadow: var(--shadow); }
+.fields { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 10px; }
+.field label { display: block; font-size: 12.5px; font-weight: 600; color: var(--muted); margin-bottom: 5px; }
+.field input, .field select {
+  width: 100%; font: inherit; font-size: 14.5px; color: var(--ink); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px;
+}
+.field input:focus, .field select:focus { outline: 2px solid var(--green); outline-offset: 1px; }
+.finder-bar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; margin-top: 14px; }
+.finder-bar .left { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+.check { display: inline-flex; gap: 7px; align-items: center; font-size: 14px; cursor: pointer; }
+.check input { accent-color: var(--green); width: 16px; height: 16px; margin: 0; }
+.btn { font: 600 13.5px var(--body); cursor: pointer; border-radius: 10px; padding: 8px 14px; border: 1px solid var(--line); background: transparent; color: var(--ink); }
+.btn.primary { background: var(--gold-soft); color: var(--gold); border-color: transparent; }
+.count { font-size: 14px; color: var(--muted); }
+.count b { color: var(--ink); }
+.results { margin-top: 16px; border-top: 1px solid var(--line); }
+.hit { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; padding: 12px 2px; border-bottom: 1px solid var(--line); }
+.hit b { font-weight: 600; font-size: 15px; }
+.hit .t { font-size: 14px; color: var(--ink-2); }
+.hit .m { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.hit.closed { opacity: .5; }
+.hit .apply { padding: 7px 13px; font-size: 13px; }
+.more { display: block; margin: 14px auto 0; }
+.hint { font-size: 13px; color: var(--muted); margin: 14px 0 0; }
+@media (max-width: 820px) { .fields { grid-template-columns: 1fr 1fr; } .fields .field:first-child { grid-column: 1 / -1; } }
+
 footer { padding: 40px 0 56px; color: var(--muted); font-size: 13.5px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
 footer a { color: var(--green); }
 
@@ -203,23 +231,48 @@ footer a { color: var(--green); }
 <header>
   <div class="tag"><i class="dot"></i> <span id="swept"></span></div>
   <h1>Internship <span>Radar</span></h1>
-  <p class="lede">Every Summer 2027 product management internship I can actually apply to as a Cal Poly business major. Found, checked, and updated automatically.</p>
+  <p class="lede">Search every Summer 2027 internship with your own filters, or see the product management roles I found for myself as a Cal Poly business major.</p>
   <div class="stats">
-    <div class="stat"><b id="s-live">0</b><span>open roles that fit</span></div>
-    <div class="stat hot"><b id="s-soon">0</b><span>closing in 7 days</span></div>
-    <div class="stat"><b id="s-out">0</b><span>companies ruled out</span></div>
+    <div class="stat"><b id="s-all">&nbsp;</b><span>Summer 2027 internships open</span></div>
+    <div class="stat"><b id="s-live">0</b><span>my verified picks</span></div>
+    <div class="stat hot"><b id="s-soon">0</b><span>of mine closing this week</span></div>
   </div>
 </header>
 
+<section id="search">
+  <h2>Search all Summer 2027 internships</h2>
+  <p class="sub">Set your own criteria. Data comes from the SimplifyJobs tracker and refreshes every day.</p>
+  <form class="finder" id="finder" onsubmit="return false">
+    <div class="fields">
+      <div class="field"><label for="f-q">Keyword</label><input id="f-q" type="search" placeholder="product, marketing, Google..."></div>
+      <div class="field"><label for="f-g">Field</label><select id="f-g"><option value="">All fields</option></select></div>
+      <div class="field"><label for="f-loc">Location</label><select id="f-loc"><option value="">Anywhere</option></select></div>
+      <div class="field"><label for="f-deg">Degree</label><select id="f-deg"><option value="">Any degree</option></select></div>
+      <div class="field"><label for="f-age">Posted</label><select id="f-age"><option value="">Any time</option><option value="3">Last 3 days</option><option value="7">Last week</option><option value="30">Last month</option></select></div>
+    </div>
+    <div class="finder-bar">
+      <div class="left">
+        <label class="check"><input type="checkbox" id="f-open" checked> Open only</label>
+        <button type="button" class="btn primary" id="f-mine">Try my filters</button>
+        <button type="button" class="btn" id="f-reset">Clear</button>
+      </div>
+      <span class="count" id="f-count">Loading listings...</span>
+    </div>
+    <div class="results" id="f-results"></div>
+    <button type="button" class="btn more" id="f-more" hidden>Show more</button>
+  </form>
+</section>
+
 <section>
-  <h2>How it works</h2>
-  <p class="sub">Checking 40+ career pages by hand every week for one line of fine print takes hours. So an AI agent does it for me.</p>
+  <h2>How I get my picks</h2>
+  <p class="sub">Search can't tell you if a role quietly requires a CS degree. That's in the fine print, and checking 40+ career pages for it every week takes hours. So an AI agent reads it for me.</p>
   <div class="steps">
     <div class="step"><div class="n">1</div><h3>Scan</h3><p>Every two days it pulls the big GitHub internship list, searches LinkedIn and Google, and visits about 40 California company career pages.</p></div>
     <div class="step"><div class="n">2</div><h3>Filter</h3><p>It opens each posting and reads the actual requirements. A role only makes the list if it passes all three rules below.</p></div>
     <div class="step"><div class="n">3</div><h3>Update</h3><p>It rewrites this page and keeps a log of past mistakes, so a closed or wrong role never shows up twice.</p></div>
   </div>
   <div class="rules">
+    <span class="rule">Summer 2027 internship</span>
     <span class="rule">In California</span>
     <span class="rule">No CS or engineering degree required</span>
     <span class="rule">Real product management work</span>
@@ -227,14 +280,14 @@ footer a { color: var(--green); }
 </section>
 
 <section id="deadline-section">
-  <h2>Deadlines</h2>
-  <p class="sub">The roles with a hard closing date. Everything else can disappear without warning, so earlier is better.</p>
+  <h2>My deadlines</h2>
+  <p class="sub">My picks with a hard closing date. Everything else can disappear without warning, so earlier is better.</p>
   <div class="deadlines" id="deadlines"></div>
 </section>
 
-<section>
-  <h2>Open now</h2>
-  <p class="sub">Tick "Applied" once you submit. It saves in your browser.</p>
+<section id="picks">
+  <h2>My picks</h2>
+  <p class="sub">Summer 2027 PM internships in California with no CS degree required. Every one checked by reading the posting. Tick "Applied" once you submit.</p>
   <div class="toolbar">
     <input class="search" id="q" type="search" placeholder="Search company, role or city" aria-label="Search roles">
     <div class="chips" role="group" aria-label="Filter roles">
@@ -517,6 +570,89 @@ document.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () =
   renderRoles();
 }));
 document.getElementById("q").addEventListener("input", e => { query = e.target.value; renderRoles(); });
+
+/* ---------- search all Summer 2027 internships ---------- */
+
+const STATES = { CA: "California", NY: "New York", TX: "Texas", WA: "Washington", IL: "Illinois", MA: "Massachusetts",
+  GA: "Georgia", NC: "North Carolina", VA: "Virginia", PA: "Pennsylvania", CO: "Colorado", NJ: "New Jersey",
+  FL: "Florida", MN: "Minnesota", OH: "Ohio", MI: "Michigan", AZ: "Arizona", OR: "Oregon", UT: "Utah", WI: "Wisconsin",
+  MD: "Maryland", DC: "Washington DC", MO: "Missouri", TN: "Tennessee", IA: "Iowa", IN: "Indiana", CT: "Connecticut" };
+const PAGE = 25;
+const F = id => document.getElementById(id);
+let LISTINGS = [], shownCount = PAGE, minePreset = false;
+
+const stateOf = l => { const m = l.match(/,\s*([A-Z]{2})$/); return m ? m[1] : null; };
+function matchLoc(r, v) {
+  if (!v) return true;
+  return r.l.some(l => v === "Remote" ? /remote/i.test(l) : v === "Canada" ? /canada/i.test(l) : stateOf(l) === v);
+}
+
+function fillOptions() {
+  const count = key => { const m = {}; LISTINGS.forEach(r => [].concat(key(r)).forEach(k => { if (k) m[k] = (m[k] || 0) + 1; })); return m; };
+  const add = (sel, pairs) => pairs.forEach(([v, label]) => sel.insertAdjacentHTML("beforeend", '<option value="' + esc(v) + '">' + esc(label) + '</option>'));
+  const g = count(r => r.g);
+  add(F("f-g"), Object.keys(g).sort((a, b) => g[b] - g[a]).map(k => [k, k]));
+  const st = count(r => [...new Set(r.l.map(stateOf).filter(s => STATES[s]))]);
+  const locs = Object.keys(st).sort((a, b) => st[b] - st[a]).map(k => [k, STATES[k]]);
+  add(F("f-loc"), [["Remote", "Remote"]].concat(locs, [["Canada", "Canada"]]));
+  add(F("f-deg"), [["Bachelor's", "Bachelor's"], ["Master's", "Master's"], ["MBA", "MBA"], ["PhD", "PhD"]]);
+}
+
+function searchResults() {
+  const q = F("f-q").value.trim().toLowerCase();
+  const g = F("f-g").value, loc = F("f-loc").value, deg = F("f-deg").value, age = +F("f-age").value;
+  const open = F("f-open").checked;
+  const cutoff = age ? Date.now() / 1000 - age * 86400 : 0;
+  return LISTINGS.filter(r =>
+    (!open || r.a) &&
+    (!g || r.g === g) &&
+    (!deg || !r.deg.length || r.deg.includes(deg)) &&
+    (!cutoff || r.d >= cutoff) &&
+    matchLoc(r, loc) &&
+    (!q || (r.c + " " + r.t + " " + r.l.join(" ")).toLowerCase().includes(q)));
+}
+
+function postedAgo(ts) {
+  const d = Math.floor((Date.now() / 1000 - ts) / 86400);
+  return d <= 0 ? "today" : d === 1 ? "yesterday" : d < 60 ? d + " days ago" : Math.round(d / 30) + " months ago";
+}
+
+function renderSearch() {
+  const hits = searchResults();
+  F("f-count").innerHTML = "<b>" + hits.length.toLocaleString() + "</b> internships match";
+  const locText = l => l.length > 3 ? l.slice(0, 3).join(", ") + " +" + (l.length - 3) + " more" : l.join(", ");
+  F("f-results").innerHTML = hits.length ? hits.slice(0, shownCount).map(r =>
+    '<div class="hit' + (r.a ? "" : " closed") + '"><div><b>' + esc(r.c) + '</b> <span class="t">' + esc(r.t) + '</span>' +
+    '<div class="m">' + esc(locText(r.l) || "Location not listed") + ' &middot; ' + esc(r.g) + ' &middot; Posted ' + postedAgo(r.d) + (r.a ? "" : " &middot; Closed") + '</div></div>' +
+    (r.a ? '<a class="apply" href="' + esc(r.u) + '" target="_blank" rel="noopener">Apply</a>' : '<span class="badge closed">Closed</span>') + '</div>'
+  ).join("") + (minePreset ? '<p class="hint">Search finds ' + hits.length + ' product internships in California. After reading every posting, only ' +
+    ROLES.filter(r => !isClosed(r)).length + ' made <a href="#picks">my picks</a>. The rest need a CS degree, an MBA, or aren\'t real internships.</p>' : "")
+    : '<div class="empty" style="margin-top:16px">No internships match. Try loosening a filter.</div>';
+  F("f-more").hidden = hits.length <= shownCount;
+}
+
+function onFilter() { shownCount = PAGE; minePreset = false; renderSearch(); }
+["f-q"].forEach(id => F(id).addEventListener("input", onFilter));
+["f-g", "f-loc", "f-deg", "f-age", "f-open"].forEach(id => F(id).addEventListener("change", onFilter));
+F("f-more").addEventListener("click", () => { shownCount += PAGE; renderSearch(); });
+F("f-reset").addEventListener("click", () => {
+  ["f-q", "f-g", "f-loc", "f-deg", "f-age"].forEach(id => F(id).value = "");
+  F("f-open").checked = true; onFilter();
+});
+F("f-mine").addEventListener("click", () => {
+  F("f-q").value = ""; F("f-g").value = "Product"; F("f-loc").value = "CA"; F("f-deg").value = "Bachelor's"; F("f-age").value = "";
+  F("f-open").checked = true; shownCount = PAGE; minePreset = true; renderSearch();
+});
+
+fetch("data.json")
+  .then(r => r.json())
+  .then(rows => {
+    LISTINGS = rows;
+    fillOptions();
+    F("s-all").textContent = rows.filter(r => r.a).length.toLocaleString();
+    renderSearch();
+  })
+  .catch(() => { F("f-count").textContent = "Couldn't load listings. Try refreshing."; F("s-all").textContent = "-"; });
 
 renderStats();
 renderDeadlines();
