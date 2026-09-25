@@ -555,7 +555,6 @@ function renderStats() {
   const open = ROLES.filter(r => !isClosed(r));
   document.getElementById("s-live").textContent = open.length;
   document.getElementById("s-soon").textContent = ROLES.filter(isSoon).length;
-  document.getElementById("s-out").textContent = PIPELINE[0].items.reduce((n, it) => n + it.co.split(",").length, 0);
   document.getElementById("swept").textContent = "Last checked " + toDate(SWEPT).toLocaleDateString("en-US", { month: "long", day: "numeric" });
 }
 
@@ -619,7 +618,7 @@ function postedAgo(ts) {
 
 function renderSearch() {
   const hits = searchResults();
-  F("f-count").innerHTML = "<b>" + hits.length.toLocaleString() + "</b> internships match";
+  F("f-count").innerHTML = "<b>" + hits.length.toLocaleString() + "</b> " + (hits.length === 1 ? "internship matches" : "internships match");
   const locText = l => l.length > 3 ? l.slice(0, 3).join(", ") + " +" + (l.length - 3) + " more" : l.join(", ");
   F("f-results").innerHTML = hits.length ? hits.slice(0, shownCount).map(r =>
     '<div class="hit' + (r.a ? "" : " closed") + '"><div><b>' + esc(r.c) + '</b> <span class="t">' + esc(r.t) + '</span>' +
