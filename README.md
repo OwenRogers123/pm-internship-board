@@ -24,7 +24,15 @@ An AI agent (Claude, running on a schedule every two days) does the checking:
 - "Ruled out" list showing every rejected company and why
 - "Applied" and prep checkboxes that save in your browser
 
-The public search uses listings data from [SimplifyJobs](https://github.com/SimplifyJobs/Summer2027-Internships), refreshed daily.
+## Search
+
+Anyone can search every Summer 2027 internship by keyword, major, location, degree and posting date. About 3,000 listings come from the [SimplifyJobs](https://github.com/SimplifyJobs/Summer2027-Internships) list plus the public job boards of about 100 companies (Greenhouse, Lever, Ashby and Workday), refreshed every day by a GitHub Action.
+
+- Loose matching: "product" also finds product manager, product strategy and APM roles, and "sales" also finds business development and account executive roles
+- Handles typos ("accountng", "sofware enginer") and ignores filler words like "internship"
+- Best matches first, with the matched words highlighted
+- When nothing matches, it says which filter to remove and how many results that brings back
+- Every search is saved in the URL, so it can be shared
 
 ## Stack
 
