@@ -1,4 +1,8 @@
 {
+" RGA Reinsurance Company": {
+"size": null,
+"checked": 1790532964
+},
 "1X": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -110,6 +114,10 @@
 "Abundant": {
 "size": "11-50",
 "checked": 1790368289
+},
+"Academy Sports + Outdoors": {
+"size": null,
+"checked": 1790532964
 },
 "Acceldata": {
 "size": "201-500",
@@ -235,6 +243,10 @@
 "size": "5,001-10,000",
 "checked": 1790488033
 },
+"Allegro MicroSystems": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "Allen Control Systems": {
 "size": "201-500",
 "checked": 1790368289
@@ -299,9 +311,21 @@
 "size": "51-200",
 "checked": 1790488033
 },
+"Amcor": {
+"size": "10,001+",
+"checked": 1790532964
+},
 "Ameren": {
 "size": "5,001-10,000",
 "checked": 1790368289
+},
+"American Cancer Society": {
+"size": "5,001-10,000",
+"checked": 1790532964
+},
+"American Cancer Society Cancer Action Network ": {
+"size": "201-500",
+"checked": 1790532964
 },
 "American Century Investments": {
 "size": null,
@@ -451,6 +475,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Arctic Wolf": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "Ardian": {
 "size": "501-1,000",
 "checked": 1790488033
@@ -458,6 +486,10 @@
 "Argonne National Laboratory": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"AriensCo": {
+"size": null,
+"checked": 1790532964
 },
 "Arista Networks": {
 "size": "5,001-10,000",
@@ -487,6 +519,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Ascend Performance Materials ": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "Ascendis Pharma": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -502,6 +538,10 @@
 "AssetWorks": {
 "size": "201-500",
 "checked": 1790488033
+},
+"Assurant": {
+"size": "10,001+",
+"checked": 1790532964
 },
 "Assured Guaranty": {
 "size": "201-500",
@@ -522,6 +562,10 @@
 "Astranis": {
 "size": "501-1,000",
 "checked": 1790368289
+},
+"Astreya": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "Athene": {
 "size": "1,001-5,000",
@@ -595,6 +639,10 @@
 "size": "5,001-10,000",
 "checked": 1790368289
 },
+"Axos Bank": {
+"size": "501-1,000",
+"checked": 1790532964
+},
 "BCI Brands": {
 "size": "201-500",
 "checked": 1790488033
@@ -646,6 +694,10 @@
 "Baird": {
 "size": "5,001-10,000",
 "checked": 1790368289
+},
+"Baker Hughes": {
+"size": "10,001+",
+"checked": 1790532964
 },
 "Baldwin Group": {
 "size": "1,001-5,000",
@@ -702,6 +754,10 @@
 "Beacon Software": {
 "size": "51-200",
 "checked": 1790488033
+},
+"Becton Dickinson": {
+"size": "10,001+",
+"checked": 1790532964
 },
 "Bedrock Robotics": {
 "size": "51-200",
@@ -831,6 +887,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Boston Medical Center": {
+"size": "10,001+",
+"checked": 1790532964
+},
 "Boston Scientific": {
 "size": "10,001+",
 "checked": 1790368289
@@ -871,6 +931,10 @@
 "size": "1-10",
 "checked": 1790488033
 },
+"Bristol Myers Squibb": {
+"size": "10,001+",
+"checked": 1790532964
+},
 "British Columbia Investment": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -883,9 +947,21 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Brooks Automation": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
+"Brown & Brown Insurance": {
+"size": null,
+"checked": 1790532964
+},
 "Brown Brothers Harriman": {
 "size": "5,001-10,000",
 "checked": 1790488371
+},
+"Brown University": {
+"size": null,
+"checked": 1790532964
 },
 "Brown University Health": {
 "size": "1-10",
@@ -911,6 +987,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"C&S Wholesale Grocers": {
+"size": null,
+"checked": 1790532964
+},
 "C.H. Robinson": {
 "size": "10,001+",
 "checked": 1790368289
@@ -934,6 +1014,10 @@
 "CDM Smith": {
 "size": "5,001-10,000",
 "checked": 1790368289
+},
+"CDW Corporation": {
+"size": "10,001+",
+"checked": 1790532964
 },
 "CHAOS Industries": {
 "size": "201-500",
@@ -991,6 +1075,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"CWAN": {
+"size": null,
+"checked": 1790532964
+},
 "Cadence": {
 "size": null,
 "checked": 1790368289
@@ -1047,6 +1135,10 @@
 "size": "201-500",
 "checked": 1790488033
 },
+"CareSource": {
+"size": null,
+"checked": 1790532964
+},
 "Carrier Global": {
 "size": "10,001+",
 "checked": 1790488371
@@ -1083,6 +1175,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Center for Internet Security (CIS)": {
+"size": null,
+"checked": 1790532964
+},
 "Centerfield": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -1090,6 +1186,10 @@
 "Centerstone": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Centific": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "Central Hudson": {
 "size": "1-10",
@@ -1110,6 +1210,10 @@
 "Chamberlain Group": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"ChampionX": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "Chanel": {
 "size": "10,001+",
@@ -1159,6 +1263,10 @@
 "size": "1-10",
 "checked": 1790368289
 },
+"Cisco": {
+"size": "10,001+",
+"checked": 1790532964
+},
 "Cisive": {
 "size": null,
 "checked": 1790488033
@@ -1182,6 +1290,10 @@
 "City of Austin": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"City of Baltimore": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "City of Vancouver": {
 "size": "1,001-5,000",
@@ -1242,6 +1354,10 @@
 "Cogna": {
 "size": "51-200",
 "checked": 1790368289
+},
+"Cognex": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "Cohen & Steers": {
 "size": null,
@@ -1395,9 +1511,17 @@
 "size": null,
 "checked": 1790368289
 },
+"Crane Co.": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "Creation Technologies": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Creative Artists Agency": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "Crest Industries": {
 "size": "51-200",
@@ -1475,6 +1599,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"DPR Family of Companies": {
+"size": "5,001-10,000",
+"checked": 1790532964
+},
 "DRW": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -1487,6 +1615,10 @@
 "size": "201-500",
 "checked": 1790368289
 },
+"DXC Technology": {
+"size": "10,001+",
+"checked": 1790532964
+},
 "Daikin Applied": {
 "size": "1,001-5,000",
 "checked": 1790488253
@@ -1495,9 +1627,17 @@
 "size": "5,001-10,000",
 "checked": 1790368289
 },
+"Dairyland Power Cooperative": {
+"size": "201-500",
+"checked": 1790532964
+},
 "Daktronics": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Dallas College": {
+"size": null,
+"checked": 1790532964
 },
 "Dallas Fort Worth International Airport": {
 "size": "1,001-5,000",
@@ -1759,6 +1899,10 @@
 "size": "201-500",
 "checked": 1790488033
 },
+"EisnerAmper": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "Ekimetrics": {
 "size": "501-1,000",
 "checked": 1790488033
@@ -1866,6 +2010,10 @@
 "Entrust": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Envista": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "Envoy": {
 "size": "201-500",
@@ -2007,6 +2155,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"FHLBank Topeka": {
+"size": "201-500",
+"checked": 1790532964
+},
 "FMC Corporation": {
 "size": "5,001-10,000",
 "checked": 1790488033
@@ -2067,6 +2219,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Fenwick & West": {
+"size": null,
+"checked": 1790532964
+},
 "Ferrovial": {
 "size": "10,001+",
 "checked": 1790488033
@@ -2119,6 +2275,10 @@
 "size": "51-200",
 "checked": 1790368289
 },
+"First Quality": {
+"size": null,
+"checked": 1790532964
+},
 "Fiserv": {
 "size": "10,001+",
 "checked": 1790368289
@@ -2166,6 +2326,10 @@
 "Fortive": {
 "size": "5,001-10,000",
 "checked": 1790368289
+},
+"Fortrea": {
+"size": "10,001+",
+"checked": 1790532964
 },
 "Fortune Brands": {
 "size": "1,001-5,000",
@@ -2243,6 +2407,10 @@
 "size": "5,001-10,000",
 "checked": 1790368289
 },
+"GSK": {
+"size": "10,001+",
+"checked": 1790532964
+},
 "GTS": {
 "size": "201-500",
 "checked": 1790368289
@@ -2266,6 +2434,10 @@
 "Garner Health": {
 "size": "201-500",
 "checked": 1790488033
+},
+"Gartner": {
+"size": "10,001+",
+"checked": 1790532964
 },
 "Gecko Robotics": {
 "size": "201-500",
@@ -2323,6 +2495,10 @@
 "size": "201-500",
 "checked": 1790368289
 },
+"Gentex Corporation": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "Genworth Financial": {
 "size": null,
 "checked": 1790368289
@@ -2367,6 +2543,10 @@
 "size": "5,001-10,000",
 "checked": 1790368289
 },
+"GoTo Group": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "Goldman Sachs": {
 "size": "10,001+",
 "checked": 1790368289
@@ -2390,6 +2570,10 @@
 "Grainger": {
 "size": null,
 "checked": 1790368289
+},
+"Granite Construction": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "Grant Thornton": {
 "size": "10,001+",
@@ -2551,6 +2735,10 @@
 "size": null,
 "checked": 1790488253
 },
+"Hendrick Motorsports": {
+"size": "501-1,000",
+"checked": 1790532964
+},
 "Henry Schein": {
 "size": "10,001+",
 "checked": 1790368289
@@ -2582,6 +2770,10 @@
 "Highgate": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Highmark Health": {
+"size": "5,001-10,000",
+"checked": 1790532964
 },
 "Hilton Worldwide": {
 "size": "10,001+",
@@ -2691,6 +2883,14 @@
 "size": "1,001-5,000",
 "checked": 1790488371
 },
+"IGS Energy": {
+"size": "501-1,000",
+"checked": 1790532964
+},
+"IJM": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "IKO": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -2766,6 +2966,10 @@
 "Inizio": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"Inmar Intelligence": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "Innovaccer": {
 "size": "1,001-5,000",
@@ -2847,6 +3051,10 @@
 "size": null,
 "checked": 1790488033
 },
+"International Rescue Committee (IRC)": {
+"size": null,
+"checked": 1790532964
+},
 "Internship": {
 "size": null,
 "checked": 1790488033
@@ -2895,6 +3103,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"JPI": {
+"size": "501-1,000",
+"checked": 1790532964
+},
 "JPMorgan Chase": {
 "size": null,
 "checked": 1790368289
@@ -2902,6 +3114,14 @@
 "Jabil": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Jackson": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
+"Jade Global": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "Jain Global": {
 "size": null,
@@ -2914,6 +3134,10 @@
 "Javelin Global Commodities": {
 "size": "201-500",
 "checked": 1790488033
+},
+"Jefferson Health": {
+"size": null,
+"checked": 1790532964
 },
 "Jencap": {
 "size": "201-500",
@@ -3063,6 +3287,10 @@
 "size": null,
 "checked": 1790488253
 },
+"Kite Pharma": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "Kitware": {
 "size": "51-200",
 "checked": 1790488033
@@ -3079,6 +3307,10 @@
 "size": null,
 "checked": 1790488033
 },
+"Kobo": {
+"size": "501-1,000",
+"checked": 1790532964
+},
 "Koch Industries": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -3094,6 +3326,10 @@
 "Konica Minolta Business Solutions": {
 "size": null,
 "checked": 1790368289
+},
+"Kraft Heinz": {
+"size": "10,001+",
+"checked": 1790532964
 },
 "Kroll": {
 "size": "5,001-10,000",
@@ -3219,6 +3455,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Littelfuse": {
+"size": "5,001-10,000",
+"checked": 1790532964
+},
 "Little Caesars Enterprises": {
 "size": null,
 "checked": 1790488253
@@ -3243,6 +3483,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Logitech": {
+"size": "5,001-10,000",
+"checked": 1790532964
+},
 "Lonza": {
 "size": "10,001+",
 "checked": 1790488033
@@ -3259,9 +3503,17 @@
 "size": "1,001-5,000",
 "checked": 1790488253
 },
+"Louisiana State University (LSU)": {
+"size": null,
+"checked": 1790532964
+},
 "Lowe's": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Lowe's ": {
+"size": null,
+"checked": 1790532964
 },
 "Lumentum": {
 "size": "1,001-5,000",
@@ -3355,6 +3607,10 @@
 "size": null,
 "checked": 1790488033
 },
+"Maricopa County": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "Markel Group, Inc.": {
 "size": null,
 "checked": 1790488033
@@ -3362,6 +3618,10 @@
 "Marmon Holdings": {
 "size": "201-500",
 "checked": 1790368289
+},
+"Marriott Vacations Worldwide": {
+"size": "5,001-10,000",
+"checked": 1790532964
 },
 "Mars": {
 "size": "10,001+",
@@ -3386,6 +3646,10 @@
 "Mary Free Bed Rehabilitation Hospital": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Mass General Brigham": {
+"size": "1-10",
+"checked": 1790532964
 },
 "MassMutual Ascend": {
 "size": "201-500",
@@ -3443,6 +3707,10 @@
 "size": null,
 "checked": 1790488033
 },
+"Medical University of South Carolina": {
+"size": null,
+"checked": 1790532964
+},
 "Medline": {
 "size": "10,001+",
 "checked": 1790368289
@@ -3467,9 +3735,17 @@
 "size": "11-50",
 "checked": 1790368289
 },
+"Memorial Healthcare System": {
+"size": "5,001-10,000",
+"checked": 1790532964
+},
 "Menasha Corporation": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Mercer University": {
+"size": null,
+"checked": 1790532964
 },
 "Merchants Bank of Indiana": {
 "size": "201-500",
@@ -3494,6 +3770,10 @@
 "Metron": {
 "size": "201-500",
 "checked": 1790488033
+},
+"Miami University": {
+"size": "11-50",
+"checked": 1790532964
 },
 "Michelin": {
 "size": "10,001+",
@@ -3647,6 +3927,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"National Interstate Insurance": {
+"size": "501-1,000",
+"checked": 1790532964
+},
 "National Laboratory of the Rockies": {
 "size": "1,001-5,000",
 "checked": 1790488371
@@ -3662,6 +3946,10 @@
 "Nationwide": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Nationwide Children's Hospital": {
+"size": null,
+"checked": 1790532964
 },
 "Navy Federal": {
 "size": "10,001+",
@@ -3851,6 +4139,14 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Occidental Petroleum Corporation (Oxy)": {
+"size": null,
+"checked": 1790532964
+},
+"Ocean Spray": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "Odyssey": {
 "size": "51-200",
 "checked": 1790488033
@@ -3871,9 +4167,17 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"OneMain Financial": {
+"size": "5,001-10,000",
+"checked": 1790532964
+},
 "Ontario Teachers' Pension Plan": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Onto Innovation": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "OpenGov": {
 "size": "1,001-5,000",
@@ -3894,6 +4198,10 @@
 "OpusClip": {
 "size": "51-200",
 "checked": 1790488033
+},
+"Oregon State Government": {
+"size": "201-500",
+"checked": 1790532964
 },
 "Oshkosh": {
 "size": "5,001-10,000",
@@ -3935,6 +4243,10 @@
 "size": null,
 "checked": 1790488033
 },
+"PHINIA": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "PIMCO": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -3950,6 +4262,10 @@
 "POET": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"PPG Industries": {
+"size": "10,001+",
+"checked": 1790532964
 },
 "PSECU": {
 "size": null,
@@ -4054,6 +4370,10 @@
 "Persona AI": {
 "size": "51-200",
 "checked": 1790368289
+},
+"Pfizer": {
+"size": "10,001+",
+"checked": 1790532964
 },
 "Philips": {
 "size": null,
@@ -4423,6 +4743,10 @@
 "size": "5,001-10,000",
 "checked": 1790488033
 },
+"Resolve Tech Solutions": {
+"size": null,
+"checked": 1790532964
+},
 "Resultant": {
 "size": "201-500",
 "checked": 1790368289
@@ -4515,6 +4839,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Rogers Behavioral Health": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "Rolls-Royce": {
 "size": "10,001+",
 "checked": 1790488033
@@ -4543,6 +4871,10 @@
 "size": "51-200",
 "checked": 1790488033
 },
+"Ryan": {
+"size": "5,001-10,000",
+"checked": 1790532964
+},
 "Ryan Companies": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -4550,6 +4882,10 @@
 "Ryder": {
 "size": null,
 "checked": 1790488253
+},
+"Ryder System": {
+"size": "10,001+",
+"checked": 1790532964
 },
 "Rystad Energy": {
 "size": "501-1,000",
@@ -4631,6 +4967,10 @@
 "size": null,
 "checked": 1790488253
 },
+"Saks Global": {
+"size": null,
+"checked": 1790532964
+},
 "Salesforce": {
 "size": "10,001+",
 "checked": 1790368289
@@ -4662,6 +5002,10 @@
 "Santander": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"Sarasota County": {
+"size": null,
+"checked": 1790532964
 },
 "Sargent & Lundy": {
 "size": "1,001-5,000",
@@ -4743,6 +5087,10 @@
 "size": "5,001-10,000",
 "checked": 1790368289
 },
+"Sentara Health": {
+"size": "10,001+",
+"checked": 1790532964
+},
 "SentinelOne": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -4811,6 +5159,10 @@
 "size": "11-50",
 "checked": 1790488033
 },
+"SiFive": {
+"size": "501-1,000",
+"checked": 1790532964
+},
 "Sia Partners": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -4851,6 +5203,10 @@
 "size": null,
 "checked": 1790368289
 },
+"Simons Foundation": {
+"size": "201-500",
+"checked": 1790532964
+},
 "Simpson Strong-Tie": {
 "size": "1,001-5,000",
 "checked": 1790488253
@@ -4858,6 +5214,10 @@
 "SingleStore": {
 "size": "501-1,000",
 "checked": 1790488033
+},
+"SitusAMC": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "Skechers": {
 "size": "10,001+",
@@ -4895,6 +5255,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Smithfield Foods": {
+"size": "5,001-10,000",
+"checked": 1790532964
+},
 "Smiths Detection Group": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -4919,6 +5283,10 @@
 "size": "5,001-10,000",
 "checked": 1790488033
 },
+"Solenis": {
+"size": "5,001-10,000",
+"checked": 1790532964
+},
 "Solera Holdings": {
 "size": "1,001-5,000",
 "checked": 1790488253
@@ -4927,6 +5295,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Solventum": {
+"size": "10,001+",
+"checked": 1790532964
+},
 "Somerce": {
 "size": null,
 "checked": 1790488033
@@ -4934,6 +5306,10 @@
 "Sonar": {
 "size": "501-1,000",
 "checked": 1790488033
+},
+"Sonoco": {
+"size": "5,001-10,000",
+"checked": 1790532964
 },
 "Sony": {
 "size": "10,001+",
@@ -4978,6 +5354,10 @@
 "Springs Window Fashions": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"St. Luke's University Health Network": {
+"size": null,
+"checked": 1790532964
 },
 "Stand Together": {
 "size": "501-1,000",
@@ -5135,6 +5515,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"TD Synnex": {
+"size": "5,001-10,000",
+"checked": 1790532964
+},
 "TELUS": {
 "size": "10,001+",
 "checked": 1790488033
@@ -5203,6 +5587,14 @@
 "size": null,
 "checked": 1790368289
 },
+"Taylor Corporation": {
+"size": "5,001-10,000",
+"checked": 1790532964
+},
+"Techtronic Industries": {
+"size": "5,001-10,000",
+"checked": 1790532964
+},
 "Teledyne": {
 "size": "11-50",
 "checked": 1790368289
@@ -5218,6 +5610,10 @@
 "Tenstorrent": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Terex": {
+"size": "5,001-10,000",
+"checked": 1790532964
 },
 "Terranova": {
 "size": "11-50",
@@ -5263,6 +5659,10 @@
 "size": "501-1,000",
 "checked": 1790368289
 },
+"The Campbell's Company": {
+"size": null,
+"checked": 1790532964
+},
 "The Coca-Cola Company": {
 "size": "10,001+",
 "checked": 1790368289
@@ -5294,6 +5694,10 @@
 "The MJ Companies": {
 "size": "201-500",
 "checked": 1790368289
+},
+"The New School": {
+"size": null,
+"checked": 1790532964
 },
 "The New York Times": {
 "size": "10,001+",
@@ -5459,6 +5863,10 @@
 "size": "51-200",
 "checked": 1790488033
 },
+"TruStage": {
+"size": "11-50",
+"checked": 1790532964
+},
 "True Anomaly": {
 "size": null,
 "checked": 1790488033
@@ -5494,6 +5902,10 @@
 "UHY": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"UMB": {
+"size": "5,001-10,000",
+"checked": 1790532964
 },
 "URBN": {
 "size": "10,001+",
@@ -5535,17 +5947,41 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"United Parcel Service (UPS)": {
+"size": null,
+"checked": 1790532964
+},
 "Universal Health Services": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"University System of New Hampshire": {
+"size": null,
+"checked": 1790532964
+},
+"University of Arkansas": {
+"size": null,
+"checked": 1790532964
 },
 "University of British Columbia": {
 "size": null,
 "checked": 1790488033
 },
+"University of Maryland - College Park": {
+"size": null,
+"checked": 1790532964
+},
 "University of Miami": {
 "size": null,
 "checked": 1790488253
+},
+"University of Nevada, Reno": {
+"size": null,
+"checked": 1790532964
+},
+"University of Rochester": {
+"size": null,
+"checked": 1790532964
 },
 "University of Texas at Austin": {
 "size": null,
@@ -5562,6 +5998,10 @@
 "University of Wisconsin System": {
 "size": null,
 "checked": 1790488253
+},
+"Unum": {
+"size": null,
+"checked": 1790532964
 },
 "Upbound Group": {
 "size": "201-500",
@@ -5971,6 +6411,10 @@
 "size": "51-200",
 "checked": 1790488033
 },
+"X-energy": {
+"size": "1,001-5,000",
+"checked": 1790532964
+},
 "XPENG Motors": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -6094,6 +6538,10 @@
 "incident.io": {
 "size": "201-500",
 "checked": 1790368289
+},
+"nVent": {
+"size": "1,001-5,000",
+"checked": 1790532964
 },
 "onsemi": {
 "size": "10,001+",
