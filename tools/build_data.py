@@ -57,10 +57,13 @@ WORKDAY = [
     ("Dick's Sporting Goods", "dickssportinggoods.wd1", "dickssportinggoods", "DSG"),
 ]
 
-ALIASES = {"SF": "San Francisco, CA", "LA": "Los Angeles, CA", "NYC": "New York, NY"}
+ALIASES = {"SF": "San Francisco, CA", "LA": "Los Angeles, CA", "NYC": "New York, NY", "South SF": "South San Francisco, CA",
+    "Remote in USA": "Remote, US"}
 # Banks and consultancies call their interns "summer analysts" or "summer associates", so those count too.
 INTERN = re.compile(r"\bintern(ship)?s?\b|\bsummer (analyst|associate|scholar|fellow)s?\b|\bapprentice(ship)?s?\b", re.I)
 OTHER_TERM = re.compile(r"\b(2025|2026|2028|fall|autumn|spring|winter|co-?op|jan(uary)?|feb(ruary)?|march|oct(ober)?|nov(ember)?|dec(ember)?)\b", re.I)
+# Not a summer internship even when a tracker files it under Summer 2027.
+NOT_SUMMER = re.compile(r"\bnew grad|\bfull[- ]time\b|\byear[- ]round\b|\bpart[- ]time\b|\bacademic year\b|\bgraduate program\b", re.I)
 SUMMER_27 = re.compile(r"summer\s*('|20)?27|2027\s*summer", re.I)
 CUTOFF = datetime(2026, 6, 1, tzinfo=timezone.utc).timestamp()
 # Simplify's headcount is wrong or missing for some big employers with many listings.
@@ -82,9 +85,9 @@ SIZE_BUCKET = {"1-10": "s", "11-50": "s", "51-200": "s", "201-500": "m", "501-1,
 CATEGORIES = [
     ("Quant", r"\bquant|trading\b|trader"),
     ("Product", r"product manag|product strateg|product owner|product operations|product analyst|\bapm\b|associate product"),
-    ("Hardware", r"hardware|electrical|mechanical|manufacturing|embedded|firmware|robotic|aerospace|avionic|asic|fpga|silicon|mixed signal|analog|circuit|chip"),
+    ("Hardware", r"hardware|electrical|mechanical|manufacturing|embedded|firmware|robotic|aerospace|avionic|asic|fpga|silicon(?! valley)|mixed signal|analog|circuit|chip|\bcivil\b|structural|chemical eng|industrial eng|environmental eng|\br&d\b|\bic\b|vlsi|design for test|design verification|\bdft\b|design automation|physical design|\brtl\b"),
     ("AI/ML/Data", r"machine learning|\bml\b|\bai\b|data|analytics|research scien|applied scien"),
-    ("Software", r"software|developer|engineer|\bswe\b|frontend|backend|full.?stack|mobile|\bios\b|android|infrastructure|security|devops|\bsre\b|programmer"),
+    ("Software", r"software|developer|engineer|\bswe\b|frontend|backend|full.?stack|mobile|\bios\b|android|infrastructure|security|cyber|devops|\bsre\b|programmer"),
     ("Design", r"design|\bux\b|creative|illustrat"),
 ]
 
@@ -138,6 +141,7 @@ def degrees(title):
     if re.search(r"\bms\b|master", t): out.append("Master's")
     if "mba" in t: out.append("MBA")
     if "phd" in t or "ph.d" in t: out.append("PhD")
+    if re.search(r"\bj\.?d\b|law student|law school", t): out.append("JD")
     return out
 
 
@@ -158,11 +162,24 @@ def category(title):
     for name, pat in CATEGORIES:
         if re.search(pat, title, re.I):
             return name
-    return "Business"
+    # Only call it business when the title says so; "Clay Sculpting" is not a business role.
+    return "Business" if BIZ_WORDS.search(title) else "Other"
+
+
+# Simplify only has tech categories, so its sales, finance and ops roles arrive filed as data or software.
+BIZ_WORDS = re.compile(r"business|marketing|sales|strategy|financ|accounting|audit|\btax\b|supply chain|operations|"
+    r"human resources|recruit|consult|merchandis|brand|pricing|revenue|real estate|invest|customer|partnership", re.I)
+
+
+def simplify_category(title, simplify_cat):
+    ours = category(title)
+    if ours != "Other":
+        return ours
+    return "Software" if simplify_cat == "Software Engineering" else (simplify_cat or "Other")
 
 
 def is_summer_2027(title, posted):
-    if not INTERN.search(title):
+    if not INTERN.search(title) or NOT_SUMMER.search(title):
         return False
     if SUMMER_27.search(title):
         return not re.search(r"\b(2025|2026|2028)\b", title)
@@ -277,12 +294,14 @@ def from_simplify():
         # Undated listings count when the title and posting date say Summer 2027.
         if "Summer 2027" not in terms and not (terms == ["N/A"] and is_summer_2027(x["title"], x["date_posted"])):
             continue
+        if NOT_SUMMER.search(x["title"]):
+            continue
         rows.append({
             "c": x["company_name"], "t": x["title"],
             "l": [ALIASES.get(l, l) for l in x.get("locations", [])],
             "u": x["url"], "d": x["date_posted"], "a": 1 if x.get("active") else 0,
-            "g": "Software" if x.get("category") == "Software Engineering" else x.get("category", ""),
-            "deg": x.get("degrees", []), "s": "tracker",
+            "g": simplify_category(x["title"], x.get("category", "")),
+            "deg": sorted(set(x.get("degrees", []) + degrees(x["title"]))), "s": "tracker",
             "_slug": (x.get("company_url") or "").rsplit("/c/", 1)[-1] or None,
         })
     return rows
@@ -346,7 +365,10 @@ def add_sizes(rows):
 
 def key(r):
     norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())
-    return norm(r["c"])[:12] + "|" + norm(re.sub(r"\(.*?\)|summer|2027|intern(ship)?", "", r["t"], flags=re.I))
+    # "Nike" and "NIKE, Inc." are the same company; "- Multiple Teams" is the same job.
+    company = re.sub(r"\b(inc|llc|corp(oration)?|co|company|usa|the|group)\b\.?", "", r["c"], flags=re.I)
+    title = re.sub(r"\(.*?\)|summer|2027|intern(ship)?|multiple (teams|locations)|nike,? inc\.?", "", r["t"], flags=re.I)
+    return norm(company)[:12] + "|" + norm(title)
 
 
 def main():
@@ -368,9 +390,13 @@ def main():
                     added += 1
     unique = {}
     for r in rows:
-        k = (r["c"].lower(), r["t"].lower().strip(), tuple(sorted(r["l"])))
-        if k not in unique or (r["a"] and not unique[k]["a"]):
+        k = key(r)
+        old = unique.get(k)
+        if old is None or (r["a"] and not old["a"]):
             unique[k] = r
+        # Same job listed per city or on two boards: keep one link but every city.
+        if old is not None:
+            unique[k]["l"] = list(dict.fromkeys(old["l"] + r["l"]))
     rows = sorted(unique.values(), key=lambda r: -r["d"])
     looked_up = add_sizes(rows)
     with open("data.json", "w") as f:

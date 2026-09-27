@@ -139,6 +139,10 @@
 "size": "5,001-10,000",
 "checked": 1790368289
 },
+"American Century Investments": {
+"size": null,
+"checked": 1790486647
+},
 "American Express": {
 "size": "10,001+",
 "checked": 1790368289
@@ -587,6 +591,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Cencora": {
+"size": "10,001+",
+"checked": 1790486647
+},
 "Centene": {
 "size": "10,001+",
 "checked": 1790368289
@@ -959,6 +967,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Efficient Computer": {
+"size": "51-200",
+"checked": 1790486647
+},
 "Electronic Arts": {
 "size": "10,001+",
 "checked": 1790368289
@@ -1151,6 +1163,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Flint": {
+"size": null,
+"checked": 1790486647
+},
 "Flow Traders": {
 "size": "501-1,000",
 "checked": 1790368289
@@ -1174,6 +1190,10 @@
 "G-Research": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"GCM Grosvenor": {
+"size": "201-500",
+"checked": 1790486647
 },
 "GE Aerospace": {
 "size": "10,001+",
@@ -1947,6 +1967,10 @@
 "size": "201-500",
 "checked": 1790368289
 },
+"Neogen": {
+"size": "1,001-5,000",
+"checked": 1790486647
+},
 "Netsmart": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -2078,6 +2102,10 @@
 "Pacific Fusion": {
 "size": "201-500",
 "checked": 1790368289
+},
+"Pacific Life": {
+"size": "1,001-5,000",
+"checked": 1790486647
 },
 "Palantir": {
 "size": "5,001-10,000",
@@ -2298,6 +2326,10 @@
 "Readystate Asset Management": {
 "size": "11-50",
 "checked": 1790368289
+},
+"Red Ventures": {
+"size": "1,001-5,000",
+"checked": 1790486647
 },
 "Regions Bank": {
 "size": null,
@@ -3110,6 +3142,10 @@
 "Western Digital": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Western National Insurance": {
+"size": "501-1,000",
+"checked": 1790486647
 },
 "Westinghouse Electric Company": {
 "size": "10,001+",
