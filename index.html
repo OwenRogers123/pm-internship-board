@@ -225,10 +225,10 @@ const STATES = { AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA:
   WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming" };
 const PAGE = 25;
 // Titles that are engineering or research even when they also say "strategy" or "operations".
-const TECHY = /engineer|developer|software|scientist|machine learning|hardware|firmware|embedded|phd|r&d|research|recruitment program/i;
+const TECHY = /engineer|developer|software|scientist|machine learning|hardware|firmware|embedded|phd|r&d|research|recruitment program|campus recruiting|recruiting program/i;
 const MAJORS = {
   biz: r => r.g === "Product" ||
-    (/business|marketing|sales|strategy|financ|accounting|audit|\btax\b|supply chain|operations|consult|human resources|recruit|merchandis|brand|pricing|revenue|real estate|invest|customer|partnership/i.test(r.t) && !TECHY.test(r.t)),
+    (/business|marketing|sales|strategy|financ|accounting|audit|\btax\b|supply chain|operations|consult|human resources|\bhr\b|recruit|talent|merchandis|brand|pricing|revenue|real estate|invest|customer|partnership|communicat|public relations|credit|risk|underwrit|insurance|compliance|procurement|purchasing|logistics|event|hospitality|wealth|banking|treasury/i.test(r.t) && !TECHY.test(r.t)),
   is: r => r.g === "Product" || (r.g === "Business" && /analy|operations|systems|technology|digital|data|\berp\b|\bsap\b|salesforce|implementation/i.test(r.t)) ||
     ((/\bIT\b/.test(r.t) || /information system|information technology|business analy|systems analy|data analy|analytics|business intelligence|\berp\b|\bsap\b|salesforce|program manag|project manag|implementation|technology consult|cyber|security analy/i.test(r.t)) &&
       !/phd|scientist|firmware|hardware|embedded/i.test(r.t)),

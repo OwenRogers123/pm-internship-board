@@ -6,7 +6,7 @@ Search Summer 2027 internships from job boards and company career pages, filtere
 
 ## Where the listings come from
 
-About 4,300 listings come from the [SimplifyJobs](https://github.com/SimplifyJobs/Summer2027-Internships) list, [The Muse](https://www.themuse.com/developers/api/v2), and the public job boards of about 150 companies (Greenhouse, Lever, Ashby and Workday). A GitHub Action rebuilds the list every day with `tools/build_data.py`. Company size comes from each company's Simplify profile, with a short list of corrections in the same file.
+About 9,000 listings come from the [SimplifyJobs](https://github.com/SimplifyJobs/Summer2027-Internships) list, [The Muse](https://www.themuse.com/developers/api/v2), and the public job boards of about 4,100 companies (Greenhouse, Lever, Ashby, Workday, SmartRecruiters and Workable). Boards are found automatically from every company link in the Simplify lists, since those companies also post marketing, HR and finance internships that Simplify skips. A GitHub Action rebuilds the list every day with `tools/build_data.py`. Company size comes from each company's Simplify profile, with a short list of corrections in the same file.
 
 The build also cleans the data:
 

@@ -9,6 +9,20 @@ import urllib.request
 from datetime import datetime, timezone
 
 SIMPLIFY = "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json"
+# Simplify only lists tech roles, but its links point at thousands of company job boards. Those boards also post
+# marketing, HR, finance and ops internships, so every board linked from these lists gets checked directly.
+DISCOVERY = ["https://raw.githubusercontent.com/SimplifyJobs/%s/dev/.github/scripts/listings.json" % r
+             for r in ("Summer2026-Internships", "New-Grad-Positions")]
+BOARD_PATTERNS = [
+    ("greenhouse", re.compile(r"(?:boards|job-boards)(?:\.eu)?\.greenhouse\.io/(?:embed/job_board\?for=)?([A-Za-z0-9_-]+)")),
+    ("lever", re.compile(r"jobs\.lever\.co/([A-Za-z0-9_.-]+)")),
+    ("ashby", re.compile(r"jobs\.ashbyhq\.com/([A-Za-z0-9_.%-]+)")),
+    ("workday", re.compile(r"https://([a-z0-9-]+)\.(wd\d+)\.myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?([A-Za-z0-9_-]+)")),
+    ("workdaysite", re.compile(r"https://(wd\d+)\.myworkdaysite\.com/(?:[a-z]{2}-[A-Z]{2}/)?recruiting/([A-Za-z0-9_-]+)/([A-Za-z0-9_-]+)")),
+    ("smartrecruiters", re.compile(r"(?:jobs|careers)\.smartrecruiters\.com/([A-Za-z0-9_-]+)")),
+    ("workable", re.compile(r"apply\.workable\.com/([A-Za-z0-9_-]+)")),
+]
+NOT_BOARD = {"embed", "api", "v1", "jobs", "job", "careers", "en-US", "j", "details"}
 MUSE = "https://www.themuse.com/api/public/jobs"
 # The Muse's internship categories, minus Healthcare (thousands of pharmacy and clinical rotations).
 MUSE_CATEGORIES = ["Business Operations", "Sales", "Product Management", "Project Management", "Data and Analytics",
@@ -30,31 +44,31 @@ LEVER = "palantir shieldai spotify whoop lyrahealth greenlight zoox gopuff ro ja
 ASHBY = """ramp notion openai linear retool deel clay posthog replit supabase plaid cohere elevenlabs harvey
 perplexity sierra vanta wealthsimple sleeper supercell substack modal drata headway thumbtack strava poshmark
 hopper oyster patreon acorns zapier kayak""".split()
-# (display name, host, tenant, site)
+# (display name, base url, tenant, site, public page prefix)
 WORKDAY = [
-    ("Visa", "visa.wd5", "visa", "Visa_Early_Careers"),
-    ("PIMCO", "pimco.wd1", "pimco", "pimco-careers"),
-    ("PwC", "pwc.wd3", "pwc", "US_Entry_Level_Careers"),
-    ("Salesforce", "salesforce.wd12", "salesforce", "External_Career_Site"),
-    ("Adobe", "adobe.wd5", "adobe", "external_experienced"),
-    ("NVIDIA", "nvidia.wd5", "nvidia", "NVIDIAExternalCareerSite"),
-    ("Target", "target.wd5", "target", "targetcareers"),
-    ("Walmart", "walmart.wd5", "walmart", "WalmartExternal"),
-    ("Capital One", "capitalone.wd12", "capitalone", "Capital_One"),
-    ("Mastercard", "mastercard.wd1", "mastercard", "CorporateCareers"),
-    ("PayPal", "paypal.wd1", "paypal", "jobs"),
-    ("Intel", "intel.wd1", "intel", "External"),
-    ("Disney", "disney.wd5", "disney", "disneycareer"),
-    ("Nike", "nike.wd1", "nike", "nke"),
-    ("Autodesk", "autodesk.wd1", "autodesk", "uni"),
-    ("Workday", "workday.wd5", "workday", "Workday_Early_Career"),
-    ("Levi Strauss & Co.", "levistraussandco.wd5", "levistraussandco", "External"),
-    ("Illumina", "illumina.wd1", "illumina", "illumina-careers"),
-    ("Zurn Elkay", "elkay.wd1", "elkay", "Elkay_External"),
-    ("Trimble", "trimble.wd1", "trimble", "TrimbleCareers"),
-    ("U.S. Bank", "usbank.wd1", "usbank", "US_Bank_Careers"),
-    ("USAA", "usaa.wd1", "usaa", "USAAJOBSWD"),
-    ("Dick's Sporting Goods", "dickssportinggoods.wd1", "dickssportinggoods", "DSG"),
+    ("Visa", "https://visa.wd5.myworkdayjobs.com", "visa", "Visa_Early_Careers", "/en-US/Visa_Early_Careers"),
+    ("PIMCO", "https://pimco.wd1.myworkdayjobs.com", "pimco", "pimco-careers", "/en-US/pimco-careers"),
+    ("PwC", "https://pwc.wd3.myworkdayjobs.com", "pwc", "US_Entry_Level_Careers", "/en-US/US_Entry_Level_Careers"),
+    ("Salesforce", "https://salesforce.wd12.myworkdayjobs.com", "salesforce", "External_Career_Site", "/en-US/External_Career_Site"),
+    ("Adobe", "https://adobe.wd5.myworkdayjobs.com", "adobe", "external_experienced", "/en-US/external_experienced"),
+    ("NVIDIA", "https://nvidia.wd5.myworkdayjobs.com", "nvidia", "NVIDIAExternalCareerSite", "/en-US/NVIDIAExternalCareerSite"),
+    ("Target", "https://target.wd5.myworkdayjobs.com", "target", "targetcareers", "/en-US/targetcareers"),
+    ("Walmart", "https://walmart.wd5.myworkdayjobs.com", "walmart", "WalmartExternal", "/en-US/WalmartExternal"),
+    ("Capital One", "https://capitalone.wd12.myworkdayjobs.com", "capitalone", "Capital_One", "/en-US/Capital_One"),
+    ("Mastercard", "https://mastercard.wd1.myworkdayjobs.com", "mastercard", "CorporateCareers", "/en-US/CorporateCareers"),
+    ("PayPal", "https://paypal.wd1.myworkdayjobs.com", "paypal", "jobs", "/en-US/jobs"),
+    ("Intel", "https://intel.wd1.myworkdayjobs.com", "intel", "External", "/en-US/External"),
+    ("Disney", "https://disney.wd5.myworkdayjobs.com", "disney", "disneycareer", "/en-US/disneycareer"),
+    ("Nike", "https://nike.wd1.myworkdayjobs.com", "nike", "nke", "/en-US/nke"),
+    ("Autodesk", "https://autodesk.wd1.myworkdayjobs.com", "autodesk", "uni", "/en-US/uni"),
+    ("Workday", "https://workday.wd5.myworkdayjobs.com", "workday", "Workday_Early_Career", "/en-US/Workday_Early_Career"),
+    ("Levi Strauss & Co.", "https://levistraussandco.wd5.myworkdayjobs.com", "levistraussandco", "External", "/en-US/External"),
+    ("Illumina", "https://illumina.wd1.myworkdayjobs.com", "illumina", "illumina-careers", "/en-US/illumina-careers"),
+    ("Zurn Elkay", "https://elkay.wd1.myworkdayjobs.com", "elkay", "Elkay_External", "/en-US/Elkay_External"),
+    ("Trimble", "https://trimble.wd1.myworkdayjobs.com", "trimble", "TrimbleCareers", "/en-US/TrimbleCareers"),
+    ("U.S. Bank", "https://usbank.wd1.myworkdayjobs.com", "usbank", "US_Bank_Careers", "/en-US/US_Bank_Careers"),
+    ("USAA", "https://usaa.wd1.myworkdayjobs.com", "usaa", "USAAJOBSWD", "/en-US/USAAJOBSWD"),
+    ("Dick's Sporting Goods", "https://dickssportinggoods.wd1.myworkdayjobs.com", "dickssportinggoods", "DSG", "/en-US/DSG"),
 ]
 
 ALIASES = {"SF": "San Francisco, CA", "LA": "Los Angeles, CA", "NYC": "New York, NY", "South SF": "South San Francisco, CA",
@@ -63,7 +77,7 @@ ALIASES = {"SF": "San Francisco, CA", "LA": "Los Angeles, CA", "NYC": "New York,
 INTERN = re.compile(r"\bintern(ship)?s?\b|\bsummer (analyst|associate|scholar|fellow)s?\b|\bapprentice(ship)?s?\b", re.I)
 OTHER_TERM = re.compile(r"\b(2025|2026|2028|fall|autumn|spring|winter|co-?op|jan(uary)?|feb(ruary)?|march|oct(ober)?|nov(ember)?|dec(ember)?)\b", re.I)
 # Not a summer internship even when a tracker files it under Summer 2027.
-NOT_SUMMER = re.compile(r"\bnew grad|\bfull[- ]time\b|\byear[- ]round\b|\bpart[- ]time\b|\bacademic year\b|\bgraduate program\b", re.I)
+NOT_SUMMER = re.compile(r"\bnew grad|\bfull[- ]time\b|\byear[- ]round\b|\bpart[- ]time\b|\bacademic year\b|\bgraduate program\b|^\s*(staff|senior|sr\.?|lead(?! gen)|principal|director|head of)\b|\b(and|&|for) interns\b", re.I)
 SUMMER_27 = re.compile(r"summer\s*('|20)?27|2027\s*summer", re.I)
 CUTOFF = datetime(2026, 6, 1, tzinfo=timezone.utc).timestamp()
 # Simplify's headcount is wrong or missing for some big employers with many listings.
@@ -107,8 +121,16 @@ CITY_ONLY = {"new york": "New York, NY", "new york city": "New York, NY", "san f
 
 
 def clean_location(p):
-    p = re.sub(r"\s*,\s*", ", ", p.strip().strip(",")).strip()
+    p = re.sub(r"\s*,\s*", ", ", p.strip().strip(",").strip(" -")).strip()
     p = re.sub(r"^(hybrid|on-?site|in office)\s*[-:]\s*", "", p, flags=re.I)
+    # Workday styles: "USA VA Herndon", "WI Madison"
+    m = re.match(r"^(?:USA?|United States)[\s,-]+([A-Z]{2})[\s,-]+([A-Za-z .'-]+)$", p) or re.match(r"^([A-Z]{2}) ([A-Z][A-Za-z .'-]+)$", p)
+    if m and m.group(1) in CODES:
+        return m.group(2).strip() + ", " + m.group(1)
+    # "Wyoming, Michigan" is a city in Michigan, so a trailing state name wins over a leading one.
+    m = re.match(r"^([^,]+), ([A-Za-z ]+)$", p)
+    if m and m.group(2).lower() in STATE_NAMES:
+        return m.group(1) + ", " + STATE_NAMES[m.group(2).lower()]
     p = re.sub(r"^(US|USA|United States)\s*[-,]\s*", "", p)
     p = re.sub(r",?\s*\b(US|USA|United States( of America)?)$", "", p).strip()
     m = re.match(r"^([A-Za-z ]+?)\s+-\s+(.+)$", p)
@@ -168,7 +190,9 @@ def category(title):
 
 # Simplify only has tech categories, so its sales, finance and ops roles arrive filed as data or software.
 BIZ_WORDS = re.compile(r"business|marketing|sales|strategy|financ|accounting|audit|\btax\b|supply chain|operations|"
-    r"human resources|recruit|consult|merchandis|brand|pricing|revenue|real estate|invest|customer|partnership", re.I)
+    r"human resources|\bhr\b|recruit|talent|consult|merchandis|brand|pricing|revenue|real estate|invest|customer|partnership|"
+    r"communicat|public relations|credit|risk|underwrit|insurance|compliance|procurement|purchasing|logistics|event|"
+    r"hospitality|loyalty|\betf\b|wealth|banking|treasury", re.I)
 
 
 def simplify_category(title, simplify_cat):
@@ -211,12 +235,12 @@ def iso_ts(s):
         return time.time()
 
 
-def from_greenhouse(token):
-    meta = get_json(f"https://boards-api.greenhouse.io/v1/boards/{token}")
+def from_greenhouse(token, name=None):
     jobs = get_json(f"https://boards-api.greenhouse.io/v1/boards/{token}/jobs")
     if not jobs:
         return []
-    name = (meta or {}).get("name") or token.title()
+    if not name:
+        name = (get_json(f"https://boards-api.greenhouse.io/v1/boards/{token}") or {}).get("name") or token.title()
     out = []
     for j in jobs.get("jobs", []):
         posted = iso_ts(j.get("first_published") or j.get("updated_at") or "")
@@ -226,7 +250,7 @@ def from_greenhouse(token):
     return out
 
 
-def from_lever(token):
+def from_lever(token, name=None):
     jobs = get_json(f"https://api.lever.co/v0/postings/{token}?mode=json")
     if not isinstance(jobs, list):
         return []
@@ -236,12 +260,12 @@ def from_lever(token):
         cats = j.get("categories") or {}
         locs = cats.get("allLocations") or [cats.get("location")]
         if is_summer_2027(j["text"], posted):
-            out.append(row(token.title(), j["text"], split_locations("; ".join(l for l in locs if l)),
+            out.append(row(name or token.title(), j["text"], split_locations("; ".join(l for l in locs if l)),
                            j["hostedUrl"], posted, "company"))
     return out
 
 
-def from_ashby(token):
+def from_ashby(token, name=None):
     d = get_json(f"https://api.ashbyhq.com/posting-api/job-board/{token}")
     if not d or "jobs" not in d:
         return []
@@ -250,7 +274,7 @@ def from_ashby(token):
         posted = iso_ts(j.get("publishedAt") or "")
         locs = [j.get("location")] + [s.get("location") for s in j.get("secondaryLocations") or []]
         if is_summer_2027(j["title"], posted):
-            out.append(row(token.title(), j["title"], split_locations("; ".join(l for l in locs if l)),
+            out.append(row(name or token.title(), j["title"], split_locations("; ".join(l for l in locs if l)),
                            j["jobUrl"], posted, "company"))
     return out
 
@@ -266,9 +290,8 @@ def workday_posted(text):
     return now - int(m.group(1)) * 86400 if m else now - 30 * 86400
 
 
-def from_workday(entry):
-    name, host, tenant, site = entry
-    base = f"https://{host}.myworkdayjobs.com"
+def from_workday(entry, _=None):
+    name, base, tenant, site, prefix = entry
     out = []
     for offset in range(0, 200, 20):
         d = get_json(f"{base}/wday/cxs/{tenant}/{site}/jobs",
@@ -279,15 +302,88 @@ def from_workday(entry):
             posted = workday_posted(j.get("postedOn"))
             if is_summer_2027(j.get("title", ""), posted):
                 out.append(row(name, j["title"], split_locations(j.get("locationsText", "")),
-                               f"{base}/en-US/{site}{j['externalPath']}", posted, "company"))
+                               f"{base}{prefix}{j['externalPath']}", posted, "company"))
         if offset + 20 >= d.get("total", 0):
             break
     return out
 
 
+def sr_location(loc):
+    loc = loc or {}
+    if (loc.get("country") or "").lower() == "us" and loc.get("region"):
+        return f"{loc.get('city')}, {loc['region']}" if loc.get("city") else loc["region"]
+    return loc.get("fullLocation") or ", ".join(x for x in (loc.get("city"), loc.get("country")) if x)
+
+
+def from_smartrecruiters(company, name=None):
+    out = []
+    for offset in range(0, 300, 100):
+        d = get_json(f"https://api.smartrecruiters.com/v1/companies/{company}/postings?q=intern&limit=100&offset={offset}")
+        if not d or not d.get("content"):
+            break
+        for j in d["content"]:
+            posted = iso_ts(j.get("releasedDate") or "")
+            if is_summer_2027(j.get("name", ""), posted):
+                out.append(row(name or (j.get("company") or {}).get("name") or company, j["name"],
+                               split_locations(sr_location(j.get("location"))),
+                               f"https://jobs.smartrecruiters.com/{company}/{j['id']}", posted, "company"))
+        if offset + 100 >= d.get("totalFound", 0):
+            break
+    return out
+
+
+def from_workable(account, name=None):
+    d = get_json(f"https://apply.workable.com/api/v3/accounts/{account}/jobs", {"query": "intern"})
+    out = []
+    for j in (d or {}).get("results", []):
+        posted = iso_ts(j.get("published") or "")
+        loc = j.get("location") or {}
+        where = ", ".join(x for x in (loc.get("city"), loc.get("region") if loc.get("countryCode") == "US" else loc.get("country")) if x)
+        if is_summer_2027(j.get("title", ""), posted):
+            out.append(row(name or account, j["title"], split_locations(where),
+                           f"https://apply.workable.com/{account}/j/{j['shortcode']}/", posted, "company"))
+    return out
+
+
+def discover_boards(listings):
+    """Every company job board linked from Simplify's lists, keyed by board, with the company's name."""
+    found = {}
+    for x in listings:
+        url = x.get("url") or ""
+        for kind, pat in BOARD_PATTERNS:
+            m = pat.search(url)
+            if not m:
+                continue
+            if kind == "workday":
+                tenant, wd, site = m.groups()
+                arg = (x["company_name"], f"https://{tenant}.{wd}.myworkdayjobs.com", tenant, site, f"/en-US/{site}")
+            elif kind == "workdaysite":
+                wd, tenant, site = m.groups()
+                arg = (x["company_name"], f"https://{wd}.myworkdaysite.com", tenant, site, f"/en-US/recruiting/{tenant}/{site}")
+            elif m.group(1) in NOT_BOARD:
+                break
+            else:
+                arg = m.group(1)
+            key = (kind, arg[2:4] if isinstance(arg, tuple) else arg.lower())
+            found.setdefault(key, (kind, arg, x.get("company_name")))
+            break
+    return list(found.values())
+
+
+SIMPLIFY_RAW = []
+
+
+def safe(fn, arg, name):
+    try:
+        return fn(arg, name)
+    except Exception:
+        return []
+
+
 def from_simplify():
     rows = []
-    for x in get_json(SIMPLIFY, timeout=60) or []:
+    SIMPLIFY_RAW[:] = get_json(SIMPLIFY, timeout=60) or []
+    for x in SIMPLIFY_RAW:
         if not x.get("is_visible", True):
             continue
         terms = x.get("terms") or ["N/A"]
@@ -312,7 +408,7 @@ def muse_page(cat, page):
     return get_json(f"{MUSE}?{q}")
 
 
-def from_muse(cat):
+def from_muse(cat, _=None):
     out = []
     first = muse_page(cat, 0)
     if not first:
@@ -376,12 +472,22 @@ def main():
     if not rows:
         raise SystemExit("tracker download failed; keeping the old data.json")
     seen = {key(r) for r in rows}
-    jobs = ([(from_greenhouse, t) for t in GREENHOUSE] + [(from_lever, t) for t in LEVER] +
-            [(from_ashby, t) for t in ASHBY] + [(from_workday, w) for w in WORKDAY] +
-            [(from_muse, c) for c in MUSE_CATEGORIES])
+    fetchers = {"greenhouse": from_greenhouse, "lever": from_lever, "ashby": from_ashby, "workday": from_workday,
+                "workdaysite": from_workday, "smartrecruiters": from_smartrecruiters, "workable": from_workable}
+    listings = SIMPLIFY_RAW[:]
+    for url in DISCOVERY:
+        listings += get_json(url, timeout=60) or []
+    boards = {}
+    for kind, arg, name in ([("greenhouse", t, None) for t in GREENHOUSE] + [("lever", t, None) for t in LEVER] +
+                            [("ashby", t, None) for t in ASHBY] + [("workday", w, None) for w in WORKDAY] +
+                            discover_boards(listings)):
+        k = (kind.replace("site", ""), arg[2:4] if isinstance(arg, tuple) else arg.lower())
+        boards.setdefault(k, (fetchers[kind], arg, name))
+    jobs = list(boards.values()) + [(from_muse, c, None) for c in MUSE_CATEGORIES]
+    print(len(boards), "company job boards to check")
     added = 0
-    with cf.ThreadPoolExecutor(24) as ex:
-        for found in ex.map(lambda j: j[0](j[1]), jobs):
+    with cf.ThreadPoolExecutor(48) as ex:
+        for found in ex.map(lambda j: safe(j[0], j[1], j[2]), jobs):
             for r in found:
                 k = key(r)
                 if k not in seen:
