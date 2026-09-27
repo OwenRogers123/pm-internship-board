@@ -92,7 +92,7 @@ h2 { font: 800 26px/1.2 var(--display); letter-spacing: -0.02em; margin: 0 0 6px
 
 /* search everything */
 .finder { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; box-shadow: var(--shadow); }
-.fields { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr; gap: 10px; }
+.fields { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 10px; }
 .field label { display: block; font-size: 12.5px; font-weight: 600; color: var(--muted); margin-bottom: 5px; }
 .field input, .field select {
   width: 100%; font: inherit; font-size: 14.5px; color: var(--ink); background: var(--bg);
@@ -172,7 +172,6 @@ footer a { color: var(--green); }
         <option value="design">Design</option>
       </select></div>
       <div class="field"><label for="f-loc">Location</label><select id="f-loc"><option value="">Anywhere in the US</option><option value="world">Anywhere, incl. abroad</option></select></div>
-      <div class="field"><label for="f-deg">Degree</label><select id="f-deg"><option value="">Any degree</option></select></div>
       <div class="field"><label for="f-age">Posted</label><select id="f-age"><option value="">Any time</option><option value="3">Last 3 days</option><option value="7">Last week</option><option value="30">Last month</option></select></div>
       <div class="field"><label for="f-size">Company size</label><select id="f-size"><option value="">Any size</option></select></div>
     </div>
@@ -185,6 +184,7 @@ footer a { color: var(--green); }
       <button type="button" data-try="design">design</button>
       <button type="button" data-try="software">software</button>
     </div>
+    <p class="hint">Not seeing many roles? Lots of marketing, HR and operations internships don't post until winter or spring, so check back.</p>
     <div class="finder-bar">
       <div class="left">
         <label class="check"><input type="checkbox" id="f-open" checked> Open only</label>
@@ -380,8 +380,8 @@ function scoreListing(r, terms) {
       score += best + (CATEGORY_HINT[term.text] && CATEGORY_HINT[term.text] === r.g ? 5 : 0);
     }
   }
-  // Most people searching are undergrads, so Master's- or PhD-only postings sit a little lower unless a degree is picked.
-  if (score && r.deg.length && !r.deg.includes("Bachelor's") && !F("f-deg")?.value) score -= 3;
+  // Most people searching are undergrads, so Master's- or PhD-only postings sit a little lower.
+  if (score && r.deg.length && !r.deg.includes("Bachelor's")) score -= 3;
   return { score, matched, hits };
 }
 
@@ -400,7 +400,7 @@ function suggestionFor(text) {
 
 function readFilters() {
   return {
-    q: F("f-q").value.slice(0, 80), g: F("f-g").value, loc: F("f-loc").value, deg: F("f-deg").value,
+    q: F("f-q").value.slice(0, 80), g: F("f-g").value, loc: F("f-loc").value,
     age: +F("f-age").value || 0, size: F("f-size").value, open: F("f-open").checked, sort: F("f-sort").value
   };
 }
@@ -411,7 +411,6 @@ const inUS = r => !r.l.length || r.l.some(l => STATES[stateOf(l)] || /remote|uni
 function passes(r, f, skip) {
   if (skip !== "open" && f.open && !r.a) return false;
   if (skip !== "g" && f.g && !MAJORS[f.g](r)) return false;
-  if (skip !== "deg" && f.deg && r.deg.length && !r.deg.includes(f.deg)) return false;
   if (skip !== "size" && f.size && r.z !== f.size) return false;
   if (skip !== "age" && f.age && r.d < Date.now() / 1000 - f.age * 86400) return false;
   if (skip !== "loc" && f.loc !== "world") {
@@ -457,7 +456,7 @@ function postedAgo(ts) {
   return d <= 0 ? "today" : d === 1 ? "yesterday" : d < 60 ? d + " days ago" : Math.round(d / 30) + " months ago";
 }
 
-const FILTER_LABELS = { g: "f-g", loc: "f-loc", deg: "f-deg", age: "f-age", size: "f-size" };
+const FILTER_LABELS = { g: "f-g", loc: "f-loc", age: "f-age", size: "f-size" };
 function selectedText(id) { const s = F(id); return s.options[s.selectedIndex].text.replace(/\s*\(\d[\d,]*\)$/, ""); }
 
 function renderActive(f) {
@@ -478,7 +477,7 @@ function emptyState(f, res) {
     const s = suggestionFor(t);
     if (s) fixes.push('<button type="button" class="btn" data-replace="' + esc(t) + '" data-with="' + esc(s) + '">Search "' + esc(s) + '" instead of "' + esc(t) + '"</button>');
   });
-  [["loc", "f-loc"], ["g", "f-g"], ["size", "f-size"], ["deg", "f-deg"], ["age", "f-age"], ["open", "f-open"]].forEach(([k, id]) => {
+  [["loc", "f-loc"], ["g", "f-g"], ["size", "f-size"], ["age", "f-age"], ["open", "f-open"]].forEach(([k, id]) => {
     const active = k === "open" ? f.open : !!F(id).value;
     if (!active) return;
     const n = runSearch(f, k).hits.length;
@@ -498,7 +497,7 @@ function emptyState(f, res) {
 }
 
 // Nothing is shown until the student says what they want, so the first screen isn't 4,000 random rows.
-const hasIntent = f => !!(norm(f.q) || f.g || f.loc || f.deg || f.age || f.size || !f.open);
+const hasIntent = f => !!(norm(f.q) || f.g || f.loc || f.age || f.size || !f.open);
 function welcome() {
   return '<div class="empty welcome" style="margin-top:16px"><b>Start with a role or your major.</b>' +
     '<p>Type what you want above, like "marketing" or "supply chain", or pick your major and location. ' +
@@ -563,7 +562,7 @@ function renderElsewhere(f) {
     '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + n + "</a>").join("");
 }
 
-const URL_KEYS = [["q", "f-q"], ["major", "f-g"], ["loc", "f-loc"], ["degree", "f-deg"], ["posted", "f-age"], ["size", "f-size"], ["sort", "f-sort"]];
+const URL_KEYS = [["q", "f-q"], ["major", "f-g"], ["loc", "f-loc"], ["posted", "f-age"], ["size", "f-size"], ["sort", "f-sort"]];
 function syncUrl(f) {
   const p = new URLSearchParams();
   URL_KEYS.forEach(([k, id]) => { const v = F(id).value; if (v && !(k === "sort" && v === "best")) p.set(k, k === "q" ? v.trim() : v); });
@@ -588,7 +587,7 @@ function clearField(id) {
   else F(id).value = "";
 }
 function clearAll() {
-  ["f-q", "f-g", "f-loc", "f-deg", "f-age", "f-size"].forEach(id => F(id).value = "");
+  ["f-q", "f-g", "f-loc", "f-age", "f-size"].forEach(id => F(id).value = "");
   F("f-open").checked = true;
 }
 
@@ -596,7 +595,7 @@ let debounce;
 function onFilter() { shownCount = PAGE; renderSearch(); }
 F("f-q").addEventListener("input", () => { clearTimeout(debounce); debounce = setTimeout(onFilter, 120); });
 F("f-q").addEventListener("keydown", e => { if (e.key === "Escape") { F("f-q").value = ""; onFilter(); } });
-["f-g", "f-loc", "f-deg", "f-age", "f-size", "f-open", "f-sort"].forEach(id => F(id).addEventListener("change", onFilter));
+["f-g", "f-loc", "f-age", "f-size", "f-open", "f-sort"].forEach(id => F(id).addEventListener("change", onFilter));
 F("f-more").addEventListener("click", () => { shownCount += PAGE; renderSearch(); });
 F("f-reset").addEventListener("click", () => { clearAll(); onFilter(); });
 F("finder").addEventListener("click", e => {
@@ -621,9 +620,6 @@ function fillOptions() {
   LISTINGS.forEach(r => new Set(r.l.map(stateOf).filter(s => STATES[s])).forEach(s => st[s] = (st[s] || 0) + 1));
   const locs = Object.keys(st).sort((a, b) => st[b] - st[a]).map(k => [k, STATES[k] + " (" + st[k] + ")"]);
   add(F("f-loc"), [["Remote", "Remote"]].concat(locs, [["Canada", "Canada"]]));
-  // Most postings never say, so each option also keeps listings with no degree stated.
-  add(F("f-deg"), [["Bachelor's", "Bachelor's or not stated"], ["Master's", "Master's or not stated"], ["MBA", "MBA or not stated"],
-    ["PhD", "PhD or not stated"], ["JD", "Law (JD) or not stated"]]);
   const sz = { s: 0, m: 0, l: 0 };
   LISTINGS.forEach(r => { if (r.z in sz) sz[r.z]++; });
   add(F("f-size"), [["s", "Startup, under 200 (" + sz.s + ")"], ["m", "Mid-size, 200-5k (" + sz.m + ")"], ["l", "Large, 5k+ (" + sz.l + ")"]]);
@@ -642,7 +638,7 @@ function loadListings() {
     .then(rows => {
       LISTINGS = rows.filter(r => r && r.c && r.t && r.u);
       LISTINGS.forEach(r => { r.l = Array.isArray(r.l) ? r.l : []; r.deg = Array.isArray(r.deg) ? r.deg : []; prepare(r); });
-      if (!F("f-deg").options[1]) fillOptions();
+      if (!F("f-size").options[1]) fillOptions();
       readUrl();
       F("f-total").textContent = LISTINGS.filter(r => r.a).length.toLocaleString();
       renderSearch();

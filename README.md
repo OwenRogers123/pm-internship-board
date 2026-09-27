@@ -22,9 +22,8 @@ Coverage is strongest for business, tech, finance, engineering and design. Nursi
 - Nothing shows until you type a role or pick a filter
 - Loose matching: "product" also finds product manager, product strategy and APM roles, and "sales" also finds business development and account executive roles
 - Handles typos ("accountng", "sofware enginer") and ignores filler words like "internship"
-- Best matches first, with the matched words highlighted. Master's- and PhD-only postings rank a little lower unless you pick a degree
+- Best matches first, with the matched words highlighted. Master's- and PhD-only postings rank a little lower
 - US listings by default, with an option to include roles abroad
-- Degree options also keep postings that don't state a degree, since most don't
 - When nothing matches, it says which filter to remove and how many results that brings back
 - Every search is saved in the URL, so it can be shared
 - One click runs the same search on Indeed, LinkedIn, Wellfound, Handshake and Google Jobs, which block scripts from pulling their listings
