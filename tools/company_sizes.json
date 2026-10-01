@@ -3,9 +3,17 @@
 "size": null,
 "checked": 1790532964
 },
+" impact.com ": {
+"size": null,
+"checked": 1790882735
+},
 "1X": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"21Shares": {
+"size": "51-200",
+"checked": 1790882735
 },
 "3M": {
 "size": "10,001+",
@@ -14,6 +22,10 @@
 "42dot": {
 "size": "501-1,000",
 "checked": 1790488033
+},
+"7-Eleven": {
+"size": "10,001+",
+"checked": 1790882735
 },
 "AArete": {
 "size": "501-1,000",
@@ -259,6 +271,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Allegiant Air": {
+"size": "1,001-5,000",
+"checked": 1790882735
+},
 "Allegion": {
 "size": "5,001-10,000",
 "checked": 1790488033
@@ -290,6 +306,10 @@
 "Allstate Insurance Company": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"Alpha FMC": {
+"size": "1,001-5,000",
+"checked": 1790882735
 },
 "AlphaHire": {
 "size": "11-50",
@@ -639,6 +659,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"AvePoint": {
+"size": "1,001-5,000",
+"checked": 1790882735
+},
 "Avery Dennison": {
 "size": "10,001+",
 "checked": 1790368289
@@ -894,6 +918,10 @@
 "Blue Cross and Blue Shield of Kansas": {
 "size": "501-1,000",
 "checked": 1790368289
+},
+"Blue Cross and Blue Shield of North Carolina": {
+"size": "5,001-10,000",
+"checked": 1790882735
 },
 "Blue Origin": {
 "size": "10,001+",
@@ -1175,6 +1203,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Capstone Investment Advisors": {
+"size": "201-500",
+"checked": 1790882735
+},
 "Capula": {
 "size": "501-1,000",
 "checked": 1790368289
@@ -1362,6 +1394,10 @@
 "Clarity Innovations": {
 "size": "501-1,000",
 "checked": 1790488033
+},
+"Clay": {
+"size": "1,001-5,000",
+"checked": 1790882735
 },
 "Clera": {
 "size": "11-50",
@@ -1655,6 +1691,10 @@
 "size": "51-200",
 "checked": 1790368289
 },
+"DB E.C.O. North America": {
+"size": null,
+"checked": 1790882735
+},
 "DIRECTV": {
 "size": "10,001+",
 "checked": 1790368289
@@ -1699,6 +1739,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Dalcour Maclaren": {
+"size": "501-1,000",
+"checked": 1790882735
+},
 "Dallas College": {
 "size": null,
 "checked": 1790532964
@@ -1714,6 +1758,10 @@
 "Danaher Corporation": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"Dandy": {
+"size": "1,001-5,000",
+"checked": 1790882735
 },
 "Daniels Health": {
 "size": "501-1,000",
@@ -1814,6 +1862,10 @@
 "DiDi Global": {
 "size": "51-200",
 "checked": 1790488033
+},
+"Diageo": {
+"size": "10,001+",
+"checked": 1790882735
 },
 "Dialogue": {
 "size": null,
@@ -1962,6 +2014,10 @@
 "Edison International": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Edwards Lifesciences": {
+"size": "10,001+",
+"checked": 1790882735
 },
 "Efficient Computer": {
 "size": "51-200",
@@ -2638,6 +2694,10 @@
 "Ginkgo Bioworks": {
 "size": "501-1,000",
 "checked": 1790488033
+},
+"Glean": {
+"size": "1,001-5,000",
+"checked": 1790882735
 },
 "Glencore": {
 "size": "10,001+",
@@ -3935,6 +3995,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Mercedes-Benz": {
+"size": "10,001+",
+"checked": 1790882735
+},
 "Mercer University": {
 "size": null,
 "checked": 1790532964
@@ -3954,6 +4018,10 @@
 "Meshy": {
 "size": "51-200",
 "checked": 1790368289
+},
+"MetLife": {
+"size": "10,001+",
+"checked": 1790882735
 },
 "MetOx International": {
 "size": "51-200",
@@ -4251,6 +4319,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Noblis": {
+"size": "1,001-5,000",
+"checked": 1790882735
+},
 "Nokia": {
 "size": "10,001+",
 "checked": 1790368289
@@ -4527,6 +4599,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Patch My PC": {
+"size": "51-200",
+"checked": 1790882735
+},
 "PayPal": {
 "size": "10,001+",
 "checked": 1790368289
@@ -4638,6 +4714,10 @@
 "PingWind": {
 "size": "51-200",
 "checked": 1790488033
+},
+"Pinterest": {
+"size": "10,001+",
+"checked": 1790882735
 },
 "Piper Sandler": {
 "size": "1,001-5,000",
@@ -4803,6 +4883,10 @@
 "size": "51-200",
 "checked": 1790368289
 },
+"Quantum Signal AI": {
+"size": "11-50",
+"checked": 1790882735
+},
 "Quest Analytics": {
 "size": "201-500",
 "checked": 1790488033
@@ -4926,6 +5010,10 @@
 "Regal Rexnord": {
 "size": "51-200",
 "checked": 1790488033
+},
+"Regeneron Pharmaceuticals": {
+"size": "10,001+",
+"checked": 1790882735
 },
 "Regions Bank": {
 "size": null,
@@ -5095,6 +5183,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Rubrik": {
+"size": "5,001-10,000",
+"checked": 1790882735
+},
 "Rundoo": {
 "size": "51-200",
 "checked": 1790488033
@@ -5190,6 +5282,10 @@
 "Sage": {
 "size": "51-200",
 "checked": 1790368289
+},
+"Saint Leo University": {
+"size": null,
+"checked": 1790882735
 },
 "Saint Luke's": {
 "size": null,
@@ -5419,6 +5515,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Sierra Space": {
+"size": "1,001-5,000",
+"checked": 1790882735
+},
 "Signify": {
 "size": "10,001+",
 "checked": 1790488033
@@ -5578,6 +5678,14 @@
 "Southern Star Central Gas Pipeline": {
 "size": null,
 "checked": 1790368289
+},
+"Southwest Airlines": {
+"size": "10,001+",
+"checked": 1790882735
+},
+"Space Dynamics Laboratory": {
+"size": null,
+"checked": 1790882735
 },
 "SpaceX": {
 "size": "10,001+",
@@ -6119,6 +6227,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"TreeHouse Foods": {
+"size": "1,001-5,000",
+"checked": 1790882735
+},
 "Trend Micro": {
 "size": "5,001-10,000",
 "checked": 1790488033
@@ -6183,6 +6295,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"UFP Industries": {
+"size": "1,001-5,000",
+"checked": 1790882735
+},
 "UHY": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -6238,6 +6354,10 @@
 "United Parcel Service (UPS)": {
 "size": null,
 "checked": 1790532964
+},
+"United Talent Agency": {
+"size": "1,001-5,000",
+"checked": 1790882735
 },
 "Universal Health Services": {
 "size": "10,001+",
@@ -6343,6 +6463,10 @@
 "size": "1-10",
 "checked": 1790488033
 },
+"Vanderbilt Health": {
+"size": "10,001+",
+"checked": 1790882735
+},
 "Vanderlande Industries": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -6354,6 +6478,10 @@
 "Vantor": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Varda Space": {
+"size": "201-500",
+"checked": 1790882735
 },
 "Varian": {
 "size": "5,001-10,000",
@@ -6494,6 +6622,10 @@
 "WEC Energy Group": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"WEP Clinical": {
+"size": "201-500",
+"checked": 1790882735
 },
 "WPP": {
 "size": "10,001+",
