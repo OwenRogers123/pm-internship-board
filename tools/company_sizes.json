@@ -159,6 +159,10 @@
 "size": "501-1,000",
 "checked": 1790795091
 },
+"Accuray": {
+"size": "1,001-5,000",
+"checked": 1790968163
+},
 "Acima": {
 "size": "501-1,000",
 "checked": 1790368289
@@ -366,6 +370,10 @@
 "Ameresco": {
 "size": "1,001-5,000",
 "checked": 1790795091
+},
+"American Bankers Association": {
+"size": "501-1,000",
+"checked": 1790968163
 },
 "American Cancer Society": {
 "size": "5,001-10,000",
@@ -595,6 +603,10 @@
 "size": "201-500",
 "checked": 1790488033
 },
+"Associated Bank": {
+"size": "1,001-5,000",
+"checked": 1790968163
+},
 "Assurant": {
 "size": "10,001+",
 "checked": 1790532964
@@ -642,6 +654,10 @@
 "Atrium Health": {
 "size": "10,001+",
 "checked": 1790709393
+},
+"Attentive": {
+"size": "1,001-5,000",
+"checked": 1790968163
 },
 "Auctane": {
 "size": "1,001-5,000",
@@ -1303,6 +1319,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Charles River Associates (CRA)": {
+"size": null,
+"checked": 1790968163
+},
 "Charles Schwab": {
 "size": "10,001+",
 "checked": 1790368289
@@ -1567,6 +1587,10 @@
 "size": "1,001-5,000",
 "checked": 1790488371
 },
+"Corgan": {
+"size": "1,001-5,000",
+"checked": 1790968163
+},
 "Cornell University": {
 "size": null,
 "checked": 1790488253
@@ -1778,6 +1802,10 @@
 "Databricks": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Datacor": {
+"size": "201-500",
+"checked": 1790968163
 },
 "Datadog": {
 "size": "10,001+",
@@ -2086,6 +2114,10 @@
 "Empirical Foods": {
 "size": "201-500",
 "checked": 1790368289
+},
+"Empower": {
+"size": "51-200",
+"checked": 1790968163
 },
 "Enact Mortgage Insurance": {
 "size": "201-500",
@@ -2427,6 +2459,10 @@
 "size": "5,001-10,000",
 "checked": 1790488033
 },
+"First American": {
+"size": "10,001+",
+"checked": 1790968163
+},
 "First Bank & Trust": {
 "size": null,
 "checked": 1790795091
@@ -2615,6 +2651,10 @@
 "size": "10,001+",
 "checked": 1790532964
 },
+"Gas South": {
+"size": "201-500",
+"checked": 1790968163
+},
 "Gecko Robotics": {
 "size": "201-500",
 "checked": 1790368289
@@ -2670,6 +2710,10 @@
 "Geneva Trading": {
 "size": "201-500",
 "checked": 1790368289
+},
+"Genmab": {
+"size": "1,001-5,000",
+"checked": 1790968163
 },
 "Gentex Corporation": {
 "size": "1,001-5,000",
@@ -2907,6 +2951,10 @@
 "size": null,
 "checked": 1790627436
 },
+"Harvey": {
+"size": "1,001-5,000",
+"checked": 1790968163
+},
 "Hasbro": {
 "size": null,
 "checked": 1790795091
@@ -2922,6 +2970,10 @@
 "Heidelberg Materials": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"Helion Energy": {
+"size": "501-1,000",
+"checked": 1790968163
 },
 "Heliux": {
 "size": "11-50",
@@ -3046,6 +3098,10 @@
 "Humana": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Humanoid": {
+"size": "201-500",
+"checked": 1790968163
 },
 "Hunt Electric": {
 "size": null,
@@ -4063,6 +4119,10 @@
 "size": "501-1,000",
 "checked": 1790368289
 },
+"Mindex": {
+"size": "201-500",
+"checked": 1790968163
+},
 "Mirantis": {
 "size": "501-1,000",
 "checked": 1790488033
@@ -4162,6 +4222,10 @@
 "NBCUniversal": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"NBT Bank": {
+"size": "1,001-5,000",
+"checked": 1790968163
 },
 "NCR Atleos": {
 "size": "10,001+",
@@ -4787,6 +4851,10 @@
 "size": "51-200",
 "checked": 1790368289
 },
+"Primient": {
+"size": "501-1,000",
+"checked": 1790968163
+},
 "Principal Financial Group": {
 "size": "10,001+",
 "checked": 1790368289
@@ -4806,6 +4874,10 @@
 "Procter & Gamble (P&G)": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Profluent": {
+"size": "51-200",
+"checked": 1790968163
 },
 "Proofpoint": {
 "size": "5,001-10,000",
@@ -4966,6 +5038,10 @@
 "Ramp": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Range": {
+"size": "201-500",
+"checked": 1790968163
 },
 "Rantec Power Systems Inc.": {
 "size": null,
@@ -5223,6 +5299,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"SAS": {
+"size": "10,001+",
+"checked": 1790968163
+},
 "SC Johnson": {
 "size": "10,001+",
 "checked": 1790488371
@@ -5391,6 +5471,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"SeatGeek": {
+"size": "501-1,000",
+"checked": 1790968163
+},
 "Seattle Sounders FC": {
 "size": "201-500",
 "checked": 1790488033
@@ -5490,6 +5574,10 @@
 "Shift": {
 "size": "51-200",
 "checked": 1790488033
+},
+"ShopBack": {
+"size": "501-1,000",
+"checked": 1790968163
 },
 "Shure": {
 "size": "1,001-5,000",
@@ -5842,6 +5930,10 @@
 "Symbotic": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Symphony": {
+"size": "501-1,000",
+"checked": 1790968163
 },
 "Synchrony Financial": {
 "size": "10,001+",
