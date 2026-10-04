@@ -883,6 +883,10 @@
 "size": "201-500",
 "checked": 1790368289
 },
+"Benjamin Moore": {
+"size": "1,001-5,000",
+"checked": 1791137133
+},
 "BerryDunn": {
 "size": "501-1,000",
 "checked": 1790368289
@@ -1955,6 +1959,14 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Diversified Energy": {
+"size": "501-1,000",
+"checked": 1791137133
+},
+"DocuSign": {
+"size": "5,001-10,000",
+"checked": 1791137133
+},
 "Dolby": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -1990,6 +2002,10 @@
 "Draper": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"DreamWorks Animation": {
+"size": "1,001-5,000",
+"checked": 1791137133
 },
 "DriveTime": {
 "size": "1,001-5,000",
@@ -3679,6 +3695,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"L3Harris Technologies": {
+"size": "10,001+",
+"checked": 1791137133
+},
 "LEGO": {
 "size": "10,001+",
 "checked": 1790488033
@@ -4355,6 +4375,10 @@
 "size": null,
 "checked": 1790368289
 },
+"Nebius": {
+"size": "1,001-5,000",
+"checked": 1791137133
+},
 "Nebraska Medicine": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -4966,6 +4990,10 @@
 "Protolabs": {
 "size": "1,001-5,000",
 "checked": 1791050014
+},
+"Proxima": {
+"size": null,
+"checked": 1791137133
 },
 "Prudential Financial": {
 "size": "10,001+",
