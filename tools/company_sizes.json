@@ -327,6 +327,10 @@
 "size": "11-50",
 "checked": 1790488033
 },
+"Alston & Bird Law Firm": {
+"size": "1,001-5,000",
+"checked": 1791314733
+},
 "Alta Ares": {
 "size": "51-200",
 "checked": 1790488033
@@ -959,6 +963,10 @@
 "size": null,
 "checked": 1790368289
 },
+"Blue Cross Blue Shield of Michigan": {
+"size": "10,001+",
+"checked": 1791314733
+},
 "Blue Cross and Blue Shield of Kansas": {
 "size": "501-1,000",
 "checked": 1790368289
@@ -986,6 +994,10 @@
 "BlueScope": {
 "size": "5,001-10,000",
 "checked": 1790488371
+},
+"Bobyard": {
+"size": "51-200",
+"checked": 1791314733
 },
 "Boeing": {
 "size": "10,001+",
@@ -1215,6 +1227,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Cadence Solutions": {
+"size": "501-1,000",
+"checked": 1791314733
+},
 "Cadillac Formula 1 Team": {
 "size": null,
 "checked": 1790368289
@@ -1379,6 +1395,10 @@
 "size": "501-1,000",
 "checked": 1790368289
 },
+"Chipotle Mexican Grill": {
+"size": null,
+"checked": 1791314733
+},
 "Chuck E. Cheese": {
 "size": "5,001-10,000",
 "checked": 1790488033
@@ -1398,6 +1418,10 @@
 "Circleback": {
 "size": "1-10",
 "checked": 1790368289
+},
+"Cirrus Logic": {
+"size": "1,001-5,000",
+"checked": 1791314733
 },
 "Cisco": {
 "size": "10,001+",
@@ -1643,6 +1667,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"CoverMyMeds": {
+"size": "1,001-5,000",
+"checked": 1791314733
+},
 "Covestro": {
 "size": "10,001+",
 "checked": 1790368289
@@ -1854,6 +1882,10 @@
 "DatologyAI": {
 "size": "11-50",
 "checked": 1790368289
+},
+"Dayton Freight Lines": {
+"size": null,
+"checked": 1791314733
 },
 "Decagon": {
 "size": "501-1,000",
@@ -2194,6 +2226,10 @@
 "Engenious Design": {
 "size": "51-200",
 "checked": 1790368289
+},
+"Engineers Gate": {
+"size": null,
+"checked": 1791314733
 },
 "Enova": {
 "size": "1,001-5,000",
@@ -2999,6 +3035,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Hankook Tire America ": {
+"size": "501-1,000",
+"checked": 1791314733
+},
 "Harbinger Motors": {
 "size": "201-500",
 "checked": 1790488033
@@ -3219,9 +3259,21 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"IDEMIA": {
+"size": "10,001+",
+"checked": 1791314733
+},
 "IDEX": {
 "size": "1,001-5,000",
 "checked": 1790488371
+},
+"IEX": {
+"size": "51-200",
+"checked": 1791314733
+},
+"IFS": {
+"size": "5,001-10,000",
+"checked": 1791314733
 },
 "IGS Energy": {
 "size": "501-1,000",
@@ -3318,6 +3370,10 @@
 "Innovaccer": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Innovative Defense Technologies": {
+"size": "201-500",
+"checked": 1791314733
 },
 "Innovative Systems": {
 "size": "51-200",
@@ -3547,6 +3603,10 @@
 "size": null,
 "checked": 1790488033
 },
+"Judi Health": {
+"size": "201-500",
+"checked": 1791314733
+},
 "Julius Baer": {
 "size": "5,001-10,000",
 "checked": 1790795091
@@ -3570,6 +3630,10 @@
 "KION Group": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"KKR": {
+"size": "10,001+",
+"checked": 1791314733
 },
 "KLA": {
 "size": "10,001+",
@@ -3635,6 +3699,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Khan Academy": {
+"size": "1,001-5,000",
+"checked": 1791314733
+},
 "Kimley-Horn": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -3671,6 +3739,10 @@
 "size": null,
 "checked": 1790488033
 },
+"KnowBe4": {
+"size": "1,001-5,000",
+"checked": 1791314733
+},
 "Kobo": {
 "size": "501-1,000",
 "checked": 1790532964
@@ -3690,6 +3762,10 @@
 "Konica Minolta Business Solutions": {
 "size": null,
 "checked": 1790368289
+},
+"Koppers": {
+"size": "1,001-5,000",
+"checked": 1791314733
 },
 "Kraft Heinz": {
 "size": "10,001+",
@@ -3763,6 +3839,10 @@
 "size": null,
 "checked": 1790488033
 },
+"Legrand": {
+"size": null,
+"checked": 1791314733
+},
 "Leidos": {
 "size": "10,001+",
 "checked": 1790368289
@@ -3798,6 +3878,10 @@
 "LexisNexis Risk Solutions": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"Liberty Mutual": {
+"size": "10,001+",
+"checked": 1791314733
 },
 "Liberty Mutual Insurance": {
 "size": null,
@@ -3947,9 +4031,17 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Mach Industries": {
+"size": "201-500",
+"checked": 1791314733
+},
 "Mackenzie Investments": {
 "size": null,
 "checked": 1790368289
+},
+"Macy's": {
+"size": "10,001+",
+"checked": 1791314733
 },
 "Maersk": {
 "size": "10,001+",
@@ -3958,6 +4050,10 @@
 "Magna": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Magnite": {
+"size": "1,001-5,000",
+"checked": 1791314733
 },
 "Major League Baseball": {
 "size": null,
@@ -4063,6 +4159,10 @@
 "size": "11-50",
 "checked": 1790488033
 },
+"Mayo Clinic": {
+"size": "10,001+",
+"checked": 1791314733
+},
 "McAdams": {
 "size": "201-500",
 "checked": 1790488033
@@ -4159,6 +4259,10 @@
 "size": "51-200",
 "checked": 1790368289
 },
+"Meta": {
+"size": "10,001+",
+"checked": 1791314733
+},
 "Methodist Le Bonheur ": {
 "size": "5,001-10,000",
 "checked": 1790627436
@@ -4186,6 +4290,10 @@
 "Microsoft": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Midland States Bank": {
+"size": "501-1,000",
+"checked": 1791314733
 },
 "Miele": {
 "size": "5,001-10,000",
@@ -4467,6 +4575,10 @@
 "size": "1,001-5,000",
 "checked": 1790488253
 },
+"Niantic Spatial": {
+"size": "1-10",
+"checked": 1791314733
+},
 "Nidec": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -4662,6 +4774,10 @@
 "Oregon State Government": {
 "size": "201-500",
 "checked": 1790532964
+},
+"Orennia": {
+"size": "51-200",
+"checked": 1791314733
 },
 "Oshkosh": {
 "size": "5,001-10,000",
@@ -4875,6 +4991,10 @@
 "size": "5,001-10,000",
 "checked": 1790488033
 },
+"Pigment": {
+"size": "501-1,000",
+"checked": 1791314733
+},
 "Pika": {
 "size": "51-200",
 "checked": 1790488033
@@ -5038,6 +5158,10 @@
 "Publicis Groupe": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Pure Storage": {
+"size": "5,001-10,000",
+"checked": 1791314733
 },
 "PwC": {
 "size": "10,001+",
@@ -5318,6 +5442,10 @@
 "Rite Hite": {
 "size": "501-1,000",
 "checked": 1790488033
+},
+"Rivet Industries": {
+"size": "51-200",
+"checked": 1791314733
 },
 "Rivian": {
 "size": "10,001+",
@@ -5647,6 +5775,10 @@
 "size": "10,001+",
 "checked": 1790532964
 },
+"Sentinel Technologies": {
+"size": "501-1,000",
+"checked": 1791314733
+},
 "SentinelOne": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -5746,6 +5878,10 @@
 "Signify": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"Signifyd": {
+"size": "201-500",
+"checked": 1791314733
 },
 "Sika": {
 "size": "10,001+",
@@ -6251,6 +6387,14 @@
 "size": null,
 "checked": 1790488033
 },
+"Texas Instruments": {
+"size": "10,001+",
+"checked": 1791314733
+},
+"Texas Permanent School Fund Corporation": {
+"size": "51-200",
+"checked": 1791314733
+},
 "Textron": {
 "size": "10,001+",
 "checked": 1790368289
@@ -6298,6 +6442,10 @@
 "The Federal Reserve System": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"The Focusrite Group": {
+"size": null,
+"checked": 1791314733
 },
 "The Friedkin Group": {
 "size": "201-500",
@@ -6683,6 +6831,10 @@
 "size": "201-500",
 "checked": 1791235661
 },
+"VF": {
+"size": "10,001+",
+"checked": 1791314733
+},
 "VSC Fire & Security": {
 "size": null,
 "checked": 1790488033
@@ -6974,6 +7126,10 @@
 "West Bend Insurance": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"West Monroe": {
+"size": "1,001-5,000",
+"checked": 1791314733
 },
 "Western & Southern Financial Group": {
 "size": "1,001-5,000",
