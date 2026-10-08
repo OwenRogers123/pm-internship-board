@@ -447,6 +447,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Analysys Mason": {
+"size": "201-500",
+"checked": 1791488897
+},
 "Analytical Mechanics Associates": {
 "size": "201-500",
 "checked": 1790488033
@@ -474,6 +478,10 @@
 "Ankura Consulting Group": {
 "size": "1,001-5,000",
 "checked": 1790488371
+},
+"Ansys": {
+"size": "1-10",
+"checked": 1791488897
 },
 "Antares Nuclear": {
 "size": "51-200",
@@ -514,6 +522,10 @@
 "Apple": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Apple Bank": {
+"size": "1,001-5,000",
+"checked": 1791488897
 },
 "Applied Fluid Power": {
 "size": "1,001-5,000",
@@ -799,6 +811,10 @@
 "size": "5,001-10,000",
 "checked": 1790488033
 },
+"Badger Meter": {
+"size": "501-1,000",
+"checked": 1791488897
+},
 "Baidu USA": {
 "size": "10,001+",
 "checked": 1790488033
@@ -814,6 +830,10 @@
 "Baldwin Group": {
 "size": "1,001-5,000",
 "checked": 1790488253
+},
+"Banco Bilbao Vizcaya Argentaria": {
+"size": null,
+"checked": 1791488897
 },
 "Bank of Montreal": {
 "size": "10,001+",
@@ -1034,6 +1054,10 @@
 "Bosch Home Comfort": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Bose": {
+"size": "5,001-10,000",
+"checked": 1791488897
 },
 "Boston Medical Center": {
 "size": "10,001+",
@@ -1355,6 +1379,10 @@
 "size": "1-10",
 "checked": 1790488253
 },
+"Centric Software": {
+"size": "1,001-5,000",
+"checked": 1791488897
+},
 "Cerence": {
 "size": "1,001-5,000",
 "checked": 1790488371
@@ -1430,6 +1458,14 @@
 "Cigna Group": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Cincinnati Children\u2019s Hospital and Medical Center": {
+"size": null,
+"checked": 1791488897
+},
+"Circle K": {
+"size": "10,001+",
+"checked": 1791488897
 },
 "Circleback": {
 "size": "1-10",
@@ -1959,6 +1995,10 @@
 "size": "5,001-10,000",
 "checked": 1790627436
 },
+"Desjardins Group": {
+"size": null,
+"checked": 1791488897
+},
 "Deutsche Bank": {
 "size": "10,001+",
 "checked": 1790368289
@@ -2411,6 +2451,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Exa": {
+"size": "201-500",
+"checked": 1791488897
+},
 "Exa Labs": {
 "size": "51-200",
 "checked": 1790488033
@@ -2518,6 +2562,10 @@
 "Fasanara": {
 "size": "11-50",
 "checked": 1790488033
+},
+"Federal Home Loan Bank of Indianapolis": {
+"size": "201-500",
+"checked": 1791488897
 },
 "Federated Insurance": {
 "size": "1,001-5,000",
@@ -2787,6 +2835,10 @@
 "size": null,
 "checked": 1790488033
 },
+"GenBio AI": {
+"size": "51-200",
+"checked": 1791488897
+},
 "GenScript": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -2915,6 +2967,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Graham Capital Management": {
+"size": "51-200",
+"checked": 1791488897
+},
 "Grainger": {
 "size": null,
 "checked": 1790368289
@@ -2970,6 +3026,10 @@
 "Guardian Life": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"GuidePoint Security": {
+"size": "1,001-5,000",
+"checked": 1791488897
 },
 "GuideStone": {
 "size": "501-1,000",
@@ -3066,6 +3126,10 @@
 "Hankook Tire America ": {
 "size": "501-1,000",
 "checked": 1791314733
+},
+"Happyrobot": {
+"size": "201-500",
+"checked": 1791488897
 },
 "Harbinger Motors": {
 "size": "201-500",
@@ -4375,6 +4439,10 @@
 "size": "5,001-10,000",
 "checked": 1790368289
 },
+"Modernizing Medicine": {
+"size": null,
+"checked": 1791488897
+},
 "Mohawk": {
 "size": "10,001+",
 "checked": 1791235661
@@ -5015,6 +5083,10 @@
 "size": null,
 "checked": 1790368289
 },
+"Phillips 66": {
+"size": "10,001+",
+"checked": 1791488897
+},
 "Phlair": {
 "size": "11-50",
 "checked": 1790488033
@@ -5166,6 +5238,10 @@
 "Profluent": {
 "size": "51-200",
 "checked": 1790968163
+},
+"Proforest": {
+"size": null,
+"checked": 1791488897
 },
 "Proofpoint": {
 "size": "5,001-10,000",
@@ -5570,6 +5646,10 @@
 "Rubrik": {
 "size": "5,001-10,000",
 "checked": 1790882735
+},
+"Rugged Robotics": {
+"size": "11-50",
+"checked": 1791488897
 },
 "Rundoo": {
 "size": "51-200",
@@ -6175,6 +6255,10 @@
 "size": "201-500",
 "checked": 1790368289
 },
+"State Affairs": {
+"size": "51-200",
+"checked": 1791488897
+},
 "State Farm": {
 "size": "10,001+",
 "checked": 1790368289
@@ -6210,6 +6294,10 @@
 "Stoke Space": {
 "size": "201-500",
 "checked": 1790368289
+},
+"Strada": {
+"size": "11-50",
+"checked": 1791488897
 },
 "Strategic Education": {
 "size": "5,001-10,000",
