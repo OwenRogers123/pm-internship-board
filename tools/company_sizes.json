@@ -423,6 +423,10 @@
 "size": "1,001-5,000",
 "checked": 1790488371
 },
+"American Red Cross": {
+"size": "10,001+",
+"checked": 1791656720
+},
 "Ameriprise Financial": {
 "size": "10,001+",
 "checked": 1790368289
@@ -1319,6 +1323,10 @@
 "size": "501-1,000",
 "checked": 1790368289
 },
+"CarMax": {
+"size": "10,001+",
+"checked": 1791656720
+},
 "Cardinal Health": {
 "size": null,
 "checked": 1790368289
@@ -1474,6 +1482,10 @@
 "Circle K": {
 "size": "10,001+",
 "checked": 1791488897
+},
+"Circle Logistics": {
+"size": "501-1,000",
+"checked": 1791656720
 },
 "Circleback": {
 "size": "1-10",
@@ -2587,6 +2599,10 @@
 "size": null,
 "checked": 1790532964
 },
+"Fermilab": {
+"size": "1,001-5,000",
+"checked": 1791656720
+},
 "Ferrovial": {
 "size": "10,001+",
 "checked": 1790488033
@@ -3287,6 +3303,10 @@
 "size": "1,001-5,000",
 "checked": 1790488253
 },
+"Howard County Public School System": {
+"size": null,
+"checked": 1791656720
+},
 "Howden": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -3426,6 +3446,10 @@
 "Icon": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"Idaho Power": {
+"size": "1,001-5,000",
+"checked": 1791656720
 },
 "Illinois Tool Works": {
 "size": "5,001-10,000",
@@ -4143,6 +4167,10 @@
 "size": "51-200",
 "checked": 1790488253
 },
+"MSI Express": {
+"size": "501-1,000",
+"checked": 1791656720
+},
 "MSX International": {
 "size": "1,001-5,000",
 "checked": 1790795091
@@ -4387,6 +4415,10 @@
 "size": "10,001+",
 "checked": 1791314733
 },
+"Meter": {
+"size": "201-500",
+"checked": 1791656720
+},
 "Methodist Le Bonheur ": {
 "size": "5,001-10,000",
 "checked": 1790627436
@@ -4394,6 +4426,10 @@
 "Metron": {
 "size": "201-500",
 "checked": 1790488033
+},
+"Metropolitan State University of Denver": {
+"size": null,
+"checked": 1791656720
 },
 "Miami University": {
 "size": "11-50",
@@ -4543,6 +4579,10 @@
 "size": "1,001-5,000",
 "checked": 1790488253
 },
+"MultiCare Health System": {
+"size": "5,001-10,000",
+"checked": 1791656720
+},
 "Munters": {
 "size": "1,001-5,000",
 "checked": 1790795091
@@ -4670,6 +4710,10 @@
 "Neuberger Berman": {
 "size": null,
 "checked": 1790368289
+},
+"Neuralink": {
+"size": "501-1,000",
+"checked": 1791656720
 },
 "New Flyer": {
 "size": "1-10",
@@ -5795,6 +5839,10 @@
 "size": "51-200",
 "checked": 1790368289
 },
+"SageSure": {
+"size": "501-1,000",
+"checked": 1791656720
+},
 "SailPoint": {
 "size": "1,001-5,000",
 "checked": 1791402735
@@ -6086,6 +6134,10 @@
 "Simmons Bank": {
 "size": "1,001-5,000",
 "checked": 1790488371
+},
+"Simon Property Group": {
+"size": "11-50",
+"checked": 1791656720
 },
 "SimonComputing": {
 "size": null,
@@ -7302,6 +7354,10 @@
 "Wavestone": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"Wawa": {
+"size": "10,001+",
+"checked": 1791656720
 },
 "Waymo": {
 "size": "1,001-5,000",
