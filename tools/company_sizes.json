@@ -43,6 +43,10 @@
 "size": null,
 "checked": 1790488033
 },
+"ADT": {
+"size": "10,001+",
+"checked": 1791922262
+},
 "AECOM": {
 "size": "10,001+",
 "checked": 1790488033
@@ -647,6 +651,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Ascension": {
+"size": "51-200",
+"checked": 1791922262
+},
 "Ascensus": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -782,6 +790,10 @@
 "Axos Bank": {
 "size": "501-1,000",
 "checked": 1790532964
+},
+"Azul Systems": {
+"size": "501-1,000",
+"checked": 1791922262
 },
 "BCI Brands": {
 "size": "201-500",
@@ -2799,6 +2811,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"GAF": {
+"size": "1,001-5,000",
+"checked": 1791922262
+},
 "GCM Grosvenor": {
 "size": "201-500",
 "checked": 1790486647
@@ -2999,6 +3015,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Goodlord": {
+"size": "201-500",
+"checked": 1791922262
+},
 "Google": {
 "size": "10,001+",
 "checked": 1790368289
@@ -3110,6 +3130,10 @@
 "Gunvor": {
 "size": "501-1,000",
 "checked": 1790488033
+},
+"Gusto, Inc.": {
+"size": null,
+"checked": 1791922262
 },
 "H&R Block": {
 "size": "1-10",
@@ -3987,6 +4011,10 @@
 "size": "201-500",
 "checked": 1790488033
 },
+"Lake Michigan Credit Union": {
+"size": "1,001-5,000",
+"checked": 1791922262
+},
 "Lamb Weston": {
 "size": "501-1,000",
 "checked": 1790488033
@@ -4174,6 +4202,10 @@
 "M3USA": {
 "size": null,
 "checked": 1790488033
+},
+"MEMX": {
+"size": "51-200",
+"checked": 1791922262
 },
 "MFS": {
 "size": "1,001-5,000",
@@ -5531,6 +5563,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Radius Limited": {
+"size": null,
+"checked": 1791922262
+},
 "Ragle Inc": {
 "size": null,
 "checked": 1790368289
@@ -5570,6 +5606,10 @@
 "Realm": {
 "size": "51-200",
 "checked": 1790488033
+},
+"Realty Income": {
+"size": "501-1,000",
+"checked": 1791922262
 },
 "Red Bull": {
 "size": "10,001+",
@@ -6291,9 +6331,17 @@
 "size": "1,001-5,000",
 "checked": 1790488253
 },
+"Solid Power": {
+"size": null,
+"checked": 1791922262
+},
 "Solidigm": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"SoloPulse": {
+"size": "11-50",
+"checked": 1791922262
 },
 "Solventum": {
 "size": "10,001+",
@@ -7203,6 +7251,10 @@
 "size": "5,001-10,000",
 "checked": 1790368289
 },
+"Vendelux": {
+"size": "51-200",
+"checked": 1791922262
+},
 "Venerable": {
 "size": "201-500",
 "checked": 1790488253
@@ -7242,6 +7294,10 @@
 "Vermeer": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"VersaDesk": {
+"size": null,
+"checked": 1791922262
 },
 "Versant": {
 "size": "201-500",
