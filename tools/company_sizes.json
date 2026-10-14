@@ -151,6 +151,10 @@
 "size": null,
 "checked": 1790532964
 },
+"Acadian Asset Management": {
+"size": "201-500",
+"checked": 1792002588
+},
 "Acceldata": {
 "size": "201-500",
 "checked": 1790488033
@@ -495,6 +499,10 @@
 "size": "1,001-5,000",
 "checked": 1790488371
 },
+"Ann & Robert H. Lurie Children\u2019s Hospital of Chicago": {
+"size": "5,001-10,000",
+"checked": 1792002588
+},
 "Ansys": {
 "size": "1-10",
 "checked": 1791488897
@@ -506,6 +514,10 @@
 "Anthelion Capital": {
 "size": "1-10",
 "checked": 1790368289
+},
+"Aon": {
+"size": "10,001+",
+"checked": 1792002588
 },
 "Apera AI": {
 "size": "51-200",
@@ -999,6 +1011,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Blackline Safety": {
+"size": "501-1,000",
+"checked": 1792002588
+},
 "Blackstone": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -1086,6 +1102,10 @@
 "Bose": {
 "size": "5,001-10,000",
 "checked": 1791488897
+},
+"Boston Consulting Group": {
+"size": "10,001+",
+"checked": 1792002588
 },
 "Boston Medical Center": {
 "size": "10,001+",
@@ -1347,6 +1367,10 @@
 "size": "10,001+",
 "checked": 1791656720
 },
+"Carbon Robotics": {
+"size": "201-500",
+"checked": 1792002588
+},
 "Cardinal Health": {
 "size": null,
 "checked": 1790368289
@@ -1418,6 +1442,10 @@
 "Centric Software": {
 "size": "1,001-5,000",
 "checked": 1791488897
+},
+"Centrica": {
+"size": "11-50",
+"checked": 1792002588
 },
 "Cerence": {
 "size": "1,001-5,000",
@@ -2107,6 +2135,10 @@
 "size": "501-1,000",
 "checked": 1791137133
 },
+"Doctors Without Borders": {
+"size": null,
+"checked": 1792002588
+},
 "DocuSign": {
 "size": "5,001-10,000",
 "checked": 1791137133
@@ -2482,6 +2514,10 @@
 "Euronext": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Eurostar International": {
+"size": "1,001-5,000",
+"checked": 1792002588
 },
 "Everest": {
 "size": "501-1,000",
@@ -3655,6 +3691,10 @@
 "size": "1,001-5,000",
 "checked": 1790627436
 },
+"Inversion Space": {
+"size": null,
+"checked": 1792002588
+},
 "Invesco": {
 "size": "501-1,000",
 "checked": 1790368289
@@ -3662,6 +3702,10 @@
 "Investment Management Corporation of Ontario": {
 "size": "201-500",
 "checked": 1790488033
+},
+"Invitation Homes": {
+"size": "1,001-5,000",
+"checked": 1792002588
 },
 "Iridium Communications": {
 "size": "1,001-5,000",
@@ -3894,6 +3938,10 @@
 "Khan Academy": {
 "size": "1,001-5,000",
 "checked": 1791314733
+},
+"Kikoff": {
+"size": "201-500",
+"checked": 1792002588
 },
 "Kimley-Horn": {
 "size": "5,001-10,000",
@@ -4303,6 +4351,10 @@
 "size": null,
 "checked": 1790488033
 },
+"MarketStar": {
+"size": "1,001-5,000",
+"checked": 1792002588
+},
 "Marmon Holdings": {
 "size": "201-500",
 "checked": 1790368289
@@ -4494,6 +4546,10 @@
 "Metropolitan State University of Denver": {
 "size": null,
 "checked": 1791656720
+},
+"Metropolitan Transportation Authority": {
+"size": "1,001-5,000",
+"checked": 1792002588
 },
 "Miami University": {
 "size": "11-50",
@@ -4778,6 +4834,10 @@
 "Netcompany": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"Netflix": {
+"size": "10,001+",
+"checked": 1792002588
 },
 "Netsmart": {
 "size": "1,001-5,000",
@@ -5707,6 +5767,10 @@
 "size": "51-200",
 "checked": 1790488033
 },
+"Rhombus": {
+"size": "201-500",
+"checked": 1792002588
+},
 "Richardson": {
 "size": "501-1,000",
 "checked": 1790488033
@@ -5906,6 +5970,10 @@
 "SPHERIX GLOBAL INSIGHTS US INC": {
 "size": "51-200",
 "checked": 1790368289
+},
+"SPS Commerce": {
+"size": "1,001-5,000",
+"checked": 1792002588
 },
 "SS&C": {
 "size": null,
@@ -6751,6 +6819,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Teya": {
+"size": "1,001-5,000",
+"checked": 1792002588
+},
 "Thales": {
 "size": "10,001+",
 "checked": 1790368289
@@ -7103,6 +7175,10 @@
 "size": "1,001-5,000",
 "checked": 1790882735
 },
+"Unity": {
+"size": "5,001-10,000",
+"checked": 1792002588
+},
 "Universal Health Services": {
 "size": "10,001+",
 "checked": 1790368289
@@ -7323,6 +7399,10 @@
 "size": "201-500",
 "checked": 1790368289
 },
+"Viatris": {
+"size": "10,001+",
+"checked": 1792002588
+},
 "Viavi Solutions": {
 "size": "5,001-10,000",
 "checked": 1790488033
@@ -7458,6 +7538,10 @@
 "Warner Bros. Discovery": {
 "size": null,
 "checked": 1790368289
+},
+"Wash U": {
+"size": null,
+"checked": 1792002588
 },
 "Washpost": {
 "size": null,
