@@ -475,6 +475,10 @@
 "size": "51-200",
 "checked": 1790488033
 },
+"Amplify": {
+"size": "1,001-5,000",
+"checked": 1792439241
+},
 "AnaVation": {
 "size": "51-200",
 "checked": 1790368289
@@ -1546,6 +1550,10 @@
 "Charter Manufacturing": {
 "size": "201-500",
 "checked": 1790368289
+},
+"Checkout.com": {
+"size": null,
+"checked": 1792439241
 },
 "Cheiron": {
 "size": "11-50",
@@ -3187,6 +3195,10 @@
 "size": "501-1,000",
 "checked": 1790488033
 },
+"Graviton": {
+"size": "1-10",
+"checked": 1792439241
+},
 "GrayMatter Robotics": {
 "size": null,
 "checked": 1790488033
@@ -4202,6 +4214,10 @@
 "Lean TECHniques": {
 "size": null,
 "checked": 1790488033
+},
+"Legend Biotech": {
+"size": "1,001-5,000",
+"checked": 1792439241
 },
 "Legrand": {
 "size": null,
@@ -6631,6 +6647,10 @@
 "size": "5,001-10,000",
 "checked": 1791573913
 },
+"Sophos": {
+"size": "5,001-10,000",
+"checked": 1792439241
+},
 "Sopra Steria": {
 "size": "10,001+",
 "checked": 1790488033
@@ -6967,6 +6987,10 @@
 "size": "5,001-10,000",
 "checked": 1790532964
 },
+"Teamworks": {
+"size": "501-1,000",
+"checked": 1792439241
+},
 "Techtronic Industries": {
 "size": "5,001-10,000",
 "checked": 1790532964
@@ -7034,6 +7058,10 @@
 "The Aerospace Corporation": {
 "size": null,
 "checked": 1790368289
+},
+"The Allen Institute for AI": {
+"size": null,
+"checked": 1792439241
 },
 "The Andersons": {
 "size": "1,001-5,000",
@@ -7194,6 +7222,10 @@
 "Tokyo Electron": {
 "size": "11-50",
 "checked": 1790368289
+},
+"Topgolf International": {
+"size": "10,001+",
+"checked": 1792439241
 },
 "Tower Research Capital": {
 "size": "1,001-5,000",
@@ -8006,6 +8038,10 @@
 "ZOLL Medical Corporation": {
 "size": null,
 "checked": 1790488033
+},
+"ZS": {
+"size": "10,001+",
+"checked": 1792439241
 },
 "Zebra Technologies": {
 "size": "10,001+",
