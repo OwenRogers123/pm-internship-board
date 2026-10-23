@@ -39,6 +39,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"ACI Worldwide": {
+"size": "1,001-5,000",
+"checked": 1792779295
+},
 "ACLU Kentucky": {
 "size": null,
 "checked": 1790488033
@@ -554,6 +558,10 @@
 "Anthelion Capital": {
 "size": "1-10",
 "checked": 1790368289
+},
+"Anton Paar": {
+"size": "1,001-5,000",
+"checked": 1792779295
 },
 "Aon": {
 "size": "10,001+",
@@ -1238,6 +1246,10 @@
 "Brookfield": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Brookhaven Lab": {
+"size": "1,001-5,000",
+"checked": 1792779295
 },
 "Brooks Automation": {
 "size": "1,001-5,000",
@@ -1994,6 +2006,10 @@
 "Crusoe": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Cubic": {
+"size": "1,001-5,000",
+"checked": 1792779295
 },
 "Cummins": {
 "size": "10,001+",
@@ -3007,6 +3023,10 @@
 "size": null,
 "checked": 1790488033
 },
+"Freestone Capital Management": {
+"size": "51-200",
+"checked": 1792779295
+},
 "Fresenius Medical Care": {
 "size": null,
 "checked": 1790488033
@@ -3307,6 +3327,10 @@
 "size": null,
 "checked": 1790488253
 },
+"Gritt": {
+"size": "11-50",
+"checked": 1792779295
+},
 "Gritt Robotics Inc": {
 "size": null,
 "checked": 1790488033
@@ -3402,6 +3426,10 @@
 "HP IQ": {
 "size": "51-200",
 "checked": 1790368289
+},
+"HP Inc.": {
+"size": "10,001+",
+"checked": 1792779295
 },
 "HPR (Hyannis Port Research)": {
 "size": "51-200",
@@ -3950,6 +3978,10 @@
 "Itron": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"Ivalua": {
+"size": "1,001-5,000",
+"checked": 1792779295
 },
 "Ivy Tech Community College": {
 "size": null,
@@ -4515,6 +4547,10 @@
 "size": null,
 "checked": 1790488033
 },
+"MBDA": {
+"size": "5,001-10,000",
+"checked": 1792779295
+},
 "MEMX": {
 "size": "51-200",
 "checked": 1791922262
@@ -4542,6 +4578,10 @@
 "MSI Express": {
 "size": "501-1,000",
 "checked": 1791656720
+},
+"MSIG USA ": {
+"size": "501-1,000",
+"checked": 1792779295
 },
 "MSX International": {
 "size": "1,001-5,000",
@@ -5007,6 +5047,10 @@
 "size": "11-50",
 "checked": 1790488033
 },
+"NASA Jet Propulsion Laboratory": {
+"size": null,
+"checked": 1792779295
+},
 "NBCUniversal": {
 "size": "10,001+",
 "checked": 1790488033
@@ -5327,6 +5371,10 @@
 "size": "5,001-10,000",
 "checked": 1792173405
 },
+"OATEY": {
+"size": "501-1,000",
+"checked": 1792779295
+},
 "OCC": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -5595,6 +5643,10 @@
 "size": "51-200",
 "checked": 1790882735
 },
+"Path Robotics": {
+"size": null,
+"checked": 1792779295
+},
 "PatientPoint": {
 "size": "501-1,000",
 "checked": 1792693673
@@ -5610,6 +5662,10 @@
 "PayPal": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Peak Energy": {
+"size": "51-200",
+"checked": 1792779295
 },
 "Pebl": {
 "size": "11-50",
@@ -6571,6 +6627,10 @@
 "size": null,
 "checked": 1790368289
 },
+"Sedgwick Claims Management Services": {
+"size": "10,001+",
+"checked": 1792779295
+},
 "Semgrep": {
 "size": "201-500",
 "checked": 1790368289
@@ -7231,6 +7291,10 @@
 "size": null,
 "checked": 1790368289
 },
+"Taylor": {
+"size": "5,001-10,000",
+"checked": 1792779295
+},
 "Taylor Corporation": {
 "size": "5,001-10,000",
 "checked": 1790532964
@@ -7495,6 +7559,10 @@
 "size": "201-500",
 "checked": 1790488033
 },
+"Trace Labs": {
+"size": "11-50",
+"checked": 1792779295
+},
 "Trace3": {
 "size": "1,001-5,000",
 "checked": 1792693673
@@ -7598,6 +7666,10 @@
 "Twist Bioscience": {
 "size": null,
 "checked": 1790488033
+},
+"Twitch": {
+"size": "1,001-5,000",
+"checked": 1792779295
 },
 "Two Sigma": {
 "size": "1,001-5,000",
@@ -7846,6 +7918,10 @@
 "Veeam Software": {
 "size": "5,001-10,000",
 "checked": 1790368289
+},
+"Veeda AI": {
+"size": "1-10",
+"checked": 1792779295
 },
 "Veeva Systems": {
 "size": "5,001-10,000",
