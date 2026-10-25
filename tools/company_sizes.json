@@ -6187,6 +6187,10 @@
 "size": "501-1,000",
 "checked": 1790368289
 },
+"Remitly": {
+"size": "1,001-5,000",
+"checked": 1792949647
+},
 "Renesas Electronics": {
 "size": "10,001+",
 "checked": 1790368289
@@ -7770,6 +7774,10 @@
 "Unilever": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"Unisys": {
+"size": "1-10",
+"checked": 1792949647
 },
 "United Airlines": {
 "size": "10,001+",
