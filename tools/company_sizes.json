@@ -1,7 +1,7 @@
 {
 " RGA Reinsurance Company": {
 "size": null,
-"checked": 1790532964
+"checked": 1793215632
 },
 " impact.com ": {
 "size": null,
@@ -129,7 +129,7 @@
 },
 "AT&T": {
 "size": null,
-"checked": 1790488033
+"checked": 1793215632
 },
 "ATC": {
 "size": "501-1,000",
@@ -191,9 +191,17 @@
 "size": "1,001-5,000",
 "checked": 1790968163
 },
+"Ace Hardware": {
+"size": "5,001-10,000",
+"checked": 1793215632
+},
 "Acima": {
 "size": "501-1,000",
 "checked": 1790368289
+},
+"Acrisure": {
+"size": "1,001-5,000",
+"checked": 1793215632
 },
 "Acron Aviation": {
 "size": "501-1,000",
@@ -684,8 +692,8 @@
 "checked": 1790488033
 },
 "AriensCo": {
-"size": null,
-"checked": 1790532964
+"size": "501-1,000",
+"checked": 1793215632
 },
 "Arista Networks": {
 "size": "5,001-10,000",
@@ -871,6 +879,10 @@
 "size": "5,001-10,000",
 "checked": 1790488371
 },
+"Axiom Math": {
+"size": "51-200",
+"checked": 1793215632
+},
 "Axiom Space": {
 "size": "501-1,000",
 "checked": 1790368289
@@ -1007,6 +1019,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Baxter International": {
+"size": "10,001+",
+"checked": 1793215632
+},
 "Baystate Health": {
 "size": "5,001-10,000",
 "checked": 1790488033
@@ -1075,6 +1091,10 @@
 "size": "10,001+",
 "checked": 1790627436
 },
+"Betterment": {
+"size": "501-1,000",
+"checked": 1793215632
+},
 "Bild AI": {
 "size": "11-50",
 "checked": 1790488033
@@ -1139,6 +1159,10 @@
 "size": "10,001+",
 "checked": 1791314733
 },
+"Blue Cross Blue Shield of Rhode Island": {
+"size": null,
+"checked": 1793215632
+},
 "Blue Cross and Blue Shield of Kansas": {
 "size": "501-1,000",
 "checked": 1790368289
@@ -1146,6 +1170,10 @@
 "Blue Cross and Blue Shield of North Carolina": {
 "size": "5,001-10,000",
 "checked": 1790882735
+},
+"Blue Cross and Blue Shield of Rhode Island": {
+"size": "501-1,000",
+"checked": 1793215632
 },
 "Blue Origin": {
 "size": "10,001+",
@@ -1211,6 +1239,10 @@
 "size": "10,001+",
 "checked": 1792002588
 },
+"Boston Dynamics": {
+"size": "1,001-5,000",
+"checked": 1793215632
+},
 "Boston Medical Center": {
 "size": "10,001+",
 "checked": 1790532964
@@ -1263,6 +1295,10 @@
 "size": "51-200",
 "checked": 1790488033
 },
+"Bridge Neurotech": {
+"size": null,
+"checked": 1793215632
+},
 "Bright Machines": {
 "size": "201-500",
 "checked": 1792256301
@@ -1297,7 +1333,7 @@
 },
 "Brown & Brown Insurance": {
 "size": null,
-"checked": 1790532964
+"checked": 1793215632
 },
 "Brown Brothers Harriman": {
 "size": "5,001-10,000",
@@ -1319,6 +1355,10 @@
 "size": "1,001-5,000",
 "checked": 1792693673
 },
+"Build AI": {
+"size": null,
+"checked": 1793215632
+},
 "Buildertrend": {
 "size": "501-1,000",
 "checked": 1790488033
@@ -1337,7 +1377,7 @@
 },
 "C&S Wholesale Grocers": {
 "size": null,
-"checked": 1790532964
+"checked": 1793215632
 },
 "C.H. Robinson": {
 "size": "10,001+",
@@ -1359,6 +1399,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"CAMS": {
+"size": null,
+"checked": 1793215632
+},
 "CDM Smith": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -1370,6 +1414,10 @@
 "CHAOS Industries": {
 "size": "201-500",
 "checked": 1790368289
+},
+"CHEP": {
+"size": "5,001-10,000",
+"checked": 1793215632
 },
 "CHS": {
 "size": "5,001-10,000",
@@ -1406,6 +1454,10 @@
 "CSA Group": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"CSAA Insurance Group": {
+"size": "1,001-5,000",
+"checked": 1793215632
 },
 "CSC Generation": {
 "size": "201-500",
@@ -1586,6 +1638,10 @@
 "Cerity Partners": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Certa": {
+"size": "201-500",
+"checked": 1793215632
 },
 "Certara": {
 "size": "1,001-5,000",
@@ -2153,7 +2209,7 @@
 },
 "Dallas College": {
 "size": null,
-"checked": 1790532964
+"checked": 1793215632
 },
 "Dallas Fort Worth International Airport": {
 "size": "1,001-5,000",
@@ -2539,9 +2595,13 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Elveo": {
+"size": null,
+"checked": 1793215632
+},
 "Embry-Riddle Aeronautical University": {
 "size": null,
-"checked": 1790488253
+"checked": 1793215632
 },
 "Emergent Labs": {
 "size": "1-10",
@@ -2827,6 +2887,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"FUTO": {
+"size": null,
+"checked": 1793215632
+},
 "Fab2": {
 "size": "51-200",
 "checked": 1790488033
@@ -2930,6 +2994,10 @@
 "Figure": {
 "size": "501-1,000",
 "checked": 1791842625
+},
+"Filevine": {
+"size": "1,001-5,000",
+"checked": 1793215632
 },
 "Financial Ombudsman Service": {
 "size": "1,001-5,000",
@@ -3611,6 +3679,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Hex Technologies": {
+"size": "201-500",
+"checked": 1793215632
+},
 "Hexagon AB": {
 "size": "501-1,000",
 "checked": 1790368289
@@ -3630,6 +3702,10 @@
 "Hilton Worldwide": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Hire Hangar": {
+"size": "1-10",
+"checked": 1793215632
 },
 "Hitachi": {
 "size": "10,001+",
@@ -3759,6 +3835,10 @@
 "size": "51-200",
 "checked": 1790709393
 },
+"Hyphenate": {
+"size": null,
+"checked": 1793215632
+},
 "IAT Insurance Group": {
 "size": "501-1,000",
 "checked": 1793044280
@@ -3875,6 +3955,10 @@
 "size": null,
 "checked": 1793044280
 },
+"Infleqtion": {
+"size": "201-500",
+"checked": 1793215632
+},
 "Informa Group": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -3955,6 +4039,10 @@
 "size": "11-50",
 "checked": 1793128856
 },
+"Integrate": {
+"size": "11-50",
+"checked": 1793215632
+},
 "Integrity": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -4001,7 +4089,7 @@
 },
 "International Rescue Committee (IRC)": {
 "size": null,
-"checked": 1790532964
+"checked": 1793215632
 },
 "Internship": {
 "size": null,
@@ -4054,6 +4142,10 @@
 "Ivy Tech Community College": {
 "size": null,
 "checked": 1790488371
+},
+"Ixian Robotics": {
+"size": null,
+"checked": 1793215632
 },
 "J.M. Smucker": {
 "size": "1,001-5,000",
@@ -4109,7 +4201,7 @@
 },
 "Jefferson Health": {
 "size": null,
-"checked": 1790532964
+"checked": 1793215632
 },
 "Jencap": {
 "size": "201-500",
@@ -4129,7 +4221,7 @@
 },
 "John Wiley & Sons": {
 "size": null,
-"checked": 1790488253
+"checked": 1793215632
 },
 "Johns Hopkins Applied Physics Laboratory": {
 "size": "5,001-10,000",
@@ -4427,6 +4519,10 @@
 "size": "501-1,000",
 "checked": 1790488033
 },
+"Laminar": {
+"size": "51-200",
+"checked": 1793215632
+},
 "Land O'Lakes": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -4515,9 +4611,17 @@
 "size": "10,001+",
 "checked": 1790488253
 },
+"Light": {
+"size": "51-200",
+"checked": 1793215632
+},
 "Lightmatter": {
 "size": "201-500",
 "checked": 1790368289
+},
+"Lineage Logistics": {
+"size": "10,001+",
+"checked": 1793215632
 },
 "Link Logistics": {
 "size": "1,001-5,000",
@@ -4555,6 +4659,10 @@
 "size": "501-1,000",
 "checked": 1790488033
 },
+"Lloyds Bank": {
+"size": "5,001-10,000",
+"checked": 1793215632
+},
 "Loblaw Companies": {
 "size": "10,001+",
 "checked": 1790488033
@@ -4578,6 +4686,10 @@
 "Louisiana Blue": {
 "size": "1,001-5,000",
 "checked": 1790488253
+},
+"Louisiana State University": {
+"size": null,
+"checked": 1793215632
 },
 "Louisiana State University (LSU)": {
 "size": null,
@@ -4741,7 +4853,7 @@
 },
 "Markel Group, Inc.": {
 "size": null,
-"checked": 1790488033
+"checked": 1793215632
 },
 "MarketStar": {
 "size": "1,001-5,000",
@@ -4794,6 +4906,10 @@
 "Mastercard": {
 "size": "11-50",
 "checked": 1790368289
+},
+"MatX": {
+"size": "51-200",
+"checked": 1793215632
 },
 "Materion": {
 "size": "1,001-5,000",
@@ -5043,6 +5159,10 @@
 "size": "10,001+",
 "checked": 1791235661
 },
+"Mohegan": {
+"size": "1,001-5,000",
+"checked": 1793215632
+},
 "Momentive": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -5109,7 +5229,7 @@
 },
 "Motorola Solutions": {
 "size": null,
-"checked": 1790488371
+"checked": 1793215632
 },
 "Movado Group": {
 "size": "1,001-5,000",
@@ -5179,6 +5299,10 @@
 "size": "11-50",
 "checked": 1790488033
 },
+"NUVACORE": {
+"size": null,
+"checked": 1793215632
+},
 "NVIDIA": {
 "size": "10,001+",
 "checked": 1790368289
@@ -5233,7 +5357,7 @@
 },
 "Nationwide Children's Hospital": {
 "size": null,
-"checked": 1790532964
+"checked": 1793215632
 },
 "Navy Federal": {
 "size": "10,001+",
@@ -5374,6 +5498,10 @@
 "Nokia": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Nomad GCS": {
+"size": "51-200",
+"checked": 1793215632
 },
 "Nomagic": {
 "size": "201-500",
@@ -5523,6 +5651,10 @@
 "size": null,
 "checked": 1793128856
 },
+"Oklahoma State Government": {
+"size": "201-500",
+"checked": 1793215632
+},
 "Old Mission": {
 "size": "51-200",
 "checked": 1790368289
@@ -5543,6 +5675,10 @@
 "size": "201-500",
 "checked": 1793128856
 },
+"One Robot": {
+"size": null,
+"checked": 1793215632
+},
 "OneMain Financial": {
 "size": "5,001-10,000",
 "checked": 1790532964
@@ -5562,6 +5698,10 @@
 "OpenGov": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"OpenMind": {
+"size": null,
+"checked": 1793215632
 },
 "OpenSesame": {
 "size": "201-500",
@@ -5795,6 +5935,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Per Scholas": {
+"size": "1,001-5,000",
+"checked": 1793215632
+},
 "Peraton": {
 "size": "10,001+",
 "checked": 1790368289
@@ -5826,6 +5970,10 @@
 "Persona AI": {
 "size": "51-200",
 "checked": 1790368289
+},
+"Perspective Therapeutics": {
+"size": "51-200",
+"checked": 1793215632
 },
 "Pfizer": {
 "size": "10,001+",
@@ -5946,6 +6094,14 @@
 "Powell": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Powertown": {
+"size": null,
+"checked": 1793215632
+},
+"Pramaana Labs": {
+"size": null,
+"checked": 1793215632
 },
 "Precision AQ": {
 "size": "501-1,000",
@@ -6082,6 +6238,10 @@
 "QuEra Computing": {
 "size": "201-500",
 "checked": 1790488033
+},
+"Quadric": {
+"size": "51-200",
+"checked": 1793215632
 },
 "Quadrillion": {
 "size": "11-50",
@@ -6275,6 +6435,10 @@
 "size": "501-1,000",
 "checked": 1790368289
 },
+"Relling": {
+"size": null,
+"checked": 1793215632
+},
 "Remitly": {
 "size": "1,001-5,000",
 "checked": 1792949647
@@ -6322,6 +6486,10 @@
 "Resultant": {
 "size": "201-500",
 "checked": 1790368289
+},
+"Resurgent Industries": {
+"size": null,
+"checked": 1793215632
 },
 "Revantage Corporate Services": {
 "size": "11-50",
@@ -6446,6 +6614,10 @@
 "Rolls-Royce": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"RosaicLabs": {
+"size": null,
+"checked": 1793215632
 },
 "Roswell Park Comprehensive Cancer Center": {
 "size": "1,001-5,000",
@@ -6672,8 +6844,8 @@
 "checked": 1790795091
 },
 "Sarasota County": {
-"size": null,
-"checked": 1790532964
+"size": "1,001-5,000",
+"checked": 1793215632
 },
 "Sardine": {
 "size": "201-500",
@@ -6726,6 +6898,10 @@
 "Scotts Miracle-Gro": {
 "size": "1,001-5,000",
 "checked": 1790488253
+},
+"Scout AI": {
+"size": "51-200",
+"checked": 1793215632
 },
 "Scout Clean Energy": {
 "size": "201-500",
@@ -6828,8 +7004,8 @@
 "checked": 1790488033
 },
 "Shaw Industries Group": {
-"size": null,
-"checked": 1790488033
+"size": "10,001+",
+"checked": 1793215632
 },
 "Shell": {
 "size": "10,001+",
@@ -6962,6 +7138,10 @@
 "SkyGig": {
 "size": "1-10",
 "checked": 1790488033
+},
+"Skyband Systems": {
+"size": null,
+"checked": 1793215632
 },
 "Skydio": {
 "size": "1,001-5,000",
@@ -7141,7 +7321,7 @@
 },
 "St. Luke's University Health Network": {
 "size": null,
-"checked": 1790532964
+"checked": 1793215632
 },
 "Stand Together": {
 "size": "501-1,000",
@@ -7282,6 +7462,10 @@
 "Swift": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"Sycamore": {
+"size": "11-50",
+"checked": 1793215632
 },
 "Symbotic": {
 "size": "1,001-5,000",
@@ -7481,7 +7665,7 @@
 },
 "Texas A&M International University": {
 "size": null,
-"checked": 1790488033
+"checked": 1793215632
 },
 "Texas Instruments": {
 "size": "10,001+",
@@ -7586,6 +7770,10 @@
 "The Nuclear Company": {
 "size": "51-200",
 "checked": 1790368289
+},
+"The Robotics Company": {
+"size": null,
+"checked": 1793215632
 },
 "The TJX Companies, Inc.": {
 "size": null,
@@ -8019,6 +8207,10 @@
 "size": null,
 "checked": 1790488033
 },
+"VSP Vision": {
+"size": "1,001-5,000",
+"checked": 1793215632
+},
 "VWH Capital Management": {
 "size": null,
 "checked": 1790488033
@@ -8179,6 +8371,10 @@
 "size": "51-200",
 "checked": 1791573913
 },
+"Viggle AI": {
+"size": null,
+"checked": 1793215632
+},
 "Vigil Labs": {
 "size": "1-10",
 "checked": 1793044280
@@ -8229,7 +8425,7 @@
 },
 "Voya Financial": {
 "size": null,
-"checked": 1790488253
+"checked": 1793215632
 },
 "Voyager Technologies": {
 "size": "201-500",
@@ -8254,6 +8450,10 @@
 "WEP Clinical": {
 "size": "201-500",
 "checked": 1790882735
+},
+"WGU": {
+"size": null,
+"checked": 1793215632
 },
 "WPP": {
 "size": "10,001+",
@@ -8350,6 +8550,10 @@
 "Wealthsimple": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"WebFX": {
+"size": "1,001-5,000",
+"checked": 1793215632
 },
 "Weiss Asset Management": {
 "size": "51-200",
@@ -8515,6 +8719,10 @@
 "size": "1,001-5,000",
 "checked": 1791573913
 },
+"WorldEngine AI": {
+"size": null,
+"checked": 1793215632
+},
 "WorldStrides": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -8634,6 +8842,10 @@
 "blp": {
 "size": "201-500",
 "checked": 1791050014
+},
+"dmodel": {
+"size": null,
+"checked": 1793215632
 },
 "doTERRA": {
 "size": "1-10",
