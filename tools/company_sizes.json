@@ -427,6 +427,10 @@
 "size": null,
 "checked": 1793128856
 },
+"Altman Solon": {
+"size": "501-1,000",
+"checked": 1793302238
+},
 "Altria Group, Inc.": {
 "size": null,
 "checked": 1790368289
@@ -790,6 +794,10 @@
 "Astreya": {
 "size": "1,001-5,000",
 "checked": 1790532964
+},
+"Astronics": {
+"size": "1,001-5,000",
+"checked": 1793302238
 },
 "Athene": {
 "size": "1,001-5,000",
@@ -1191,6 +1199,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"BlueCross BlueShield of South Carolina": {
+"size": null,
+"checked": 1793302238
+},
 "BlueScope": {
 "size": "5,001-10,000",
 "checked": 1790488371
@@ -1367,6 +1379,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Burns Engineering": {
+"size": "201-500",
+"checked": 1793302238
+},
 "Businessolver": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -1402,6 +1418,10 @@
 "CAMS": {
 "size": null,
 "checked": 1793215632
+},
+"CCLIM - Quantitative Equity": {
+"size": "11-50",
+"checked": 1793302238
 },
 "CDM Smith": {
 "size": "5,001-10,000",
@@ -1535,6 +1555,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Capital de Recherche Tower": {
+"size": null,
+"checked": 1793302238
+},
 "Capstone Investment Advisors": {
 "size": "201-500",
 "checked": 1790882735
@@ -1571,6 +1595,10 @@
 "size": "201-500",
 "checked": 1790488033
 },
+"Castelion": {
+"size": "201-500",
+"checked": 1793302238
+},
 "Castleton Commodities International": {
 "size": "501-1,000",
 "checked": 1790368289
@@ -1595,6 +1623,10 @@
 "size": "10,001+",
 "checked": 1790486647
 },
+"Cenovus Energy": {
+"size": "1,001-5,000",
+"checked": 1793302238
+},
 "Centene": {
 "size": "10,001+",
 "checked": 1790368289
@@ -1602,6 +1634,10 @@
 "Center for Internet Security (CIS)": {
 "size": null,
 "checked": 1790532964
+},
+"Center for Strategic and International Studies": {
+"size": "1,001-5,000",
+"checked": 1793302238
 },
 "Centerfield": {
 "size": "1,001-5,000",
@@ -1666,6 +1702,10 @@
 "Chanel": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"Charles River Analytics": {
+"size": "51-200",
+"checked": 1793302238
 },
 "Charles River Associates (CRA)": {
 "size": null,
@@ -1806,6 +1846,10 @@
 "Clay": {
 "size": "1,001-5,000",
 "checked": 1790882735
+},
+"Clean Harbors": {
+"size": "10,001+",
+"checked": 1793302238
 },
 "Clera": {
 "size": "11-50",
@@ -2254,6 +2298,10 @@
 "Dataiku": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Datasite": {
+"size": "1,001-5,000",
+"checked": 1793302238
 },
 "DatologyAI": {
 "size": "11-50",
@@ -3075,6 +3123,10 @@
 "size": null,
 "checked": 1793128856
 },
+"Florida Atlantic University": {
+"size": null,
+"checked": 1793302238
+},
 "Flow Traders": {
 "size": "501-1,000",
 "checked": 1790368289
@@ -3555,6 +3607,10 @@
 "size": "51-200",
 "checked": 1790368289
 },
+"HPS Investment Partners": {
+"size": "201-500",
+"checked": 1793302238
+},
 "HUB": {
 "size": "10,001+",
 "checked": 1790488033
@@ -3597,7 +3653,7 @@
 },
 "Harris Williams": {
 "size": null,
-"checked": 1790627436
+"checked": 1793302238
 },
 "Harvey": {
 "size": "1,001-5,000",
@@ -3618,6 +3674,10 @@
 "Healthpeak Properties": {
 "size": "51-200",
 "checked": 1792173405
+},
+"Hearst": {
+"size": "5,001-10,000",
+"checked": 1793302238
 },
 "Heidelberg Materials": {
 "size": "5,001-10,000",
@@ -3673,7 +3733,7 @@
 },
 "Hewlett Packard (HP)": {
 "size": null,
-"checked": 1790627436
+"checked": 1793302238
 },
 "Hewlett Packard Enterprise": {
 "size": "10,001+",
@@ -3950,6 +4010,10 @@
 "Indian River State College": {
 "size": null,
 "checked": 1790488371
+},
+"Indie": {
+"size": "201-500",
+"checked": 1793302238
 },
 "InfiniteQuant": {
 "size": null,
@@ -4383,6 +4447,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Keyrock": {
+"size": "201-500",
+"checked": 1793302238
+},
 "Keysight Technologies": {
 "size": "10,001+",
 "checked": 1790368289
@@ -4709,7 +4777,7 @@
 },
 "Lunar Energy": {
 "size": null,
-"checked": 1790488033
+"checked": 1793302238
 },
 "Lunar Outpost": {
 "size": "51-200",
@@ -5395,6 +5463,10 @@
 "size": "5,001-10,000",
 "checked": 1790488033
 },
+"Netcraft": {
+"size": "201-500",
+"checked": 1793302238
+},
 "Netflix": {
 "size": "10,001+",
 "checked": 1792002588
@@ -5607,6 +5679,10 @@
 "size": "1,001-5,000",
 "checked": 1790795091
 },
+"OLIX": {
+"size": "51-200",
+"checked": 1793302238
+},
 "OMERS": {
 "size": null,
 "checked": 1791235661
@@ -5678,6 +5754,10 @@
 "One Robot": {
 "size": null,
 "checked": 1793215632
+},
+"OneEthos": {
+"size": "11-50",
+"checked": 1793302238
 },
 "OneMain Financial": {
 "size": "5,001-10,000",
@@ -5946,6 +6026,10 @@
 "Perchwell": {
 "size": "51-200",
 "checked": 1790709393
+},
+"Pernod Ricard, cr\u00e9ateurs de convivialit\u00e9": {
+"size": null,
+"checked": 1793302238
 },
 "Perpay": {
 "size": "51-200",
@@ -6267,9 +6351,17 @@
 "size": "501-1,000",
 "checked": 1792087921
 },
+"Quantiq": {
+"size": "11-50",
+"checked": 1793302238
+},
 "Quantum Signal AI": {
 "size": "11-50",
 "checked": 1790882735
+},
+"Qube Research & Technologies": {
+"size": "1,001-5,000",
+"checked": 1793302238
 },
 "Quest Analytics": {
 "size": "201-500",
@@ -6443,6 +6535,10 @@
 "size": "1,001-5,000",
 "checked": 1792949647
 },
+"Rendezvous Robotics": {
+"size": "11-50",
+"checked": 1793302238
+},
 "Renesas Electronics": {
 "size": "10,001+",
 "checked": 1790368289
@@ -6550,6 +6646,10 @@
 "Rite Hite": {
 "size": "501-1,000",
 "checked": 1790488033
+},
+"Riverlane": {
+"size": "201-500",
+"checked": 1793302238
 },
 "Rivet Industries": {
 "size": "51-200",
@@ -6669,7 +6769,7 @@
 },
 "Ryder": {
 "size": null,
-"checked": 1790488253
+"checked": 1793302238
 },
 "Ryder System": {
 "size": "10,001+",
@@ -7043,6 +7143,10 @@
 "size": "501-1,000",
 "checked": 1790532964
 },
+"SiTime": {
+"size": "501-1,000",
+"checked": 1793302238
+},
 "Sia Partners": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -7263,6 +7367,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"SoundExchange": {
+"size": "201-500",
+"checked": 1793302238
+},
 "SouthState Bank": {
 "size": "1,001-5,000",
 "checked": 1790627436
@@ -7291,6 +7399,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Spaceium": {
+"size": "1-10",
+"checked": 1793302238
+},
 "Span": {
 "size": "201-500",
 "checked": 1790488033
@@ -7298,6 +7410,10 @@
 "SpartanNash": {
 "size": "1,001-5,000",
 "checked": 1791050014
+},
+"Sparx Learning": {
+"size": null,
+"checked": 1793302238
 },
 "SpawGlass": {
 "size": "501-1,000",
@@ -7334,6 +7450,10 @@
 "Stanley Black & Decker": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Star Catcher": {
+"size": "51-200",
+"checked": 1793302238
 },
 "Starr Insurance": {
 "size": "1,001-5,000",
@@ -7414,6 +7534,10 @@
 "StudyFetch": {
 "size": "51-200",
 "checked": 1792862415
+},
+"Subtotal": {
+"size": "1-10",
+"checked": 1793302238
 },
 "Sun Life": {
 "size": "10,001+",
@@ -7606,6 +7730,10 @@
 "Tanium": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Tapestry": {
+"size": "10,001+",
+"checked": 1793302238
 },
 "Target": {
 "size": "10,001+",
@@ -7855,6 +7983,10 @@
 "size": "5,001-10,000",
 "checked": 1790368289
 },
+"TobogganLabs": {
+"size": "11-50",
+"checked": 1793302238
+},
 "Together AI": {
 "size": "201-500",
 "checked": 1790368289
@@ -7973,7 +8105,7 @@
 },
 "Truist": {
 "size": null,
-"checked": 1790627436
+"checked": 1793302238
 },
 "Truist Bank": {
 "size": "10,001+",
@@ -8046,6 +8178,10 @@
 "USAA": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"USAFacts": {
+"size": "11-50",
+"checked": 1793302238
 },
 "Uber": {
 "size": "10,001+",
@@ -8165,7 +8301,7 @@
 },
 "Unum": {
 "size": null,
-"checked": 1790532964
+"checked": 1793302238
 },
 "Upbound Group": {
 "size": "201-500",
@@ -8351,6 +8487,10 @@
 "size": "501-1,000",
 "checked": 1792607595
 },
+"Veterans United": {
+"size": "1,001-5,000",
+"checked": 1793302238
+},
 "Vialto Partners": {
 "size": "5,001-10,000",
 "checked": 1790488033
@@ -8366,6 +8506,10 @@
 "Viavi Solutions": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"Vibrant Emotional Health": {
+"size": "501-1,000",
+"checked": 1793302238
 },
 "Viget": {
 "size": "51-200",
