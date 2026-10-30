@@ -779,6 +779,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Astera": {
+"size": "11-50",
+"checked": 1793387313
+},
 "Astera Labs": {
 "size": "501-1,000",
 "checked": 1793128856
@@ -818,6 +822,10 @@
 "Atoms": {
 "size": "1,001-5,000",
 "checked": 1793044280
+},
+"AtriCure": {
+"size": "1,001-5,000",
+"checked": 1793387313
 },
 "Atrium Health": {
 "size": "10,001+",
@@ -1135,6 +1143,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Blackberry": {
+"size": "1-10",
+"checked": 1793387313
+},
 "Blackhawk Network Holdings": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -1282,6 +1294,10 @@
 "Bracket Bot": {
 "size": "1-10",
 "checked": 1790488033
+},
+"Brain Co.": {
+"size": "51-200",
+"checked": 1793387313
 },
 "Braun Intertec ": {
 "size": "1,001-5,000",
@@ -1584,8 +1600,8 @@
 "checked": 1790488033
 },
 "CareSource": {
-"size": null,
-"checked": 1790532964
+"size": "1,001-5,000",
+"checked": 1793387313
 },
 "Carrier Global": {
 "size": "10,001+",
@@ -1970,6 +1986,10 @@
 "Compeer Financial": {
 "size": "501-1,000",
 "checked": 1790368289
+},
+"Composio": {
+"size": "51-200",
+"checked": 1793387313
 },
 "Conagra Brands": {
 "size": null,
@@ -2891,6 +2911,10 @@
 "size": "1,001-5,000",
 "checked": 1790627436
 },
+"F&G": {
+"size": "1,001-5,000",
+"checked": 1793387313
+},
 "F5": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -3023,6 +3047,10 @@
 "size": "1-10",
 "checked": 1790368289
 },
+"Fideres": {
+"size": null,
+"checked": 1793387313
+},
 "Field AI": {
 "size": "201-500",
 "checked": 1790488033
@@ -3073,7 +3101,7 @@
 },
 "First Bank & Trust": {
 "size": null,
-"checked": 1790795091
+"checked": 1793387313
 },
 "First Citizens BancShares": {
 "size": "10,001+",
@@ -3199,6 +3227,10 @@
 "size": null,
 "checked": 1793128856
 },
+"FreshCut Paper": {
+"size": null,
+"checked": 1793387313
+},
 "Freudenberg Group": {
 "size": "10,001+",
 "checked": 1790488033
@@ -3206,6 +3238,10 @@
 "Frost": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Fussball Club Cincinnati LLC (\u201cFC Cincinnati\u201d)": {
+"size": null,
+"checked": 1793387313
 },
 "G-20 Group": {
 "size": "11-50",
@@ -3291,6 +3327,10 @@
 "size": "201-500",
 "checked": 1790968163
 },
+"Gearset": {
+"size": "201-500",
+"checked": 1793387313
+},
 "Gecko Robotics": {
 "size": "201-500",
 "checked": 1790368289
@@ -3354,6 +3394,10 @@
 "Geneva Trading": {
 "size": "201-500",
 "checked": 1790368289
+},
+"Genius AI": {
+"size": "201-500",
+"checked": 1793387313
 },
 "Genmab": {
 "size": "1,001-5,000",
@@ -3426,6 +3470,10 @@
 "GoTo Group": {
 "size": "1,001-5,000",
 "checked": 1790532964
+},
+"Golden Analytics": {
+"size": null,
+"checked": 1793387313
 },
 "Goldman Sachs": {
 "size": "10,001+",
@@ -3660,12 +3708,12 @@
 "checked": 1790968163
 },
 "Hasbro": {
-"size": null,
-"checked": 1790795091
+"size": "1,001-5,000",
+"checked": 1793387313
 },
 "Haven Studios": {
 "size": null,
-"checked": 1790795091
+"checked": 1793387313
 },
 "HealthCorps": {
 "size": "51-200",
@@ -3809,7 +3857,7 @@
 },
 "Hospital for Special Surgery (HSS)": {
 "size": null,
-"checked": 1790627436
+"checked": 1793387313
 },
 "Hottinger Br\u00fcel & Kjaer (HBK)": {
 "size": null,
@@ -3898,6 +3946,10 @@
 "Hyphenate": {
 "size": null,
 "checked": 1793215632
+},
+"Hyster-Yale Materials Handling": {
+"size": "1,001-5,000",
+"checked": 1793387313
 },
 "IAT Insurance Group": {
 "size": "501-1,000",
@@ -4735,6 +4787,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Loft Orbital": {
+"size": null,
+"checked": 1793387313
+},
 "Logitech": {
 "size": "5,001-10,000",
 "checked": 1790532964
@@ -5435,6 +5491,10 @@
 "size": null,
 "checked": 1790368289
 },
+"Ncino": {
+"size": "1,001-5,000",
+"checked": 1793387313
+},
 "Nebius": {
 "size": "1,001-5,000",
 "checked": 1791137133
@@ -5487,6 +5547,10 @@
 "size": "1-10",
 "checked": 1791235661
 },
+"New York ISO": {
+"size": "501-1,000",
+"checked": 1793387313
+},
 "New York Mets": {
 "size": null,
 "checked": 1791050014
@@ -5502,6 +5566,10 @@
 "Newell Brands": {
 "size": "10,001+",
 "checked": 1792693673
+},
+"Newmont": {
+"size": "10,001+",
+"checked": 1793387313
 },
 "Newrez": {
 "size": "1,001-5,000",
@@ -5723,6 +5791,10 @@
 "size": "51-200",
 "checked": 1790488033
 },
+"Ohio State University": {
+"size": null,
+"checked": 1793387313
+},
 "Ohiohealth": {
 "size": null,
 "checked": 1793128856
@@ -5827,6 +5899,10 @@
 "size": "501-1,000",
 "checked": 1790488033
 },
+"Overland AI": {
+"size": "51-200",
+"checked": 1793387313
+},
 "Overview Energy": {
 "size": "11-50",
 "checked": 1790488033
@@ -5926,6 +6002,10 @@
 "Palomar Holdings": {
 "size": "201-500",
 "checked": 1791050014
+},
+"Palona AI": {
+"size": "11-50",
+"checked": 1793387313
 },
 "PanAgora": {
 "size": null,
@@ -6109,7 +6189,7 @@
 },
 "Pima County": {
 "size": null,
-"checked": 1790488253
+"checked": 1793387313
 },
 "Pine Rest": {
 "size": "1,001-5,000",
@@ -6819,6 +6899,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"SK hynix": {
+"size": "5,001-10,000",
+"checked": 1793387313
+},
 "SOCOTEC Global": {
 "size": "5,001-10,000",
 "checked": 1790488033
@@ -7171,6 +7255,10 @@
 "size": "1,001-5,000",
 "checked": 1791402735
 },
+"Signet Jewelers": {
+"size": "5,001-10,000",
+"checked": 1793387313
+},
 "Signify": {
 "size": "10,001+",
 "checked": 1790488033
@@ -7511,6 +7599,10 @@
 "size": "11-50",
 "checked": 1791488897
 },
+"Strada Education Foundation": {
+"size": "201-500",
+"checked": 1793387313
+},
 "Strategic Education": {
 "size": "5,001-10,000",
 "checked": 1790488033
@@ -7614,6 +7706,10 @@
 "Synopsys": {
 "size": "10,001+",
 "checked": 1792256301
+},
+"Synthesis": {
+"size": null,
+"checked": 1793387313
 },
 "Syntiant": {
 "size": "201-500",
@@ -7834,6 +7930,10 @@
 "The Boeing Company": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"The Boyd Group": {
+"size": "201-500",
+"checked": 1793387313
 },
 "The Brattle Group": {
 "size": "501-1,000",
@@ -8116,8 +8216,8 @@
 "checked": 1790488033
 },
 "Tulsa County": {
-"size": null,
-"checked": 1790488033
+"size": "1,001-5,000",
+"checked": 1793387313
 },
 "Turner & Townsend": {
 "size": null,
@@ -8358,6 +8458,10 @@
 "Valeo": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"Valeris": {
+"size": "201-500",
+"checked": 1793387313
 },
 "Valmont": {
 "size": "1,001-5,000",
@@ -8635,6 +8739,10 @@
 "size": "501-1,000",
 "checked": 1790488033
 },
+"Waggoner Financial": {
+"size": null,
+"checked": 1793387313
+},
 "Walgreens": {
 "size": "10,001+",
 "checked": 1791573913
@@ -8802,6 +8910,10 @@
 "Williams-Sonoma": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Wilmington Trust": {
+"size": "1,001-5,000",
+"checked": 1793387313
 },
 "WindBorne Systems": {
 "size": "51-200",
