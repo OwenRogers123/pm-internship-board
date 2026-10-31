@@ -143,6 +143,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"AXA": {
+"size": "10,001+",
+"checked": 1793471148
+},
 "AXQ Capital": {
 "size": "11-50",
 "checked": 1790368289
@@ -286,6 +290,10 @@
 "Agiliti": {
 "size": "1,001-5,000",
 "checked": 1790488253
+},
+"AiDash": {
+"size": "201-500",
+"checked": 1793471148
 },
 "Air Liquide": {
 "size": "10,001+",
@@ -551,6 +559,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Andreessen Horowitz": {
+"size": "1,001-5,000",
+"checked": 1793471148
+},
 "Anduril": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -702,6 +714,10 @@
 "Arista Networks": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"Aristocrat": {
+"size": null,
+"checked": 1793471148
 },
 "Aristocrat Leisure": {
 "size": "5,001-10,000",
@@ -1539,6 +1555,10 @@
 "size": "1,001-5,000",
 "checked": 1790488253
 },
+"Cambridge Consultants": {
+"size": null,
+"checked": 1793471148
+},
 "Cambridge Investment Research": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -2351,6 +2371,10 @@
 "size": "201-500",
 "checked": 1790488033
 },
+"Deliveroo": {
+"size": "10,001+",
+"checked": 1793471148
+},
 "Dell Technologies": {
 "size": "10,001+",
 "checked": 1790368289
@@ -2446,6 +2470,10 @@
 "Disney": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Divergent Technologies": {
+"size": "501-1,000",
+"checked": 1793471148
 },
 "Diversified Energy": {
 "size": "501-1,000",
@@ -3011,6 +3039,10 @@
 "size": "201-500",
 "checked": 1790488253
 },
+"Farmers Mutual Hail": {
+"size": "201-500",
+"checked": 1793471148
+},
 "Fasanara": {
 "size": "11-50",
 "checked": 1790488033
@@ -3094,6 +3126,10 @@
 "Finning": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"Firework": {
+"size": "201-500",
+"checked": 1793471148
 },
 "First American": {
 "size": "10,001+",
@@ -3693,7 +3729,7 @@
 },
 "Harris Central Appraisal District": {
 "size": null,
-"checked": 1790488033
+"checked": 1793471148
 },
 "Harris Computer": {
 "size": "1,001-5,000",
@@ -4061,7 +4097,7 @@
 },
 "Indian River State College": {
 "size": null,
-"checked": 1790488371
+"checked": 1793471148
 },
 "Indie": {
 "size": "201-500",
@@ -4183,6 +4219,10 @@
 "size": null,
 "checked": 1793128856
 },
+"Intercontinental Exchange": {
+"size": "10,001+",
+"checked": 1793471148
+},
 "Interdigital": {
 "size": "501-1,000",
 "checked": 1790488033
@@ -4201,7 +4241,7 @@
 },
 "International Monetary Fund": {
 "size": null,
-"checked": 1790627436
+"checked": 1793471148
 },
 "International Rescue Committee (IRC)": {
 "size": null,
@@ -4330,6 +4370,10 @@
 "Jobs for Humanity": {
 "size": "51-200",
 "checked": 1791235661
+},
+"John D. and Catherine T. MacArthur Foundation": {
+"size": "201-500",
+"checked": 1793471148
 },
 "John Deere": {
 "size": "10,001+",
@@ -4578,6 +4622,10 @@
 "Koppers": {
 "size": "1,001-5,000",
 "checked": 1791314733
+},
+"Kpler": {
+"size": "501-1,000",
+"checked": 1793471148
 },
 "Kraft Heinz": {
 "size": "10,001+",
@@ -5287,6 +5335,10 @@
 "size": "1,001-5,000",
 "checked": 1793215632
 },
+"Molina Healthcare": {
+"size": "10,001+",
+"checked": 1793471148
+},
 "Momentive": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -5338,6 +5390,10 @@
 "Morningstar": {
 "size": "10,001+",
 "checked": 1791402735
+},
+"Morph Labs": {
+"size": null,
+"checked": 1793471148
 },
 "Mosaic": {
 "size": "1,001-5,000",
@@ -5515,6 +5571,10 @@
 "size": "1,001-5,000",
 "checked": 1790486647
 },
+"Neptune North": {
+"size": null,
+"checked": 1793471148
+},
 "NetApp": {
 "size": "51-200",
 "checked": 1792520784
@@ -5586,6 +5646,10 @@
 "NextGen Federal Systems": {
 "size": "201-500",
 "checked": 1792173405
+},
+"NextToken": {
+"size": null,
+"checked": 1793471148
 },
 "Nexthink": {
 "size": "1,001-5,000",
@@ -5770,6 +5834,10 @@
 "Oakland County, Michigan": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Obsidian Entertainment": {
+"size": "201-500",
+"checked": 1793471148
 },
 "Occidental Petroleum Corporation (Oxy)": {
 "size": null,
@@ -6283,6 +6351,10 @@
 "size": null,
 "checked": 1790488033
 },
+"Pretium": {
+"size": "501-1,000",
+"checked": 1793471148
+},
 "PricewaterhouseCoopers (PwC)": {
 "size": "10,001+",
 "checked": 1790368289
@@ -6343,6 +6415,10 @@
 "size": "501-1,000",
 "checked": 1790488033
 },
+"Protagonist": {
+"size": "11-50",
+"checked": 1793471148
+},
 "Protech Automotive Solutions": {
 "size": "51-200",
 "checked": 1790368289
@@ -6386,6 +6462,10 @@
 "Pylon": {
 "size": "51-200",
 "checked": 1790368289
+},
+"Pyrotek": {
+"size": null,
+"checked": 1793471148
 },
 "Q2": {
 "size": "1,001-5,000",
@@ -6653,7 +6733,7 @@
 },
 "Resolve Tech Solutions": {
 "size": null,
-"checked": 1790532964
+"checked": 1793471148
 },
 "Resource Innovations": {
 "size": "1,001-5,000",
@@ -6894,6 +6974,10 @@
 "SEP": {
 "size": "201-500",
 "checked": 1790368289
+},
+"SESCO": {
+"size": null,
+"checked": 1793471148
 },
 "SHEIN": {
 "size": "10,001+",
@@ -7447,6 +7531,10 @@
 "size": "5,001-10,000",
 "checked": 1791573913
 },
+"Sophinea": {
+"size": null,
+"checked": 1793471148
+},
 "Sophos": {
 "size": "5,001-10,000",
 "checked": 1792439241
@@ -7641,7 +7729,7 @@
 },
 "Suntory Global Spirits": {
 "size": null,
-"checked": 1790368289
+"checked": 1793471148
 },
 "Super": {
 "size": "1,001-5,000",
@@ -7723,6 +7811,10 @@
 "size": "501-1,000",
 "checked": 1790488033
 },
+"Systems Planning and Analysis": {
+"size": "1,001-5,000",
+"checked": 1793471148
+},
 "T-Mobile": {
 "size": "10,001+",
 "checked": 1792173405
@@ -7786,6 +7878,10 @@
 "TOPPAN Packaging Americas": {
 "size": null,
 "checked": 1793128856
+},
+"TPG": {
+"size": null,
+"checked": 1793471148
 },
 "TRC Companies": {
 "size": "5,001-10,000",
@@ -7887,6 +7983,10 @@
 "size": "11-50",
 "checked": 1790488033
 },
+"Tevora": {
+"size": "51-200",
+"checked": 1793471148
+},
 "Texas A&M International University": {
 "size": null,
 "checked": 1793215632
@@ -7949,7 +8049,7 @@
 },
 "The Composites Solution Partner (CSP)": {
 "size": null,
-"checked": 1790627436
+"checked": 1793471148
 },
 "The Exploration Company": {
 "size": "501-1,000",
@@ -8779,6 +8879,10 @@
 "size": null,
 "checked": 1790488033
 },
+"Waters": {
+"size": null,
+"checked": 1793471148
+},
 "Watts Water": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -9122,6 +9226,10 @@
 "iRhythm Technologies": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"iSAM": {
+"size": "201-500",
+"checked": 1793471148
 },
 "ibotta": {
 "size": "501-1,000",
