@@ -865,7 +865,7 @@
 },
 "Austin Community College District": {
 "size": null,
-"checked": 1791050014
+"checked": 1793659350
 },
 "Auto-Owners Insurance": {
 "size": "1,001-5,000",
@@ -1067,6 +1067,10 @@
 "size": "51-200",
 "checked": 1790488033
 },
+"Bechtel": {
+"size": null,
+"checked": 1793659350
+},
 "Becton Dickinson": {
 "size": "10,001+",
 "checked": 1790532964
@@ -1186,6 +1190,10 @@
 "Bloomberg Industry Group": {
 "size": "1,001-5,000",
 "checked": 1790488253
+},
+"Bloomberg Philanthropies": {
+"size": "201-500",
+"checked": 1793659350
 },
 "Bloxd": {
 "size": null,
@@ -1342,6 +1350,10 @@
 "Bridge Neurotech": {
 "size": null,
 "checked": 1793215632
+},
+"Brigham Young University - Provo": {
+"size": null,
+"checked": 1793659350
 },
 "Bright Machines": {
 "size": "201-500",
@@ -1627,6 +1639,10 @@
 "size": "10,001+",
 "checked": 1790488371
 },
+"Carta": {
+"size": "1,001-5,000",
+"checked": 1793659350
+},
 "Cartesian": {
 "size": "201-500",
 "checked": 1790488033
@@ -1745,7 +1761,7 @@
 },
 "Charles River Associates (CRA)": {
 "size": null,
-"checked": 1790968163
+"checked": 1793659350
 },
 "Charles Schwab": {
 "size": "10,001+",
@@ -3173,11 +3189,15 @@
 },
 "Flagship Pioneering": {
 "size": null,
-"checked": 1790488033
+"checked": 1793659350
 },
 "Flex": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Flexion Robotics": {
+"size": "51-200",
+"checked": 1793659350
 },
 "Flextronics International": {
 "size": "10,001+",
@@ -3339,6 +3359,10 @@
 "size": null,
 "checked": 1790488253
 },
+"Galaxy": {
+"size": "1,001-5,000",
+"checked": 1793659350
+},
 "Gallup": {
 "size": null,
 "checked": 1790368289
@@ -3450,6 +3474,10 @@
 "Genworth Financial": {
 "size": null,
 "checked": 1790368289
+},
+"GeoComply": {
+"size": "201-500",
+"checked": 1793659350
 },
 "Georgian Partners Growth": {
 "size": null,
@@ -5613,7 +5641,7 @@
 },
 "New York Mets": {
 "size": null,
-"checked": 1791050014
+"checked": 1793659350
 },
 "New York Post Holdings": {
 "size": "1,001-5,000",
@@ -6098,6 +6126,10 @@
 "Parallel Wireless": {
 "size": "501-1,000",
 "checked": 1792520784
+},
+"ParetoHealth": {
+"size": "201-500",
+"checked": 1793659350
 },
 "Parexel": {
 "size": "10,001+",
@@ -6625,7 +6657,7 @@
 },
 "Re:Build Manufacturing": {
 "size": null,
-"checked": 1790488033
+"checked": 1793659350
 },
 "Readystate Asset Management": {
 "size": "11-50",
@@ -6870,6 +6902,10 @@
 "Rogue Fitness": {
 "size": "201-500",
 "checked": 1792173405
+},
+"Roku": {
+"size": "1,001-5,000",
+"checked": 1793659350
 },
 "Rolls-Royce": {
 "size": "10,001+",
@@ -7958,6 +7994,10 @@
 "Techtronic Industries": {
 "size": "5,001-10,000",
 "checked": 1790532964
+},
+"Tecsys": {
+"size": "501-1,000",
+"checked": 1793659350
 },
 "Teledyne": {
 "size": "11-50",
