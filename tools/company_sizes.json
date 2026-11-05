@@ -31,6 +31,10 @@
 "size": "10,001+",
 "checked": 1790882735
 },
+"84 Lumber": {
+"size": "5,001-10,000",
+"checked": 1793912394
+},
 "AArete": {
 "size": "501-1,000",
 "checked": 1790368289
@@ -215,6 +219,10 @@
 "size": "51-200",
 "checked": 1790368289
 },
+"Acumatica": {
+"size": "501-1,000",
+"checked": 1793912394
+},
 "Acushnet Holdings": {
 "size": "1-10",
 "checked": 1790488033
@@ -326,6 +334,10 @@
 "Akuna Capital University": {
 "size": null,
 "checked": 1790368289
+},
+"Alaska Air Group": {
+"size": "10,001+",
+"checked": 1793912394
 },
 "Alberta Investment Management Corporation": {
 "size": "501-1,000",
@@ -1039,6 +1051,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Baringa": {
+"size": "501-1,000",
+"checked": 1793912394
+},
 "Barnes & Thornburg": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -1143,6 +1159,10 @@
 "size": "501-1,000",
 "checked": 1793215632
 },
+"BiblioCommons": {
+"size": "51-200",
+"checked": 1793912394
+},
 "Bild AI": {
 "size": "11-50",
 "checked": 1790488033
@@ -1194,6 +1214,10 @@
 "Bland AI": {
 "size": null,
 "checked": 1790488033
+},
+"Blockhouse": {
+"size": "11-50",
+"checked": 1793912394
 },
 "Bloom Energy": {
 "size": "1,001-5,000",
@@ -1559,6 +1583,10 @@
 "size": null,
 "checked": 1793128856
 },
+"CWILL": {
+"size": "51-200",
+"checked": 1793912394
+},
 "Cadence": {
 "size": null,
 "checked": 1790368289
@@ -1811,6 +1839,10 @@
 "size": null,
 "checked": 1791314733
 },
+"Chubb": {
+"size": "10,001+",
+"checked": 1793912394
+},
 "Chuck E. Cheese": {
 "size": "5,001-10,000",
 "checked": 1790488033
@@ -1906,6 +1938,10 @@
 "Clarity Innovations": {
 "size": "501-1,000",
 "checked": 1790488033
+},
+"Clasp": {
+"size": "11-50",
+"checked": 1793912394
 },
 "Clay": {
 "size": "1,001-5,000",
@@ -2389,7 +2425,7 @@
 },
 "Dayton Freight Lines": {
 "size": null,
-"checked": 1791314733
+"checked": 1793912394
 },
 "Decagon": {
 "size": "501-1,000",
@@ -2527,6 +2563,10 @@
 "size": "5,001-10,000",
 "checked": 1791137133
 },
+"Docusign": {
+"size": "5,001-10,000",
+"checked": 1793912394
+},
 "Dolby": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -2603,6 +2643,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"DwyerOmega": {
+"size": "1,001-5,000",
+"checked": 1793912394
+},
 "Dyna Robotics": {
 "size": "51-200",
 "checked": 1790488033
@@ -2650,6 +2694,10 @@
 "ERM": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"East Penn Manufacturing": {
+"size": null,
+"checked": 1793912394
 },
 "Eaton": {
 "size": null,
@@ -2710,6 +2758,10 @@
 "Elekta": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Element Fleet Management": {
+"size": "1,001-5,000",
+"checked": 1793912394
 },
 "Elevance Health": {
 "size": "10,001+",
@@ -2780,8 +2832,8 @@
 "checked": 1790368289
 },
 "Engineers Gate": {
-"size": null,
-"checked": 1791314733
+"size": "201-500",
+"checked": 1793912394
 },
 "Enova": {
 "size": "1,001-5,000",
@@ -3286,6 +3338,10 @@
 "FourKites": {
 "size": "501-1,000",
 "checked": 1790627436
+},
+"Framatome": {
+"size": "10,001+",
+"checked": 1793912394
 },
 "Franklin Electric": {
 "size": "1,001-5,000",
@@ -4075,6 +4131,10 @@
 "size": "1,001-5,000",
 "checked": 1790488371
 },
+"IDeaS": {
+"size": "501-1,000",
+"checked": 1793912394
+},
 "IEX": {
 "size": "51-200",
 "checked": 1791314733
@@ -4796,8 +4856,8 @@
 "checked": 1792439241
 },
 "Legrand": {
-"size": null,
-"checked": 1791314733
+"size": "10,001+",
+"checked": 1793912394
 },
 "Leidos": {
 "size": "10,001+",
@@ -5107,6 +5167,10 @@
 "size": "1,001-5,000",
 "checked": 1790532964
 },
+"Markel Group": {
+"size": "51-200",
+"checked": 1793912394
+},
 "Markel Group, Inc.": {
 "size": null,
 "checked": 1793215632
@@ -5166,6 +5230,10 @@
 "MatX": {
 "size": "51-200",
 "checked": 1793215632
+},
+"Match Group": {
+"size": "1,001-5,000",
+"checked": 1793912394
 },
 "Materion": {
 "size": "1,001-5,000",
@@ -5363,9 +5431,17 @@
 "size": "5,001-10,000",
 "checked": 1791050014
 },
+"Milwaukee Brewers": {
+"size": null,
+"checked": 1793912394
+},
 "Mindex": {
 "size": "201-500",
 "checked": 1790968163
+},
+"Minerals Technologies": {
+"size": "501-1,000",
+"checked": 1793912394
 },
 "Mirantis": {
 "size": "501-1,000",
@@ -5558,6 +5634,10 @@
 "NOX METALS": {
 "size": null,
 "checked": 1791842625
+},
+"NRDC": {
+"size": "501-1,000",
+"checked": 1793912394
 },
 "NTT DATA AIVista": {
 "size": "11-50",
@@ -5799,6 +5879,10 @@
 "size": "201-500",
 "checked": 1792087921
 },
+"Nooks": {
+"size": "201-500",
+"checked": 1793912394
+},
 "Nordson": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -5854,6 +5938,10 @@
 "Novartis": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"Novelis": {
+"size": "5,001-10,000",
+"checked": 1793912394
 },
 "Novogradac": {
 "size": "501-1,000",
@@ -6307,6 +6395,10 @@
 "size": "10,001+",
 "checked": 1790532964
 },
+"Philadelphia Gas Works": {
+"size": "1,001-5,000",
+"checked": 1793912394
+},
 "Philips": {
 "size": null,
 "checked": 1790368289
@@ -6707,6 +6799,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Rambus": {
+"size": "1,001-5,000",
+"checked": 1793912394
+},
 "Ramp": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -7082,6 +7178,10 @@
 "SCM": {
 "size": "11-50",
 "checked": 1793825105
+},
+"SDSU Research Foundation": {
+"size": "1,001-5,000",
+"checked": 1793912394
 },
 "SECURE": {
 "size": "1,001-5,000",
@@ -8209,7 +8309,7 @@
 },
 "The Focusrite Group": {
 "size": null,
-"checked": 1791314733
+"checked": 1793912394
 },
 "The Friedkin Group": {
 "size": "201-500",
@@ -8871,6 +8971,10 @@
 "size": "1,001-5,000",
 "checked": 1793302238
 },
+"ViaSat": {
+"size": "5,001-10,000",
+"checked": 1793912394
+},
 "Vialto Partners": {
 "size": "5,001-10,000",
 "checked": 1790488033
@@ -9238,6 +9342,10 @@
 "Wise": {
 "size": "10,001+",
 "checked": 1791235661
+},
+"Wolf & Company": {
+"size": "201-500",
+"checked": 1793912394
 },
 "Wonder": {
 "size": "1,001-5,000",
