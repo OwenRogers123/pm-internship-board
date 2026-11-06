@@ -95,6 +95,10 @@
 "size": "1,001-5,000",
 "checked": 1792862415
 },
+"AMAROK Security": {
+"size": null,
+"checked": 1793996506
+},
 "AMCA": {
 "size": "51-200",
 "checked": 1790795091
@@ -126,6 +130,10 @@
 "ASM Global": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"ASM International": {
+"size": "1,001-5,000",
+"checked": 1793996506
 },
 "ASML": {
 "size": "10,001+",
@@ -298,6 +306,10 @@
 "Agiliti": {
 "size": "1,001-5,000",
 "checked": 1790488253
+},
+"Agoda": {
+"size": "5,001-10,000",
+"checked": 1793996506
 },
 "AiDash": {
 "size": "201-500",
@@ -1307,6 +1319,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Bosch Group": {
+"size": null,
+"checked": 1793996506
+},
 "Bosch Home Comfort": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -1703,6 +1719,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Catholic Charities of Kansas City-St. Joseph": {
+"size": "51-200",
+"checked": 1793996506
+},
 "Cboe": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -1863,6 +1883,10 @@
 "size": null,
 "checked": 1791488897
 },
+"Cintas": {
+"size": "10,001+",
+"checked": 1793996506
+},
 "Circle": {
 "size": "1,001-5,000",
 "checked": 1792256301
@@ -1908,8 +1932,8 @@
 "checked": 1790368289
 },
 "City and County of San Francisco": {
-"size": null,
-"checked": 1790488033
+"size": "10,001+",
+"checked": 1793996506
 },
 "City of Austin": {
 "size": "5,001-10,000",
@@ -1989,7 +2013,7 @@
 },
 "Cl\u0113nera": {
 "size": null,
-"checked": 1791402735
+"checked": 1793996506
 },
 "CoBank": {
 "size": "1,001-5,000",
@@ -2834,6 +2858,10 @@
 "Engineers Gate": {
 "size": "201-500",
 "checked": 1793912394
+},
+"Engramme": {
+"size": "11-50",
+"checked": 1793996506
 },
 "Enova": {
 "size": "1,001-5,000",
@@ -3991,6 +4019,10 @@
 "size": "201-500",
 "checked": 1793128856
 },
+"HoYoverse": {
+"size": "1,001-5,000",
+"checked": 1793996506
+},
 "Homey": {
 "size": "1-10",
 "checked": 1790488033
@@ -4382,6 +4414,10 @@
 "Internship": {
 "size": null,
 "checked": 1793128856
+},
+"Interplay": {
+"size": "11-50",
+"checked": 1793996506
 },
 "Intuit": {
 "size": "10,001+",
@@ -4923,6 +4959,10 @@
 "size": "51-200",
 "checked": 1793215632
 },
+"Light & Wonder": {
+"size": "5,001-10,000",
+"checked": 1793996506
+},
 "Lightmatter": {
 "size": "201-500",
 "checked": 1790368289
@@ -4949,7 +4989,7 @@
 },
 "Little Caesars Enterprises": {
 "size": null,
-"checked": 1790488253
+"checked": 1793996506
 },
 "LivaNova": {
 "size": "1,001-5,000",
@@ -5019,6 +5059,10 @@
 "size": null,
 "checked": 1793128856
 },
+"Lumbermen's": {
+"size": "501-1,000",
+"checked": 1793996506
+},
 "Lumentum": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -5041,7 +5085,7 @@
 },
 "M&G": {
 "size": null,
-"checked": 1790488033
+"checked": 1793996506
 },
 "M&T Bank": {
 "size": null,
@@ -5862,6 +5906,10 @@
 "Nissan Global": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"Niural": {
+"size": "51-200",
+"checked": 1793996506
 },
 "Noblis": {
 "size": "1,001-5,000",
@@ -6847,6 +6895,10 @@
 "size": "1,001-5,000",
 "checked": 1790486647
 },
+"Red Wing Shoe Company": {
+"size": "1,001-5,000",
+"checked": 1793996506
+},
 "Redgate": {
 "size": "501-1,000",
 "checked": 1792520784
@@ -7010,6 +7062,10 @@
 "Riverlane": {
 "size": "201-500",
 "checked": 1793302238
+},
+"Riverside Research": {
+"size": "501-1,000",
+"checked": 1793996506
 },
 "Rivet Industries": {
 "size": "51-200",
@@ -7206,6 +7262,10 @@
 "SOCOTEC Global": {
 "size": "5,001-10,000",
 "checked": 1790488033
+},
+"SOMFY Group": {
+"size": "5,001-10,000",
+"checked": 1793996506
 },
 "SOTI": {
 "size": "1,001-5,000",
@@ -7827,6 +7887,10 @@
 "size": null,
 "checked": 1790368289
 },
+"Spectrum Control": {
+"size": "501-1,000",
+"checked": 1793996506
+},
 "Spirit AeroSystems": {
 "size": "10,001+",
 "checked": 1790368289
@@ -8427,6 +8491,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Tinder": {
+"size": "1,001-5,000",
+"checked": 1793996506
+},
 "Tive": {
 "size": "201-500",
 "checked": 1790368289
@@ -8486,6 +8554,10 @@
 "Trading212": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Trajectory": {
+"size": "11-50",
+"checked": 1793996506
 },
 "Trane Technologies": {
 "size": "10,001+",
@@ -9490,6 +9562,10 @@
 "Zoetis": {
 "size": null,
 "checked": 1793128856
+},
+"Zoox": {
+"size": "5,001-10,000",
+"checked": 1793996506
 },
 "Zurn Elkay": {
 "size": null,
