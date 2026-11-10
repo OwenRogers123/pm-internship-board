@@ -243,6 +243,10 @@
 "size": "1,001-5,000",
 "checked": 1790488371
 },
+"Addepar": {
+"size": "1,001-5,000",
+"checked": 1794343573
+},
 "Adient": {
 "size": "10,001+",
 "checked": 1790488033
@@ -783,6 +787,10 @@
 "size": "201-500",
 "checked": 1790368289
 },
+"Art of Problem Solving": {
+"size": "501-1,000",
+"checked": 1794343573
+},
 "Artefact": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -806,6 +814,10 @@
 "Ascensus": {
 "size": "5,001-10,000",
 "checked": 1790368289
+},
+"Aspect Capital": {
+"size": "51-200",
+"checked": 1794343573
 },
 "AspenTech": {
 "size": "1,001-5,000",
@@ -894,6 +906,10 @@
 "Attentive": {
 "size": "1,001-5,000",
 "checked": 1790968163
+},
+"Auburn University": {
+"size": null,
+"checked": 1794343573
 },
 "Auctane": {
 "size": "1,001-5,000",
@@ -1195,6 +1211,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Biodesix": {
+"size": "201-500",
+"checked": 1794343573
+},
 "Biogen": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -1426,6 +1446,10 @@
 "Brightstar.AI": {
 "size": "1-10",
 "checked": 1790488033
+},
+"Brillio": {
+"size": "5,001-10,000",
+"checked": 1794343573
 },
 "Bristol Myers Squibb": {
 "size": "10,001+",
@@ -4105,7 +4129,7 @@
 },
 "Howard County Public School System": {
 "size": null,
-"checked": 1791656720
+"checked": 1794343573
 },
 "Howden": {
 "size": "1,001-5,000",
@@ -4186,6 +4210,10 @@
 "Hyster-Yale Materials Handling": {
 "size": "1,001-5,000",
 "checked": 1793387313
+},
+"H\u00f6gan\u00e4s": {
+"size": null,
+"checked": 1794343573
 },
 "IAT Insurance Group": {
 "size": "501-1,000",
@@ -4398,6 +4426,10 @@
 "Integrate": {
 "size": "11-50",
 "checked": 1793215632
+},
+"Integration Innovation (i3)": {
+"size": "501-1,000",
+"checked": 1794343573
 },
 "Integrity": {
 "size": "1,001-5,000",
@@ -4718,6 +4750,10 @@
 "Kantar": {
 "size": "10,001+",
 "checked": 1792520784
+},
+"Kasa Living": {
+"size": "501-1,000",
+"checked": 1794343573
 },
 "Kastle AI": {
 "size": "11-50",
@@ -5339,6 +5375,10 @@
 "size": "201-500",
 "checked": 1790488033
 },
+"Matillion": {
+"size": "201-500",
+"checked": 1794343573
+},
 "Mattel": {
 "size": "10,001+",
 "checked": 1790368289
@@ -5658,6 +5698,10 @@
 "Mosaic": {
 "size": "1,001-5,000",
 "checked": 1790488253
+},
+"Moss": {
+"size": "201-500",
+"checked": 1794343573
 },
 "Moss & Associates": {
 "size": null,
@@ -6583,6 +6627,10 @@
 "size": "10,001+",
 "checked": 1792173405
 },
+"Pivotal Aero": {
+"size": "51-200",
+"checked": 1794343573
+},
 "Pivotal Software": {
 "size": "201-500",
 "checked": 1794266520
@@ -7038,6 +7086,10 @@
 "Republic Airways": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Republic Finance": {
+"size": "1,001-5,000",
+"checked": 1794343573
 },
 "Republic Services": {
 "size": "10,001+",
@@ -7550,6 +7602,10 @@
 "Sedgwick Claims Management Services": {
 "size": "10,001+",
 "checked": 1792779295
+},
+"Selective Insurance": {
+"size": "1,001-5,000",
+"checked": 1794343573
 },
 "Semgrep": {
 "size": "201-500",
@@ -8471,6 +8527,10 @@
 "size": "201-500",
 "checked": 1790368289
 },
+"The Marzetti Company": {
+"size": "1,001-5,000",
+"checked": 1794343573
+},
 "The New School": {
 "size": null,
 "checked": 1790532964
@@ -8682,6 +8742,10 @@
 "Trillium": {
 "size": "201-500",
 "checked": 1790368289
+},
+"Trilogy Health Services": {
+"size": "1,001-5,000",
+"checked": 1794343573
 },
 "Trimble": {
 "size": "1-10",
@@ -9471,6 +9535,10 @@
 "size": "51-200",
 "checked": 1790488033
 },
+"Windstar Cruises": {
+"size": "501-1,000",
+"checked": 1794343573
+},
 "Wing Assistant": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -9642,6 +9710,10 @@
 "Zoetis": {
 "size": null,
 "checked": 1793128856
+},
+"Zoetis Services": {
+"size": "10,001+",
+"checked": 1794343573
 },
 "Zoox": {
 "size": "5,001-10,000",
