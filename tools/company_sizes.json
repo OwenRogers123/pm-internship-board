@@ -43,6 +43,10 @@
 "size": "501-1,000",
 "checked": 1790368289
 },
+"AB InBev": {
+"size": "10,001+",
+"checked": 1794603049
+},
 "ABB": {
 "size": "10,001+",
 "checked": 1790368289
@@ -651,6 +655,10 @@
 "size": "10,001+",
 "checked": 1792002588
 },
+"Apache Industrial": {
+"size": null,
+"checked": 1794603049
+},
 "Apera AI": {
 "size": "51-200",
 "checked": 1790368289
@@ -882,6 +890,10 @@
 "Astronics": {
 "size": "1,001-5,000",
 "checked": 1793302238
+},
+"Atalanta": {
+"size": "11-50",
+"checked": 1794603049
 },
 "Athene": {
 "size": "1,001-5,000",
@@ -1455,6 +1467,10 @@
 "size": null,
 "checked": 1793215632
 },
+"Brigham Young University": {
+"size": null,
+"checked": 1794603049
+},
 "Brigham Young University - Provo": {
 "size": null,
 "checked": 1793659350
@@ -1695,6 +1711,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Camping World": {
+"size": "5,001-10,000",
+"checked": 1794603049
+},
 "Canadian Solar": {
 "size": "51-200",
 "checked": 1790488033
@@ -1702,6 +1722,10 @@
 "Cantina": {
 "size": null,
 "checked": 1793128856
+},
+"Cantor Fitzgerald": {
+"size": "1,001-5,000",
+"checked": 1794603049
 },
 "Canvas, Inc.": {
 "size": "201-500",
@@ -1722,6 +1746,10 @@
 "Capital One": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Capital Power": {
+"size": "501-1,000",
+"checked": 1794603049
 },
 "Capital de Recherche Tower": {
 "size": null,
@@ -1754,6 +1782,10 @@
 "CareSource": {
 "size": "1,001-5,000",
 "checked": 1793387313
+},
+"Carlisle Companies": {
+"size": "1,001-5,000",
+"checked": 1794603049
 },
 "Carrier Global": {
 "size": "10,001+",
@@ -2609,7 +2641,7 @@
 },
 "Dexcom": {
 "size": null,
-"checked": 1790488371
+"checked": 1794603049
 },
 "Dexmate": {
 "size": "51-200",
@@ -2665,7 +2697,7 @@
 },
 "Doctors Without Borders": {
 "size": null,
-"checked": 1792002588
+"checked": 1794603049
 },
 "DocuSign": {
 "size": "5,001-10,000",
@@ -2774,6 +2806,10 @@
 "E-Space": {
 "size": "51-200",
 "checked": 1790488033
+},
+"E2 Consulting Engineers": {
+"size": "501-1,000",
+"checked": 1794603049
 },
 "EDF Energy": {
 "size": "5,001-10,000",
@@ -2999,9 +3035,17 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Environmental Defense Fund": {
+"size": "1,001-5,000",
+"checked": 1794603049
+},
 "Envista": {
 "size": "1,001-5,000",
 "checked": 1790532964
+},
+"Envita Solutions": {
+"size": null,
+"checked": 1794603049
 },
 "Envoy": {
 "size": "201-500",
@@ -3279,6 +3323,10 @@
 "size": "10,001+",
 "checked": 1792693673
 },
+"Federal Home Loan Bank of Dallas": {
+"size": "201-500",
+"checked": 1794603049
+},
 "Federal Home Loan Bank of Indianapolis": {
 "size": "201-500",
 "checked": 1791488897
@@ -3430,6 +3478,10 @@
 "Flowserve": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"Fonds de solidarit\u00e9 FTQ": {
+"size": "501-1,000",
+"checked": 1794603049
 },
 "FormFactor": {
 "size": "1,001-5,000",
@@ -3770,6 +3822,10 @@
 "Golden Analytics": {
 "size": null,
 "checked": 1793387313
+},
+"Golden Pet Brands": {
+"size": null,
+"checked": 1794603049
 },
 "Goldman Sachs": {
 "size": "10,001+",
@@ -4171,6 +4227,10 @@
 "size": "51-200",
 "checked": 1792520784
 },
+"Horizon3.ai": {
+"size": null,
+"checked": 1794603049
+},
 "Hormel Foods": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -4198,6 +4258,10 @@
 "Howmet Aerospace": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Huawei": {
+"size": "10,001+",
+"checked": 1794603049
 },
 "Hudl": {
 "size": "1,001-5,000",
@@ -4576,8 +4640,8 @@
 "checked": 1790627436
 },
 "Inversion Space": {
-"size": null,
-"checked": 1792002588
+"size": "51-200",
+"checked": 1794603049
 },
 "Invesco": {
 "size": "501-1,000",
@@ -4654,6 +4718,10 @@
 "JPMorgan Chase": {
 "size": null,
 "checked": 1790368289
+},
+"JSX": {
+"size": "501-1,000",
+"checked": 1794603049
 },
 "Jabil": {
 "size": "10,001+",
@@ -5579,6 +5647,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Merrick": {
+"size": "501-1,000",
+"checked": 1794603049
+},
 "Meshy": {
 "size": "51-200",
 "checked": 1790368289
@@ -5674,6 +5746,10 @@
 "Minerals Technologies": {
 "size": "501-1,000",
 "checked": 1793912394
+},
+"Minitab": {
+"size": "201-500",
+"checked": 1794603049
 },
 "Mirantis": {
 "size": "501-1,000",
@@ -5797,7 +5873,7 @@
 },
 "Moss & Associates": {
 "size": null,
-"checked": 1791842625
+"checked": 1794603049
 },
 "Motorola": {
 "size": "10,001+",
@@ -6235,6 +6311,10 @@
 "size": "11-50",
 "checked": 1790488033
 },
+"OHM Advisors": {
+"size": "501-1,000",
+"checked": 1794603049
+},
 "OLG": {
 "size": "1,001-5,000",
 "checked": 1790795091
@@ -6278,6 +6358,10 @@
 "Ochsner Health": {
 "size": "10,001+",
 "checked": 1790627436
+},
+"Octant Bio": {
+"size": "51-200",
+"checked": 1794603049
 },
 "Octopus Energy": {
 "size": "5,001-10,000",
@@ -6502,6 +6586,10 @@
 "Pacific Northwest National Laboratory": {
 "size": "1,001-5,000",
 "checked": 1793737744
+},
+"Pacvue": {
+"size": "501-1,000",
+"checked": 1794603049
 },
 "Palantir": {
 "size": "5,001-10,000",
@@ -7127,6 +7215,10 @@
 "size": "501-1,000",
 "checked": 1791922262
 },
+"Reasonable AI": {
+"size": "1-10",
+"checked": 1794603049
+},
 "Red Bull": {
 "size": "10,001+",
 "checked": 1790488033
@@ -7506,6 +7598,10 @@
 "SHOPLINE": {
 "size": "501-1,000",
 "checked": 1794431572
+},
+"SJI": {
+"size": "501-1,000",
+"checked": 1794603049
 },
 "SK hynix": {
 "size": "5,001-10,000",
@@ -8531,6 +8627,10 @@
 "size": "5,001-10,000",
 "checked": 1790532964
 },
+"Techtronic Industries (TTI)": {
+"size": null,
+"checked": 1794603049
+},
 "Tecsys": {
 "size": "501-1,000",
 "checked": 1793659350
@@ -8578,6 +8678,10 @@
 "Texas A&M International University": {
 "size": null,
 "checked": 1793215632
+},
+"Texas A&M University System": {
+"size": null,
+"checked": 1794603049
 },
 "Texas Instruments": {
 "size": "10,001+",
@@ -9105,7 +9209,7 @@
 },
 "University of Nevada, Reno": {
 "size": null,
-"checked": 1790532964
+"checked": 1794603049
 },
 "University of Rochester": {
 "size": null,
@@ -9403,6 +9507,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Vital Lyfe": {
+"size": "11-50",
+"checked": 1794603049
+},
 "Vitalant": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -9529,7 +9637,7 @@
 },
 "Wash U": {
 "size": null,
-"checked": 1792002588
+"checked": 1794603049
 },
 "Washpost": {
 "size": null,
@@ -9718,6 +9826,10 @@
 "Wolf & Company": {
 "size": "201-500",
 "checked": 1793912394
+},
+"Wolters Kluwer": {
+"size": "10,001+",
+"checked": 1794603049
 },
 "Wonder": {
 "size": "1,001-5,000",
