@@ -1287,6 +1287,10 @@
 "size": null,
 "checked": 1790488033
 },
+"Blizzard Entertainment": {
+"size": "5,001-10,000",
+"checked": 1794771648
+},
 "Blockhouse": {
 "size": "11-50",
 "checked": 1793912394
@@ -3303,6 +3307,10 @@
 "size": "1,001-5,000",
 "checked": 1792607595
 },
+"Fanatics": {
+"size": "10,001+",
+"checked": 1794771648
+},
 "Fannie Mae": {
 "size": "10,001+",
 "checked": 1790368289
@@ -3746,6 +3754,10 @@
 "Genesis Molecular AI": {
 "size": "51-200",
 "checked": 1790368289
+},
+"Genesys": {
+"size": "5,001-10,000",
+"checked": 1794771648
 },
 "Geneva Trading": {
 "size": "201-500",
@@ -5187,6 +5199,10 @@
 "size": "5,001-10,000",
 "checked": 1790488033
 },
+"Liberty Global": {
+"size": "1,001-5,000",
+"checked": 1794771648
+},
 "Liberty Mutual": {
 "size": "10,001+",
 "checked": 1791314733
@@ -6486,6 +6502,10 @@
 "Oregon State Government": {
 "size": "201-500",
 "checked": 1790532964
+},
+"Oregon State University": {
+"size": null,
+"checked": 1794771648
 },
 "Orennia": {
 "size": "51-200",
@@ -9370,6 +9390,10 @@
 "Vanguard": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Vantive": {
+"size": "5,001-10,000",
+"checked": 1794771648
 },
 "Vantor": {
 "size": "1,001-5,000",
