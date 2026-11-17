@@ -387,6 +387,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"All Options": {
+"size": "501-1,000",
+"checked": 1794953396
+},
 "Allegheny County": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -1251,6 +1255,10 @@
 "size": "5,001-10,000",
 "checked": 1790368289
 },
+"Birdseye Security Solutions": {
+"size": "51-200",
+"checked": 1794953396
+},
 "Bisnow": {
 "size": "201-500",
 "checked": 1790709393
@@ -1422,6 +1430,10 @@
 "Bottom Line": {
 "size": "1,001-5,000",
 "checked": 1794871064
+},
+"Bound": {
+"size": null,
+"checked": 1794953396
 },
 "Box": {
 "size": "1,001-5,000",
@@ -1742,6 +1754,10 @@
 "Canvas, Inc.": {
 "size": "201-500",
 "checked": 1790488033
+},
+"Canyon AeroConnect": {
+"size": null,
+"checked": 1794953396
 },
 "CapTech Consulting": {
 "size": "1,001-5,000",
@@ -2471,6 +2487,10 @@
 "size": "51-200",
 "checked": 1791050014
 },
+"DLR Group": {
+"size": "1-10",
+"checked": 1794953396
+},
 "DP World": {
 "size": "10,001+",
 "checked": 1792607595
@@ -2799,6 +2819,10 @@
 "size": "501-1,000",
 "checked": 1790368289
 },
+"Duetti": {
+"size": "51-200",
+"checked": 1794953396
+},
 "Duke Energy": {
 "size": "10,001+",
 "checked": 1790488033
@@ -2830,6 +2854,10 @@
 "E2 Consulting Engineers": {
 "size": "501-1,000",
 "checked": 1794603049
+},
+"ECM Tek": {
+"size": "1-10",
+"checked": 1794953396
 },
 "EDF Energy": {
 "size": "5,001-10,000",
@@ -2974,6 +3002,10 @@
 "Emerson Electric": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Empire State Realty Trust": {
+"size": "201-500",
+"checked": 1794953396
 },
 "Empirical Foods": {
 "size": "201-500",
@@ -3271,9 +3303,17 @@
 "size": "10,001+",
 "checked": 1790627436
 },
+"FPWA": {
+"size": null,
+"checked": 1794953396
+},
 "FSH Technologies": {
 "size": "11-50",
 "checked": 1792173405
+},
+"FSP": {
+"size": "501-1,000",
+"checked": 1794953396
 },
 "FTI Consulting": {
 "size": "10,001+",
@@ -3350,6 +3390,10 @@
 "Federal Home Loan Bank of Dallas": {
 "size": "201-500",
 "checked": 1794603049
+},
+"Federal Home Loan Bank of Des Moines": {
+"size": "201-500",
+"checked": 1794953396
 },
 "Federal Home Loan Bank of Indianapolis": {
 "size": "201-500",
@@ -3526,6 +3570,10 @@
 "Formulary Financial": {
 "size": "11-50",
 "checked": 1794431572
+},
+"Forterra": {
+"size": "501-1,000",
+"checked": 1794953396
 },
 "Fortive": {
 "size": "5,001-10,000",
@@ -4111,6 +4159,10 @@
 "size": "1,001-5,000",
 "checked": 1794266520
 },
+"Havas": {
+"size": "10,001+",
+"checked": 1794953396
+},
 "Haven Studios": {
 "size": null,
 "checked": 1793387313
@@ -4194,6 +4246,10 @@
 "Hex Technologies": {
 "size": "201-500",
 "checked": 1793215632
+},
+"HexArmor": {
+"size": "201-500",
+"checked": 1794953396
 },
 "Hexagon AB": {
 "size": "501-1,000",
@@ -4430,6 +4486,10 @@
 "ING": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"IPConfigure": {
+"size": "51-200",
+"checked": 1794953396
 },
 "IQVIA": {
 "size": "10,001+",
@@ -6135,6 +6195,10 @@
 "size": "501-1,000",
 "checked": 1791656720
 },
+"NeuroSpark": {
+"size": null,
+"checked": 1794953396
+},
 "New Flyer": {
 "size": "1-10",
 "checked": 1791235661
@@ -7047,6 +7111,10 @@
 "size": "1,001-5,000",
 "checked": 1793044280
 },
+"Prometheus Group": {
+"size": "1,001-5,000",
+"checked": 1794953396
+},
 "Proofpoint": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -7090,6 +7158,10 @@
 "Publicis Groupe": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Punchcut": {
+"size": "51-200",
+"checked": 1794953396
 },
 "Pure Storage": {
 "size": "5,001-10,000",
@@ -7351,6 +7423,10 @@
 "size": null,
 "checked": 1793215632
 },
+"Remanence": {
+"size": "11-50",
+"checked": 1794953396
+},
 "Remitly": {
 "size": "1,001-5,000",
 "checked": 1792949647
@@ -7494,6 +7570,10 @@
 "Rivian and Volkswagen Group Technologies": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"Road Commission for Oakland County": {
+"size": null,
+"checked": 1794953396
 },
 "Robert Bosch Venture Capital": {
 "size": "201-500",
@@ -7903,6 +7983,14 @@
 "size": null,
 "checked": 1793044280
 },
+"SecurityMetrics": {
+"size": "201-500",
+"checked": 1794953396
+},
+"Sedaro": {
+"size": "11-50",
+"checked": 1794953396
+},
 "Sedgwick Claims Management Services": {
 "size": "10,001+",
 "checked": 1792779295
@@ -8271,6 +8359,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Soros Fund Management": {
+"size": "1-10",
+"checked": 1794953396
+},
 "SoundExchange": {
 "size": "201-500",
 "checked": 1793302238
@@ -8490,6 +8582,10 @@
 "Superhuman": {
 "size": "51-200",
 "checked": 1790368289
+},
+"SurePoint Ag Systems": {
+"size": "11-50",
+"checked": 1794953396
 },
 "Susquehanna International Group": {
 "size": "1,001-5,000",
@@ -8946,6 +9042,10 @@
 "Thomson Reuters": {
 "size": "10,001+",
 "checked": 1792173405
+},
+"Thorlabs": {
+"size": "1,001-5,000",
+"checked": 1794953396
 },
 "Thoughtworks": {
 "size": "10,001+",
@@ -10082,6 +10182,10 @@
 "Zotec Partners": {
 "size": "501-1,000",
 "checked": 1794518676
+},
+"Zurich Insurance": {
+"size": "10,001+",
+"checked": 1794953396
 },
 "Zurn Elkay": {
 "size": null,
