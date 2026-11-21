@@ -75,6 +75,10 @@
 "size": "5,001-10,000",
 "checked": 1790368289
 },
+"AFL": {
+"size": "1,001-5,000",
+"checked": 1795292782
+},
 "AGCO": {
 "size": "10,001+",
 "checked": 1792087921
@@ -242,6 +246,10 @@
 "Acuity": {
 "size": "51-200",
 "checked": 1790368289
+},
+"Acuity Insurance": {
+"size": "1,001-5,000",
+"checked": 1795292782
 },
 "Acumatica": {
 "size": "501-1,000",
@@ -723,6 +731,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Applied Research Associates": {
+"size": "1,001-5,000",
+"checked": 1795292782
+},
 "Aprio": {
 "size": "1,001-5,000",
 "checked": 1790488033
@@ -774,6 +786,10 @@
 "Ardian": {
 "size": "501-1,000",
 "checked": 1790488033
+},
+"Ardurra": {
+"size": "1,001-5,000",
+"checked": 1795292782
 },
 "Argonne National Laboratory": {
 "size": "5,001-10,000",
@@ -1011,6 +1027,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Avista": {
+"size": null,
+"checked": 1795292782
+},
 "Aviva": {
 "size": "10,001+",
 "checked": 1790488371
@@ -1126,6 +1146,10 @@
 "Baldwin Group": {
 "size": "1,001-5,000",
 "checked": 1790488253
+},
+"Baltimore Aircoil Company": {
+"size": null,
+"checked": 1795292782
 },
 "Banco Bilbao Vizcaya Argentaria": {
 "size": null,
@@ -1247,6 +1271,10 @@
 "size": "1,001-5,000",
 "checked": 1791137133
 },
+"Bennett Thrasher": {
+"size": "201-500",
+"checked": 1795292782
+},
 "Berkshire Hathaway Energy": {
 "size": null,
 "checked": 1795211105
@@ -1290,6 +1318,10 @@
 "Biogen": {
 "size": "5,001-10,000",
 "checked": 1790368289
+},
+"Biohub": {
+"size": "501-1,000",
+"checked": 1795292782
 },
 "Birdseye Security Solutions": {
 "size": "51-200",
@@ -1771,6 +1803,10 @@
 "size": null,
 "checked": 1793044280
 },
+"Calamos Investments": {
+"size": null,
+"checked": 1795292782
+},
 "Cambridge Associates": {
 "size": "1,001-5,000",
 "checked": 1790488253
@@ -1946,6 +1982,10 @@
 "Centerstone": {
 "size": "1,001-5,000",
 "checked": 1790488033
+},
+"Centier Bank": {
+"size": "501-1,000",
+"checked": 1795292782
 },
 "Centific": {
 "size": "1,001-5,000",
@@ -2587,6 +2627,10 @@
 "size": "1,001-5,000",
 "checked": 1790488253
 },
+"Daikin Comfort": {
+"size": null,
+"checked": 1795292782
+},
 "Daimler Truck": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -2943,6 +2987,10 @@
 "size": "1,001-5,000",
 "checked": 1791842625
 },
+"EP Wealth Advisors": {
+"size": "501-1,000",
+"checked": 1795292782
+},
 "EPRI": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -3086,6 +3134,10 @@
 "Enact Mortgage Insurance": {
 "size": "201-500",
 "checked": 1790368289
+},
+"Encore": {
+"size": "1,001-5,000",
+"checked": 1795292782
 },
 "Encova": {
 "size": null,
@@ -3491,6 +3543,10 @@
 "size": "10,001+",
 "checked": 1790488033
 },
+"Fidelity Bank": {
+"size": "201-500",
+"checked": 1795292782
+},
 "Fidelity Investments": {
 "size": "10,001+",
 "checked": 1790368289
@@ -3571,9 +3627,17 @@
 "size": "1,001-5,000",
 "checked": 1790627436
 },
+"First Merchants Bank": {
+"size": "1,001-5,000",
+"checked": 1795292782
+},
 "First National Bank": {
 "size": "51-200",
 "checked": 1790368289
+},
+"First PREMIER Bank": {
+"size": null,
+"checked": 1795292782
 },
 "First Quality": {
 "size": null,
@@ -3755,6 +3819,10 @@
 "size": "1,001-5,000",
 "checked": 1791922262
 },
+"GCI": {
+"size": null,
+"checked": 1795292782
+},
 "GCM Grosvenor": {
 "size": "201-500",
 "checked": 1790486647
@@ -3794,6 +3862,10 @@
 "GSK": {
 "size": "10,001+",
 "checked": 1790532964
+},
+"GTI Energy": {
+"size": "501-1,000",
+"checked": 1795292782
 },
 "GTS": {
 "size": "201-500",
@@ -4067,6 +4139,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Great Southern Wood Preserving": {
+"size": "201-500",
+"checked": 1795292782
+},
 "GreatAmerica Financial Services": {
 "size": null,
 "checked": 1793128856
@@ -4143,6 +4219,10 @@
 "size": "501-1,000",
 "checked": 1790488033
 },
+"Gusto": {
+"size": "1,001-5,000",
+"checked": 1795292782
+},
 "Gusto, Inc.": {
 "size": null,
 "checked": 1795211105
@@ -4153,7 +4233,7 @@
 },
 "H.B. Fuller": {
 "size": null,
-"checked": 1791050014
+"checked": 1795292782
 },
 "H3X Technologies": {
 "size": "51-200",
@@ -4178,6 +4258,10 @@
 "HF Sinclair": {
 "size": "5,001-10,000",
 "checked": 1790368289
+},
+"HME": {
+"size": "501-1,000",
+"checked": 1795292782
 },
 "HMH": {
 "size": "501-1,000",
@@ -4971,6 +5055,10 @@
 "size": "201-500",
 "checked": 1790488033
 },
+"Jewelers Mutual Group": {
+"size": "201-500",
+"checked": 1795292782
+},
 "Jimmy Choo": {
 "size": "1,001-5,000",
 "checked": 1792087921
@@ -5491,6 +5579,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Los Angeles Dodgers": {
+"size": null,
+"checked": 1795292782
+},
 "Louis Dreyfus Company": {
 "size": "10,001+",
 "checked": 1790488033
@@ -5895,6 +5987,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Meridian Credit Union": {
+"size": "1,001-5,000",
+"checked": 1795292782
+},
 "Merrick": {
 "size": "501-1,000",
 "checked": 1794603049
@@ -5902,6 +5998,10 @@
 "Meshy": {
 "size": "51-200",
 "checked": 1790368289
+},
+"Mesirow": {
+"size": "501-1,000",
+"checked": 1795292782
 },
 "MetLife": {
 "size": "10,001+",
@@ -5926,6 +6026,10 @@
 "Meter": {
 "size": "201-500",
 "checked": 1791656720
+},
+"Method": {
+"size": "51-200",
+"checked": 1795292782
 },
 "Methodist Le Bonheur ": {
 "size": "5,001-10,000",
@@ -5982,6 +6086,10 @@
 "MillerKnoll": {
 "size": "5,001-10,000",
 "checked": 1791050014
+},
+"Milliman": {
+"size": "1,001-5,000",
+"checked": 1795292782
 },
 "Milwaukee Brewers": {
 "size": null,
@@ -6054,6 +6162,10 @@
 "Molina Healthcare": {
 "size": "10,001+",
 "checked": 1793471148
+},
+"Mom's Meals": {
+"size": "1,001-5,000",
+"checked": 1795292782
 },
 "Momentive": {
 "size": "1,001-5,000",
@@ -6138,6 +6250,10 @@
 "MultiCare Health System": {
 "size": "5,001-10,000",
 "checked": 1791656720
+},
+"Multimatic": {
+"size": "1,001-5,000",
+"checked": 1795292782
 },
 "Multiply Labs": {
 "size": "51-200",
@@ -6930,6 +7046,10 @@
 "Parspec": {
 "size": "51-200",
 "checked": 1794076715
+},
+"Pason Systems": {
+"size": "501-1,000",
+"checked": 1795292782
 },
 "Patch My PC": {
 "size": "51-200",
@@ -7971,6 +8091,10 @@
 "size": null,
 "checked": 1793737744
 },
+"SSR": {
+"size": "501-1,000",
+"checked": 1795292782
+},
 "STCU": {
 "size": "501-1,000",
 "checked": 1791402735
@@ -8244,8 +8368,8 @@
 "checked": 1790368289
 },
 "Seven Research": {
-"size": null,
-"checked": 1792693673
+"size": "11-50",
+"checked": 1795292782
 },
 "Sezzle": {
 "size": "201-500",
@@ -8571,6 +8695,10 @@
 "size": null,
 "checked": 1790368289
 },
+"Southern Farm Bureau Life Insurance": {
+"size": "501-1,000",
+"checked": 1795292782
+},
 "Southern Mississippi Trading": {
 "size": null,
 "checked": 1795211105
@@ -8586,6 +8714,10 @@
 "Southwest Airlines": {
 "size": "10,001+",
 "checked": 1790882735
+},
+"Southwest Power Pool": {
+"size": "501-1,000",
+"checked": 1795292782
 },
 "SpAItial": {
 "size": "11-50",
@@ -8670,6 +8802,10 @@
 "Star Catcher": {
 "size": "51-200",
 "checked": 1793302238
+},
+"Starkey": {
+"size": "1,001-5,000",
+"checked": 1795292782
 },
 "Starr Insurance": {
 "size": "1,001-5,000",
@@ -8879,9 +9015,17 @@
 "size": null,
 "checked": 1793737744
 },
+"TASI Measurement": {
+"size": "51-200",
+"checked": 1795292782
+},
 "TC Energy": {
 "size": "5,001-10,000",
 "checked": 1790368289
+},
+"TCOM": {
+"size": "201-500",
+"checked": 1795292782
 },
 "TD Bank": {
 "size": "10,001+",
@@ -9411,6 +9555,10 @@
 "size": "1-10",
 "checked": 1790368289
 },
+"Trimont": {
+"size": null,
+"checked": 1795292782
+},
 "Trinity Life Sciences": {
 "size": "1,001-5,000",
 "checked": 1794518676
@@ -9554,6 +9702,10 @@
 "Ulta Beauty": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Ulteig": {
+"size": "1,001-5,000",
+"checked": 1795292782
 },
 "Unilever": {
 "size": "10,001+",
@@ -9707,6 +9859,10 @@
 "size": "1,001-5,000",
 "checked": 1793215632
 },
+"VT Industries": {
+"size": "501-1,000",
+"checked": 1795292782
+},
 "VWH Capital Management": {
 "size": null,
 "checked": 1790488033
@@ -9774,6 +9930,10 @@
 "Vatic Investments": {
 "size": "11-50",
 "checked": 1793825105
+},
+"Vatic Outsourcing": {
+"size": "51-200",
+"checked": 1795292782
 },
 "Veeam Software": {
 "size": "5,001-10,000",
@@ -10127,6 +10287,14 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Welltower": {
+"size": null,
+"checked": 1795292782
+},
+"Werner Electric Supply": {
+"size": null,
+"checked": 1795292782
+},
 "West Bend Insurance": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -10302,6 +10470,10 @@
 "Wurl": {
 "size": "51-200",
 "checked": 1790488033
+},
+"W\u00fcrth Elektronik": {
+"size": "201-500",
+"checked": 1795292782
 },
 "X-energy": {
 "size": "1,001-5,000",
