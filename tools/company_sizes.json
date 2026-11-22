@@ -283,6 +283,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Advance Auto Parts": {
+"size": "10,001+",
+"checked": 1795379952
+},
 "Advanced Energy": {
 "size": "5,001-10,000",
 "checked": 1792693673
@@ -3651,6 +3655,10 @@
 "size": "5,001-10,000",
 "checked": 1790368289
 },
+"Fiskars Group": {
+"size": "1,001-5,000",
+"checked": 1795379952
+},
 "Five Rings Capital": {
 "size": "201-500",
 "checked": 1790368289
@@ -6276,8 +6284,8 @@
 "checked": 1790488033
 },
 "NASA Jet Propulsion Laboratory": {
-"size": null,
-"checked": 1792779295
+"size": "5,001-10,000",
+"checked": 1795379952
 },
 "NBCUniversal": {
 "size": "10,001+",
@@ -6422,6 +6430,10 @@
 "Neptune North": {
 "size": null,
 "checked": 1793471148
+},
+"Neros Technologies": {
+"size": "51-200",
+"checked": 1795379952
 },
 "NetApp": {
 "size": "51-200",
@@ -7056,8 +7068,8 @@
 "checked": 1790882735
 },
 "Path Robotics": {
-"size": null,
-"checked": 1792779295
+"size": "201-500",
+"checked": 1795379952
 },
 "Pathlabs": {
 "size": null,
@@ -8234,6 +8246,10 @@
 "Schneider Electric": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Schnucks": {
+"size": "10,001+",
+"checked": 1795379952
 },
 "Schonfeld": {
 "size": "201-500",
@@ -9527,6 +9543,10 @@
 "size": "1,001-5,000",
 "checked": 1790882735
 },
+"Trellix": {
+"size": "1,001-5,000",
+"checked": 1795379952
+},
 "Trend Micro": {
 "size": "5,001-10,000",
 "checked": 1790488033
@@ -10314,6 +10334,10 @@
 "Western Digital": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Western Governors University": {
+"size": "10,001+",
+"checked": 1795379952
 },
 "Western National Insurance": {
 "size": "501-1,000",
