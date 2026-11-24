@@ -1267,6 +1267,10 @@
 "size": "201-500",
 "checked": 1790368289
 },
+"Benchling": {
+"size": "501-1,000",
+"checked": 1795484162
+},
 "Benefis Health System": {
 "size": "1,001-5,000",
 "checked": 1792173405
@@ -1443,6 +1447,10 @@
 "size": "5,001-10,000",
 "checked": 1790488371
 },
+"Blueprint AI (Mental Health)": {
+"size": "11-50",
+"checked": 1795484162
+},
 "Bobyard": {
 "size": "51-200",
 "checked": 1791314733
@@ -1506,6 +1514,10 @@
 "Bot Auto": {
 "size": "51-200",
 "checked": 1790368289
+},
+"Botpress Technologies": {
+"size": "51-200",
+"checked": 1795484162
 },
 "Bottom Line": {
 "size": "1,001-5,000",
@@ -1870,6 +1882,10 @@
 "Capital Power": {
 "size": "501-1,000",
 "checked": 1794603049
+},
+"Capital Technology Group": {
+"size": null,
+"checked": 1795484162
 },
 "Capital de Recherche Tower": {
 "size": null,
@@ -2447,6 +2463,10 @@
 "size": null,
 "checked": 1793128856
 },
+"CornerStone Partners": {
+"size": "11-50",
+"checked": 1795484162
+},
 "Corning": {
 "size": "1,001-5,000",
 "checked": 1790368289
@@ -2546,6 +2566,10 @@
 "Cubic": {
 "size": "1,001-5,000",
 "checked": 1792779295
+},
+"Culver's": {
+"size": "10,001+",
+"checked": 1795484162
 },
 "Cummins": {
 "size": "10,001+",
@@ -3646,6 +3670,10 @@
 "First Quality": {
 "size": null,
 "checked": 1793128856
+},
+"First Resonance": {
+"size": null,
+"checked": 1795484162
 },
 "Fiserv": {
 "size": "10,001+",
@@ -5507,6 +5535,10 @@
 "size": "10,001+",
 "checked": 1790488253
 },
+"Lifeway": {
+"size": "1,001-5,000",
+"checked": 1795484162
+},
 "Light": {
 "size": "51-200",
 "checked": 1793215632
@@ -5946,6 +5978,10 @@
 "MegazoneCloud": {
 "size": "501-1,000",
 "checked": 1790368289
+},
+"Megger": {
+"size": "501-1,000",
+"checked": 1795484162
 },
 "Meijer": {
 "size": "10,001+",
@@ -7275,6 +7311,10 @@
 "size": null,
 "checked": 1791235661
 },
+"Playfly Sports": {
+"size": "501-1,000",
+"checked": 1795484162
+},
 "Pluralis Research": {
 "size": "11-50",
 "checked": 1790488033
@@ -7982,6 +8022,10 @@
 "Rundoo": {
 "size": "51-200",
 "checked": 1790488033
+},
+"Runna": {
+"size": "201-500",
+"checked": 1795484162
 },
 "Ryan": {
 "size": "5,001-10,000",
@@ -8791,6 +8835,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"Spry Methods": {
+"size": "51-200",
+"checked": 1795484162
+},
 "St. Luke's University Health Network": {
 "size": null,
 "checked": 1793215632
@@ -8810,6 +8858,10 @@
 "Stanley Black & Decker": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Stantec": {
+"size": "10,001+",
+"checked": 1795484162
 },
 "Staples": {
 "size": "10,001+",
@@ -8894,6 +8946,10 @@
 "Stratolaunch": {
 "size": "201-500",
 "checked": 1792520784
+},
+"Strava": {
+"size": "1,001-5,000",
+"checked": 1795484162
 },
 "Stripe": {
 "size": "10,001+",
@@ -9625,7 +9681,7 @@
 },
 "Turner & Townsend": {
 "size": null,
-"checked": 1792087921
+"checked": 1795484162
 },
 "Twist Bioscience": {
 "size": null,
