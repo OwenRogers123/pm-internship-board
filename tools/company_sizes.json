@@ -777,7 +777,7 @@
 },
 "Arch Capital Group": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Arconic": {
 "size": "1,001-5,000",
@@ -1163,6 +1163,10 @@
 "size": null,
 "checked": 1794163555
 },
+"Bandwidth": {
+"size": "1,001-5,000",
+"checked": 1795647710
+},
 "Bank of Montreal": {
 "size": "10,001+",
 "checked": 1790368289
@@ -1249,7 +1253,7 @@
 },
 "Bee Sweet Citrus": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Belden": {
 "size": "1,001-5,000",
@@ -1298,6 +1302,10 @@
 "Bertelsmann": {
 "size": "10,001+",
 "checked": 1790488033
+},
+"Best Egg": {
+"size": "501-1,000",
+"checked": 1795647710
 },
 "Beth Israel Lahey Health": {
 "size": "10,001+",
@@ -1405,7 +1413,7 @@
 },
 "Bloxd": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Blue Cross Blue Shield of Michigan": {
 "size": "10,001+",
@@ -1820,8 +1828,8 @@
 "checked": 1791314733
 },
 "Cadillac Formula 1 Team": {
-"size": null,
-"checked": 1793044280
+"size": "501-1,000",
+"checked": 1795647710
 },
 "Calamos Investments": {
 "size": null,
@@ -2369,7 +2377,7 @@
 },
 "Conagra Brands": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "ConductorAI": {
 "size": "11-50",
@@ -2517,7 +2525,7 @@
 },
 "Cozey": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Crane Co.": {
 "size": "1,001-5,000",
@@ -2743,6 +2751,10 @@
 "size": "1,001-5,000",
 "checked": 1792173405
 },
+"Davidson Kempner": {
+"size": null,
+"checked": 1795647710
+},
 "Dayton Freight Lines": {
 "size": null,
 "checked": 1793912394
@@ -2792,8 +2804,8 @@
 "checked": 1790368289
 },
 "Demco Products": {
-"size": null,
-"checked": 1793044280
+"size": "501-1,000",
+"checked": 1795647710
 },
 "Dentsu": {
 "size": "10,001+",
@@ -2840,8 +2852,8 @@
 "checked": 1790882735
 },
 "Dialogue": {
-"size": null,
-"checked": 1793044280
+"size": "501-1,000",
+"checked": 1795647710
 },
 "Diamondback Energy": {
 "size": "501-1,000",
@@ -3221,7 +3233,7 @@
 },
 "Ensign-Bickford Aerospace & Defense Company": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Ensign-Bickford Industries": {
 "size": "51-200",
@@ -3325,7 +3337,7 @@
 },
 "Erie Insurance Group": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Ernst & Young": {
 "size": "5,001-10,000",
@@ -4637,7 +4649,7 @@
 },
 "Hunt Oil Company": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Huntington Bancshares": {
 "size": "10,001+",
@@ -4645,7 +4657,7 @@
 },
 "Huntington Ingalls Industries": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Huntsman": {
 "size": "5,001-10,000",
@@ -4813,7 +4825,7 @@
 },
 "InfiniteQuant": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Infleqtion": {
 "size": "201-500",
@@ -5060,8 +5072,8 @@
 "checked": 1790368289
 },
 "JM Family": {
-"size": null,
-"checked": 1793044280
+"size": "1,001-5,000",
+"checked": 1795647710
 },
 "JMP Statistical Discovery": {
 "size": "501-1,000",
@@ -5781,7 +5793,7 @@
 },
 "Mackenzie Investments": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Macy's": {
 "size": "10,001+",
@@ -6521,7 +6533,7 @@
 },
 "Neuberger Berman": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Neuralink": {
 "size": "501-1,000",
@@ -6626,6 +6638,10 @@
 "Nike": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"Nikkiso": {
+"size": null,
+"checked": 1795647710
 },
 "Nintendo": {
 "size": "5,001-10,000",
@@ -6859,6 +6875,10 @@
 "size": "1,001-5,000",
 "checked": 1790488033
 },
+"Omya": {
+"size": "1,001-5,000",
+"checked": 1795647710
+},
 "OnLogic": {
 "size": "201-500",
 "checked": 1793128856
@@ -6901,7 +6921,7 @@
 },
 "Oppenheimer & Co. Inc.": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "OptiSigns": {
 "size": "51-200",
@@ -7077,7 +7097,7 @@
 },
 "Panasonic Holdings": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Panera Bread": {
 "size": "10,001+",
@@ -7177,7 +7197,7 @@
 },
 "Pennsylvania State University": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Penta Group": {
 "size": "201-500",
@@ -7213,7 +7233,7 @@
 },
 "Perplexity": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Perry Homes": {
 "size": "1,001-5,000",
@@ -7551,6 +7571,10 @@
 "size": "1-10",
 "checked": 1790368289
 },
+"QinetiQ": {
+"size": "5,001-10,000",
+"checked": 1795647710
+},
 "Qorvo": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -7657,7 +7681,7 @@
 },
 "RRS Group": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "RSM": {
 "size": "1,001-5,000",
@@ -7685,7 +7709,7 @@
 },
 "Ralliant": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Ramboll": {
 "size": "10,001+",
@@ -7704,8 +7728,8 @@
 "checked": 1790968163
 },
 "Rantec Power Systems Inc.": {
-"size": null,
-"checked": 1793044280
+"size": "201-500",
+"checked": 1795647710
 },
 "Raptor Maps": {
 "size": "51-200",
@@ -7713,11 +7737,15 @@
 },
 "Raymond James Financial": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Re:Build Manufacturing": {
 "size": null,
 "checked": 1793659350
+},
+"Reach Labs": {
+"size": "11-50",
+"checked": 1795647710
 },
 "Readystate Asset Management": {
 "size": "11-50",
@@ -8239,6 +8267,10 @@
 "size": "1,001-5,000",
 "checked": 1790368289
 },
+"SambaNova Systems": {
+"size": "201-500",
+"checked": 1795647710
+},
 "Samsara": {
 "size": "5,001-10,000",
 "checked": 1790368289
@@ -8381,7 +8413,7 @@
 },
 "Securian Financial Group": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "SecurityMetrics": {
 "size": "201-500",
@@ -8601,7 +8633,7 @@
 },
 "SimonComputing": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Simons Foundation": {
 "size": "201-500",
@@ -8796,8 +8828,8 @@
 "checked": 1795211105
 },
 "Southern Star Central Gas Pipeline": {
-"size": null,
-"checked": 1793044280
+"size": "501-1,000",
+"checked": 1795647710
 },
 "Southern States, LLC": {
 "size": "201-500",
@@ -8830,6 +8862,10 @@
 "Span": {
 "size": "201-500",
 "checked": 1790488033
+},
+"Sparksoft": {
+"size": "201-500",
+"checked": 1795647710
 },
 "SpartanNash": {
 "size": "1,001-5,000",
@@ -8957,7 +8993,7 @@
 },
 "Steven's Capital Management": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Stoke Space": {
 "size": "201-500",
@@ -9173,7 +9209,7 @@
 },
 "TMEIC Corporation Americas": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "TMX Group": {
 "size": "1,001-5,000",
@@ -9249,7 +9285,7 @@
 },
 "Tarrant Regional Water District": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Taylor": {
 "size": "5,001-10,000",
@@ -9895,6 +9931,10 @@
 "size": null,
 "checked": 1792173405
 },
+"University of St. Thomas": {
+"size": null,
+"checked": 1795647710
+},
 "University of Texas - Austin": {
 "size": null,
 "checked": 1792693673
@@ -9905,7 +9945,7 @@
 },
 "University of Virginia": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "University of Virginia Investment Management Company (UVIMCO)": {
 "size": "11-50",
@@ -10281,7 +10321,7 @@
 },
 "Wabash Valley Power Alliance": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "Wabtec": {
 "size": "10,001+",
@@ -10745,7 +10785,7 @@
 },
 "iFLIP4": {
 "size": null,
-"checked": 1793044280
+"checked": 1795647710
 },
 "iHeartMedia": {
 "size": "10,001+",
