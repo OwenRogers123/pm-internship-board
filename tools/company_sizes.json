@@ -101,7 +101,7 @@
 },
 "ALTEN Mexico": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "AMA": {
 "size": "1,001-5,000",
@@ -212,8 +212,8 @@
 "checked": 1790488033
 },
 "Accenture": {
-"size": null,
-"checked": 1793128856
+"size": "10,001+",
+"checked": 1795733700
 },
 "Accor": {
 "size": "10,001+",
@@ -292,8 +292,8 @@
 "checked": 1792693673
 },
 "Advanced Space": {
-"size": null,
-"checked": 1793128856
+"size": "51-200",
+"checked": 1795733700
 },
 "Advocate Health Care": {
 "size": "10,001+",
@@ -557,7 +557,7 @@
 },
 "American Century Investments": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "American Electric Power": {
 "size": "10,001+",
@@ -825,7 +825,7 @@
 },
 "Arizona State University": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Arkansas Children's": {
 "size": null,
@@ -1097,7 +1097,7 @@
 },
 "BGE": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "BJ's Wholesale Club": {
 "size": null,
@@ -2299,6 +2299,10 @@
 "size": "11-50",
 "checked": 1790368289
 },
+"CodeRabbit": {
+"size": "201-500",
+"checked": 1795733700
+},
 "Cogna": {
 "size": "51-200",
 "checked": 1790368289
@@ -2346,6 +2350,10 @@
 "Commerce Bank": {
 "size": "1,001-5,000",
 "checked": 1790368289
+},
+"CommerceIQ": {
+"size": "51-200",
+"checked": 1795733700
 },
 "CommonAI C.I.C.": {
 "size": "11-50",
@@ -2517,7 +2525,7 @@
 },
 "Cowboy Space": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Cox": {
 "size": "10,001+",
@@ -2569,7 +2577,7 @@
 },
 "Crown Innovations": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Crum & Forster Insurance": {
 "size": "1,001-5,000",
@@ -2626,6 +2634,10 @@
 "DB E.C.O. North America": {
 "size": null,
 "checked": 1793559085
+},
+"DEPT": {
+"size": "1-10",
+"checked": 1795733700
 },
 "DIRECTV": {
 "size": "10,001+",
@@ -2866,6 +2878,10 @@
 "DigiKey": {
 "size": "1,001-5,000",
 "checked": 1790627436
+},
+"Digital Control": {
+"size": "51-200",
+"checked": 1795733700
 },
 "Digs": {
 "size": "51-200",
@@ -3741,7 +3757,7 @@
 },
 "Flint": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Florida Atlantic University": {
 "size": null,
@@ -3985,7 +4001,7 @@
 },
 "Gelber Group": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "GenBio AI": {
 "size": "51-200",
@@ -4073,7 +4089,7 @@
 },
 "Georgian Partners Growth": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Geotab": {
 "size": "1,001-5,000",
@@ -4197,7 +4213,7 @@
 },
 "GrayMatter Robotics": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Great American Insurance Company": {
 "size": "1,001-5,000",
@@ -4233,7 +4249,7 @@
 },
 "Gritt Robotics Inc": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Grow Financial Federal Credit Union": {
 "size": "201-500",
@@ -4309,7 +4325,7 @@
 },
 "HCSC": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "HD Supply": {
 "size": "10,001+",
@@ -4394,6 +4410,10 @@
 "Harris Williams": {
 "size": null,
 "checked": 1793302238
+},
+"Harvard Companies": {
+"size": "10,001+",
+"checked": 1795733700
 },
 "Harvey": {
 "size": "1,001-5,000",
@@ -4506,6 +4526,10 @@
 "Hexagon AB": {
 "size": "501-1,000",
 "checked": 1790368289
+},
+"HeyGen": {
+"size": "201-500",
+"checked": 1795733700
 },
 "Highgate": {
 "size": "1,001-5,000",
@@ -4881,7 +4905,7 @@
 },
 "Insperity": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Inspire Brands": {
 "size": "10,001+",
@@ -4897,7 +4921,7 @@
 },
 "Instead": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Instil Software Ltd": {
 "size": "51-200",
@@ -4905,7 +4929,7 @@
 },
 "Institute of Foundation Models": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Insulet": {
 "size": "5,001-10,000",
@@ -4953,7 +4977,7 @@
 },
 "Interco": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Intercontinental Exchange": {
 "size": "10,001+",
@@ -4968,8 +4992,8 @@
 "checked": 1793044280
 },
 "Intermountain Healthcare": {
-"size": null,
-"checked": 1793128856
+"size": "10,001+",
+"checked": 1795733700
 },
 "International": {
 "size": "10,001+",
@@ -5061,7 +5085,7 @@
 },
 "J.S. Held": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "JBT Marel": {
 "size": null,
@@ -5099,6 +5123,10 @@
 "size": "10,001+",
 "checked": 1790368289
 },
+"Jack Henry": {
+"size": "5,001-10,000",
+"checked": 1795733700
+},
 "Jackson": {
 "size": "1,001-5,000",
 "checked": 1790532964
@@ -5109,7 +5137,7 @@
 },
 "Jain Global": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Jane Street": {
 "size": "1,001-5,000",
@@ -5729,7 +5757,7 @@
 },
 "M3USA": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "MBDA": {
 "size": "5,001-10,000",
@@ -6561,7 +6589,7 @@
 },
 "NewYork-Presbyterian": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Newell Brands": {
 "size": "10,001+",
@@ -6853,7 +6881,7 @@
 },
 "Ohiohealth": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Oklahoma State Government": {
 "size": "201-500",
@@ -7093,7 +7121,7 @@
 },
 "PanAgora": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Panasonic Holdings": {
 "size": null,
@@ -8721,7 +8749,7 @@
 },
 "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale de Surveillance (SGS)": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Soho House": {
 "size": "5,001-10,000",
@@ -8977,7 +9005,7 @@
 },
 "State of Wisconsin Investment Board": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Steel": {
 "size": "11-50",
@@ -9221,7 +9249,7 @@
 },
 "TOPPAN Packaging Americas": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "TPG": {
 "size": null,
@@ -9529,11 +9557,11 @@
 },
 "Think Academy International Education": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Thomas & Hutton": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "Thomson Reuters": {
 "size": "10,001+",
@@ -9590,6 +9618,10 @@
 "Toshiba Global Commerce": {
 "size": "1,001-5,000",
 "checked": 1792607595
+},
+"Total Quality Logistics": {
+"size": "5,001-10,000",
+"checked": 1795733700
 },
 "Tower Research Capital": {
 "size": "1,001-5,000",
@@ -9725,7 +9757,7 @@
 },
 "True Anomaly": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "True Environmental": {
 "size": "1-10",
@@ -9897,7 +9929,7 @@
 },
 "University of Arkansas": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "University of British Columbia": {
 "size": null,
@@ -9909,11 +9941,11 @@
 },
 "University of Maryland - College Park": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "University of Miami": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "University of Nevada, Las Vegas": {
 "size": null,
@@ -9989,7 +10021,7 @@
 },
 "VAST": {
 "size": null,
-"checked": 1793128856
+"checked": 1795733700
 },
 "VELCO": {
 "size": "201-500",
@@ -10654,6 +10686,10 @@
 "Xcimer Energy": {
 "size": "51-200",
 "checked": 1790368289
+},
+"Xona Space Systems": {
+"size": "51-200",
+"checked": 1795733700
 },
 "Xsolla": {
 "size": "501-1,000",
