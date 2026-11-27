@@ -501,7 +501,7 @@
 },
 "Altera Corporation": {
 "size": null,
-"checked": 1793128856
+"checked": 1795819046
 },
 "Altice USA": {
 "size": "1,001-5,000",
@@ -1592,8 +1592,8 @@
 "checked": 1794266520
 },
 "Bridge Neurotech": {
-"size": null,
-"checked": 1793215632
+"size": "1-10",
+"checked": 1795819046
 },
 "Brigham Young University": {
 "size": null,
@@ -1641,7 +1641,7 @@
 },
 "Brown & Brown Insurance": {
 "size": null,
-"checked": 1793215632
+"checked": 1795819046
 },
 "Brown Brothers Harriman": {
 "size": "5,001-10,000",
@@ -1664,8 +1664,8 @@
 "checked": 1792693673
 },
 "Build AI": {
-"size": null,
-"checked": 1793215632
+"size": "11-50",
+"checked": 1795819046
 },
 "Buildertrend": {
 "size": "501-1,000",
@@ -1712,8 +1712,8 @@
 "checked": 1790368289
 },
 "CAMS": {
-"size": null,
-"checked": 1793215632
+"size": "1,001-5,000",
+"checked": 1795819046
 },
 "CARIAD": {
 "size": "1,001-5,000",
@@ -3168,8 +3168,8 @@
 "checked": 1790488033
 },
 "Elveo": {
-"size": null,
-"checked": 1793215632
+"size": "11-50",
+"checked": 1795819046
 },
 "Embry-Riddle Aeronautical University": {
 "size": null,
@@ -3512,8 +3512,8 @@
 "checked": 1790368289
 },
 "FUTO": {
-"size": null,
-"checked": 1793215632
+"size": "51-200",
+"checked": 1795819046
 },
 "Fab2": {
 "size": "51-200",
@@ -4708,8 +4708,8 @@
 "checked": 1790709393
 },
 "Hyphenate": {
-"size": null,
-"checked": 1793215632
+"size": "11-50",
+"checked": 1795819046
 },
 "Hyster-Yale Materials Handling": {
 "size": "1,001-5,000",
@@ -4726,6 +4726,10 @@
 "ICF International": {
 "size": "10,001+",
 "checked": 1790368289
+},
+"ICONIQ Capital": {
+"size": "501-1,000",
+"checked": 1795819046
 },
 "ID.me": {
 "size": "1,001-5,000",
@@ -4814,6 +4818,10 @@
 "Illinois Tool Works": {
 "size": "5,001-10,000",
 "checked": 1790368289
+},
+"Illumina": {
+"size": "5,001-10,000",
+"checked": 1795819046
 },
 "Illumio": {
 "size": "501-1,000",
@@ -5013,7 +5021,7 @@
 },
 "International Rescue Committee (IRC)": {
 "size": null,
-"checked": 1793215632
+"checked": 1795819046
 },
 "Internship": {
 "size": null,
@@ -5077,7 +5085,7 @@
 },
 "Ixian Robotics": {
 "size": null,
-"checked": 1793215632
+"checked": 1795819046
 },
 "J.M. Smucker": {
 "size": "1,001-5,000",
@@ -5697,7 +5705,7 @@
 },
 "Louisiana State University": {
 "size": null,
-"checked": 1793215632
+"checked": 1795819046
 },
 "Louisiana State University (LSU)": {
 "size": null,
@@ -6352,8 +6360,8 @@
 "checked": 1790368289
 },
 "Motorola Solutions": {
-"size": null,
-"checked": 1793215632
+"size": "10,001+",
+"checked": 1795819046
 },
 "Movado Group": {
 "size": "1,001-5,000",
@@ -6440,8 +6448,8 @@
 "checked": 1790488033
 },
 "NUVACORE": {
-"size": null,
-"checked": 1793215632
+"size": "51-200",
+"checked": 1795819046
 },
 "NVIDIA": {
 "size": "10,001+",
@@ -6912,8 +6920,8 @@
 "checked": 1793128856
 },
 "One Robot": {
-"size": null,
-"checked": 1793215632
+"size": "1-10",
+"checked": 1795819046
 },
 "OneEthos": {
 "size": "11-50",
@@ -6940,8 +6948,8 @@
 "checked": 1790368289
 },
 "OpenMind": {
-"size": null,
-"checked": 1793215632
+"size": "11-50",
+"checked": 1795819046
 },
 "OpenSesame": {
 "size": "201-500",
@@ -7062,6 +7070,10 @@
 "PPG Industries": {
 "size": "10,001+",
 "checked": 1790532964
+},
+"PQShield": {
+"size": "51-200",
+"checked": 1795819046
 },
 "PSECU": {
 "size": null,
@@ -7437,11 +7449,11 @@
 },
 "Powertown": {
 "size": null,
-"checked": 1793215632
+"checked": 1795819046
 },
 "Pramaana Labs": {
-"size": null,
-"checked": 1793215632
+"size": "11-50",
+"checked": 1795819046
 },
 "Precision AQ": {
 "size": "501-1,000",
@@ -7852,8 +7864,8 @@
 "checked": 1794682855
 },
 "Relling": {
-"size": null,
-"checked": 1793215632
+"size": "1-10",
+"checked": 1795819046
 },
 "Remanence": {
 "size": "11-50",
@@ -7921,7 +7933,7 @@
 },
 "Resurgent Industries": {
 "size": null,
-"checked": 1793215632
+"checked": 1795819046
 },
 "Revantage Corporate Services": {
 "size": "11-50",
@@ -8068,8 +8080,8 @@
 "checked": 1790488033
 },
 "RosaicLabs": {
-"size": null,
-"checked": 1793215632
+"size": "1-10",
+"checked": 1795819046
 },
 "Roswell Park Comprehensive Cancer Center": {
 "size": "1,001-5,000",
@@ -8692,8 +8704,8 @@
 "checked": 1790488033
 },
 "Skyband Systems": {
-"size": null,
-"checked": 1793215632
+"size": "1-10",
+"checked": 1795819046
 },
 "Skydio": {
 "size": "1,001-5,000",
@@ -9233,7 +9245,7 @@
 },
 "TMEIC": {
 "size": null,
-"checked": 1793128856
+"checked": 1795819046
 },
 "TMEIC Corporation Americas": {
 "size": null,
@@ -9501,7 +9513,7 @@
 },
 "The Robotics Company": {
 "size": null,
-"checked": 1793215632
+"checked": 1795819046
 },
 "The Shipyard": {
 "size": "201-500",
@@ -9956,8 +9968,8 @@
 "checked": 1794603049
 },
 "University of Rochester": {
-"size": null,
-"checked": 1793128856
+"size": "1-10",
+"checked": 1795819046
 },
 "University of Southern California": {
 "size": null,
@@ -10232,8 +10244,8 @@
 "checked": 1791573913
 },
 "Viggle AI": {
-"size": null,
-"checked": 1793215632
+"size": "11-50",
+"checked": 1795819046
 },
 "Vigil Labs": {
 "size": "1-10",
@@ -10292,8 +10304,8 @@
 "checked": 1790368289
 },
 "Voya Financial": {
-"size": null,
-"checked": 1793215632
+"size": "5,001-10,000",
+"checked": 1795819046
 },
 "Voyager Technologies": {
 "size": "201-500",
@@ -10321,7 +10333,7 @@
 },
 "WGU": {
 "size": null,
-"checked": 1793215632
+"checked": 1795819046
 },
 "WPP": {
 "size": "10,001+",
@@ -10645,7 +10657,7 @@
 },
 "WorldEngine AI": {
 "size": null,
-"checked": 1793215632
+"checked": 1795819046
 },
 "WorldStrides": {
 "size": "1,001-5,000",
@@ -10796,8 +10808,8 @@
 "checked": 1791050014
 },
 "dmodel": {
-"size": null,
-"checked": 1793215632
+"size": "11-50",
+"checked": 1795819046
 },
 "doTERRA": {
 "size": "1-10",
